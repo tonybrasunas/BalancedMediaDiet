@@ -1,5 +1,5 @@
 body {
-  margin: 5% 20%;
+  margin: 2%;
 }
 
 .content {
@@ -34,3 +34,10 @@ h3 {
   letter-spacing: -.012em;
   font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
 }
+
+.diet-table {
+  width: 100%;
+  min-width: 1200px;
+}
+
+
