@@ -3986,7 +3986,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Candara", Optima, Arial, sans-serif;
   font-size: 17px;
 }
 .pointer {
@@ -4012,7 +4012,7 @@ body {
 }
 /*  HEADINGS */
 h1 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Open Sans", "Candara", Optima, Arial, sans-serif;
   font-size: calc(1rem + 1.4vw);
   font-weight: 700;
   line-height: calc(1rem + 2vw);
@@ -4020,12 +4020,12 @@ h1 {
 }
 h2 {
   font-size: calc(1rem + 0.4vw);
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Open Sans", "Candara", Optima, Arial, sans-serif;
   font-weight: 700;
 }
 h3 {
   font-size: 1rem;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Open Sans", "Candara", Optima, Arial, sans-serif;
   font-weight: 700;
 }
 section.full-width-section {
@@ -4036,9 +4036,10 @@ section.full-width-section {
 }
 p {
   font-size: calc(1rem + 0.2vw);
+  max-width: 720px;
 }
 .small-text {
-  font-size: calc(1rem - 0.3vw);
+  font-size: calc(0.8rem - 0.1vw);
 }
 .light-white-text {
   color: var(--faint-white);
@@ -4070,7 +4071,7 @@ p {
 .bg-pyramid {
   background: url('Media-Pyramid_BG.png');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 40%;
   background-size: auto;
 }
 /* UTILITY */
