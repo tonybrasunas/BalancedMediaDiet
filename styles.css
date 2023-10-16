@@ -4010,10 +4010,20 @@ body {
 .main-content {
   padding: 85px 10vw;
 }
+/* SLIDE OUT MENU */
+/* Not used yet
+.ant-layout-sider-zero-width-trigger {
+  z-index: 100;
+  top: 30px;
+}
+.outer-layout {
+  min-height: 100vh;
+}
+ */
 /*  HEADINGS */
 h1 {
   font-family: "Montserrat", "Open Sans", "Candara", Optima, Arial, sans-serif;
-  font-size: calc(1rem + 1.4vw);
+  font-size: calc(1rem + 1.7vw);
   font-weight: 700;
   line-height: calc(1rem + 2vw);
   color: var(--primary-red);
@@ -4037,12 +4047,6 @@ section.full-width-section {
 p {
   font-size: calc(1rem + 0.2vw);
   max-width: 720px;
-}
-.small-text {
-  font-size: calc(0.8rem - 0.1vw);
-}
-.light-white-text {
-  color: var(--faint-white);
 }
 .highlight-underline {
   color: var(--primary-blue);
@@ -4068,21 +4072,46 @@ p {
 .bg-triangle {
   background: linear-gradient(48deg, #fff 0%, #fff 86%, var(--background-very-light-blue) 86%, var(--background-very-light-blue) 100%);
 }
-.bg-pyramid {
+.bg-pyramid-desktop {
   background: url('Media-Pyramid_BG.png');
   background-repeat: no-repeat;
   background-position: 50% 40%;
   background-size: auto;
 }
+.bg-pyramid-mobile {
+  background: url('Media-Pyramid_BG.png');
+  background-size: cover;
+  height: 100vw;
+  min-height: 500px;
+}
 /* UTILITY */
 .text-center {
   text-align: center !important;
 }
+.text-right {
+  text-align: right !important;
+}
+.text-left {
+  text-align: left !important;
+}
 .margin-bottom-0px {
   margin-bottom: 0;
 }
+.margin-left-10px {
+  margin-left: 10px;
+}
 .margin-right-15px {
   margin-right: 15px;
+}
+.small-text {
+  font-size: calc(0.8rem - 0.1vw);
+}
+.light-white-text {
+  color: var(--faint-white);
+}
+/* BUTTON */
+button {
+  min-height: 3.8rem;
 }
 button.ant-btn-primary {
   height: 4vw;
@@ -4206,5 +4235,30 @@ article p.drop-cap:first-letter {
 .featherlight-inner .preFade {
   opacity: 1;
 }
+/* MEDIA QUERIES */
+/** medium - desktop **/
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+/** small - mobile **/
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .bg-pyramid-desktop {
+    background: none;
+  }
+
+  section.full-width-section {
+    text-align: left !important;
+    min-width: 80vw;
+    max-width: 100vw;
+    margin: 0;
+  }
+}
+/** x-small - mobile **/
 
 /*# sourceMappingURL=styles.css.map*/
