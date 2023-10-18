@@ -3997,6 +3997,7 @@ body {
   --secondary-button-color: rgb(60, 59, 119);
   --primary-red: rgb(176, 38, 54);
   --primary-blue: rgb(57, 57, 114);
+  --primary-white: rgb(255, 255, 255);
   --faint-white: rgba(255, 255, 255, 0.8);
   --background-very-light-blue: #edf3f8;
 }
@@ -4065,6 +4066,9 @@ p {
 .text-bmd-red {
   color: var(--primary-red);
 }
+.text-bmd-white {
+  color: var(--primary-white);
+}
 .bg-bmd-blue {
   background-color: var(--secondary-button-color);
 }
@@ -4072,6 +4076,10 @@ p {
   background-color: var(--primary-button-color);
 }
 /* BACKGROUNDS */
+.bg-reverse {
+  background-color: var(--primary-blue);
+  color: var(--faint-white);
+}
 .bg-triangle {
   background: linear-gradient(48deg, #fff 0%, #fff 66%, var(--background-very-light-blue) 66%, var(--background-very-light-blue) 100%);
 }
@@ -4263,6 +4271,10 @@ article p.drop-cap:first-letter {
     min-width: 80vw;
     max-width: 100vw;
     margin: 0;
+  }
+
+  section#the-diets {
+    text-align: right !important;
   }
 }
 /** x-small - mobile **/
