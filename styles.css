@@ -4008,7 +4008,10 @@ body {
   padding: 0 !important;
 }
 .main-content {
-  padding: 85px 10vw;
+  padding: 4vw 10vw;
+}
+.main-content.page-top {
+  padding-top: 85px;
 }
 /* SLIDE OUT MENU */
 /* Not used yet
@@ -4070,7 +4073,7 @@ p {
 }
 /* BACKGROUNDS */
 .bg-triangle {
-  background: linear-gradient(48deg, #fff 0%, #fff 86%, var(--background-very-light-blue) 86%, var(--background-very-light-blue) 100%);
+  background: linear-gradient(48deg, #fff 0%, #fff 66%, var(--background-very-light-blue) 66%, var(--background-very-light-blue) 100%);
 }
 .bg-pyramid-desktop {
   background: url('Media-Pyramid_BG.png');
@@ -4081,8 +4084,10 @@ p {
 .bg-pyramid-mobile {
   background: url('Media-Pyramid_BG.png');
   background-size: cover;
-  height: 100vw;
-  min-height: 500px;
+  height: 180vw;
+  min-height: 600px;
+  margin-bottom: -20vw;
+  margin-top: -20vw;
 }
 /* UTILITY */
 .text-center {
@@ -4254,6 +4259,7 @@ article p.drop-cap:first-letter {
 
   section.full-width-section {
     text-align: left !important;
+    width: 100%;
     min-width: 80vw;
     max-width: 100vw;
     margin: 0;
