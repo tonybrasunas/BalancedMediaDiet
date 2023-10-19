@@ -4038,18 +4038,22 @@ h2 {
   font-weight: 700;
 }
 h3 {
-  font-size: 1rem;
+  font-size: calc(0.7rem + 0.3vw);
   font-family: "Montserrat", "Open Sans", "Candara", Optima, Arial, sans-serif;
   font-weight: 700;
 }
 section.full-width-section {
   width: 55%;
   min-width: 600px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 15px auto;
 }
-p {
+p,
+body,
+li {
   font-size: calc(1rem + 0.2vw);
+}
+p {
   max-width: 720px;
 }
 .highlight-underline {
@@ -4068,6 +4072,9 @@ p {
 }
 .text-bmd-white {
   color: var(--primary-white);
+}
+.text-faint-white {
+  color: var(--faint-white);
 }
 .bg-bmd-blue {
   background-color: var(--secondary-button-color);
@@ -4117,10 +4124,10 @@ p {
   margin-right: 15px;
 }
 .small-text {
-  font-size: calc(0.8rem - 0.1vw);
+  font-size: calc(0.7rem + 0.2vw);
 }
-.light-white-text {
-  color: var(--faint-white);
+.large-text {
+  font-size: calc(1rem + 1vw);
 }
 /* BUTTON */
 button {
