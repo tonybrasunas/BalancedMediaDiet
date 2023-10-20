@@ -4082,6 +4082,9 @@ p {
 .bg-bmd-red {
   background-color: var(--primary-button-color);
 }
+.uncolored {
+  color: revert;
+}
 /* BACKGROUNDS */
 .bg-reverse {
   background-color: var(--primary-blue);
