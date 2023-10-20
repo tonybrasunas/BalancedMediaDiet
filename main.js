@@ -80,7 +80,7 @@ class HomeComponent {
     ngOnInit() { }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_utility_service__WEBPACK_IMPORTED_MODULE_1__["UtilityService"])); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["home"]], decls: 91, vars: 3, consts: [["nz-row", "", 1, "main-content", "page-top", "bg-triangle"], ["nz-col", "", "nzMd", "12", "nzSm", "24", "nzXs", "24"], ["id", "home"], ["id", "home-header"], [1, "text-bmd-red"], [1, "sqsrte-fadeIn"], [1, "text-bmd-blue"], [1, "sqsrte-fadeIn", 2, "transition-delay", "0.0524691s"], [1, "fe-block", "fe-block-feca87e66e60df57b25d"], ["nz-button", "", "nzType", "primary", 3, "click"], ["nz-col", "", "nzMd", "12", "nzSm", "0", "nzXs", "0", "id", "iphone-image-container"], ["src", "../../assets/iphone.png"], [1, "bg-pyramid-mobile", "mobile-only"], [1, "text-bmd-blue", "text-center"], ["nz-row", "", 1, "bg-pyramid-desktop"], ["nz-col", "", "nzMd", "8", "nzSm", "0", "nzXs", "0"], ["nz-col", "", "nzMd", "16", "nzSm", "24", "nzXs", "24"], [1, "main-content"], ["nz-row", ""], ["id", "the-diets", 1, "main-content", "bg-reverse", "text-center", "full-width-section"], [1, "text-bmd-white"], [1, "text-bmd-white", "large-text"], ["name", "diet-grid", "id", "diet-grid"], [3, "dietId"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["home"]], decls: 99, vars: 3, consts: [["nz-row", "", 1, "main-content", "page-top", "bg-triangle"], ["nz-col", "", "nzMd", "12", "nzSm", "24", "nzXs", "24"], ["id", "home"], ["id", "home-header"], [1, "text-bmd-red"], [1, "sqsrte-fadeIn"], [1, "text-bmd-blue"], [1, "sqsrte-fadeIn", 2, "transition-delay", "0.0524691s"], [1, "fe-block", "fe-block-feca87e66e60df57b25d"], ["nz-button", "", "nzType", "primary", 3, "click"], ["nz-col", "", "nzMd", "12", "nzSm", "0", "nzXs", "0", "id", "iphone-image-container"], ["src", "../../assets/iphone.png"], [1, "bg-pyramid-mobile", "mobile-only"], [1, "text-bmd-blue", "text-center"], ["nz-row", "", 1, "bg-pyramid-desktop"], ["nz-col", "", "nzMd", "8", "nzSm", "0", "nzXs", "0"], ["nz-col", "", "nzMd", "16", "nzSm", "24", "nzXs", "24"], [1, "main-content"], ["nz-row", ""], ["id", "the-diets", 1, "main-content", "bg-reverse", "text-center", "full-width-section"], [1, "text-bmd-white"], [1, "text-bmd-white", "large-text"], [1, "text-faint-white", "underline", 3, "click"], ["name", "diet-grid", "id", "diet-grid"], [3, "dietId"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "section", 2);
@@ -198,35 +198,49 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "span", 21);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "2");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, " EPISODES OR ARTICLES FROM TODAY'S SOURCES");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, " EPISODES OR ARTICLES FROM THE DAY'S SOURCES");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "The diets are below. There are three levels, so pick the one that best fits your appetite. How much time you can realistically spend? ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "The diets are below. There are three levels, so pick the one that best fits your appetite. How much time can you spend? ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](78, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](79, "30 minutes each day will tremendously impact your awareness of the country and world around us.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "a", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_a_click_79_listener() { return ctx.scroll("Basic"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](80, "30 minutes");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](81, "Step it up to 60 minutes for the \u201CInformed Journalist\u201D diet. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](81, " each day will tremendously impact your awareness of the country and world around us.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](83, "Devote two hours each day to become an expert \u201CMedia Critic\u201D and accelerate your journey to ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "em");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](85, "media consciousness");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](83, "Step it up to ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "a", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_a_click_84_listener() { return ctx.scroll("Intermediate"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](85, "60 minutes");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, ".");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, " for the greater depth of the \u201CInformed Journalist\u201D diet. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, "Devote ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "a", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_a_click_89_listener() { return ctx.scroll("Expert"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, "two hours");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, " each day to become an expert \u201CMedia Critic\u201D and accelerate your journey to ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "em");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, "media consciousness");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, ".");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](87, "a", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](88, "diet-grid", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](89, "diet-grid", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](90, "diet-grid", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](95, "a", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](96, "diet-grid", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](97, "diet-grid", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](98, "diet-grid", 24);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](88);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](96);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("dietId", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("dietId", 1);

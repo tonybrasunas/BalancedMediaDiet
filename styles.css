@@ -4114,6 +4114,15 @@ p {
 .text-left {
   text-align: left !important;
 }
+.small-text {
+  font-size: calc(0.7rem + 0.2vw);
+}
+.large-text {
+  font-size: calc(1rem + 1vw);
+}
+.underline {
+  text-decoration: underline;
+}
 .margin-bottom-0px {
   margin-bottom: 0;
 }
@@ -4122,12 +4131,6 @@ p {
 }
 .margin-right-15px {
   margin-right: 15px;
-}
-.small-text {
-  font-size: calc(0.7rem + 0.2vw);
-}
-.large-text {
-  font-size: calc(1rem + 1vw);
 }
 /* BUTTON */
 button {
