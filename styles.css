@@ -157,6 +157,10 @@ body {
   font-style: italic;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .margin-bottom-0px {
   margin-bottom: 0;
 }
@@ -308,15 +312,20 @@ section.top-section {
   padding-top: 60px;
 }
 
-/* LIGHTBOX POPUPS */
+/* MODALS & POPUPS */
+.ant-modal-body {
+  border: 5px solid var(--primary-red);
+  border-radius: 15px;
+}
+.ant-modal-body img.bmd-nameplate {
+  height: 18px;
+}
+
 .news-source-modal .ant-modal-content {
   border-radius: 15px;
 }
 .news-source-modal .news-source-inner {
   overflow: auto;
-}
-.news-source-modal .news-source-inner img.bmd-nameplate {
-  height: 18px;
 }
 .news-source-modal .news-source-inner img.media-source-logo {
   float: right;
@@ -348,6 +357,7 @@ section.top-section {
   float: left;
 }
 
+/* Let's try removing these now that we've moved to ngZorro modals --
 .featherlight .featherlight-close-icon {
   top: 7px;
   right: 10px;
@@ -357,11 +367,10 @@ section.top-section {
 .featherlight-inner {
   padding: 5px 20px 20px;
 }
-
 .featherlight-inner .preFade {
   opacity: 1;
 }
-
+*/
 /* MEDIA QUERIES */
 /** medium - desktop **/
 @media (min-width: 768px) {

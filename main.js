@@ -2169,9 +2169,9 @@ class IntroComponent {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
       type: IntroComponent,
       selectors: [["intro"]],
-      decls: 112,
+      decls: 101,
       vars: 0,
-      consts: [["nz-row", "", 1, "main-content", "page-top", "bg-triangle"], ["nz-col", "", "nzMd", "12", "nzSm", "24", "nzXs", "24"], ["id", "home"], ["id", "home-header"], [1, "text-bmd-red"], [1, "sqsrte-fadeIn"], [1, "text-bmd-blue"], [1, "sqsrte-fadeIn", 2, "transition-delay", "0.0524691s"], [1, "underline", "uncolored", 3, "click"], [1, "fe-block", "fe-block-feca87e66e60df57b25d"], ["nz-button", "", "nzType", "primary", 1, "home", 3, "click"], ["nz-col", "", "nzMd", "12", "nzSm", "0", "nzXs", "0", "id", "iphone-image-container"], ["src", "../../assets/iphone.png"], [1, "bg-pyramid-mobile", "mobile-only"], [1, "text-bmd-blue", "text-center"], ["nz-row", "", 1, "bg-pyramid-desktop"], ["nz-col", "", "nzMd", "8", "nzSm", "0", "nzXs", "0"], ["nz-col", "", "nzMd", "16", "nzSm", "24", "nzXs", "24"], [1, "main-content"], ["nz-row", ""], ["id", "the-diets", 1, "main-content", "bg-reverse", "text-center", "full-width-section"], [1, "text-bmd-white"], [1, "text-bmd-white", "large-text"], [1, "uncolored", "underline", 3, "click"]],
+      consts: [["nz-row", "", 1, "main-content", "page-top", "bg-triangle"], ["nz-col", "", "nzMd", "12", "nzSm", "24", "nzXs", "24"], ["id", "home"], ["id", "home-header"], [1, "text-bmd-red"], [1, "sqsrte-fadeIn"], [1, "text-bmd-blue"], [1, "sqsrte-fadeIn", 2, "transition-delay", "0.0524691s"], [1, "underline", "uncolored", 3, "click"], [1, "fe-block", "fe-block-feca87e66e60df57b25d"], ["nz-button", "", "nzType", "primary", 1, "home", 3, "click"], ["nz-col", "", "nzMd", "12", "nzSm", "0", "nzXs", "0", "id", "iphone-image-container"], ["src", "../../assets/iphone.png"], [1, "bg-pyramid-mobile", "mobile-only"], [1, "text-bmd-blue", "text-center"], ["nz-row", "", 1, "bg-pyramid-desktop"], ["nz-col", "", "nzMd", "8", "nzSm", "0", "nzXs", "0"], ["nz-col", "", "nzMd", "16", "nzSm", "24", "nzXs", "24"], [1, "main-content"], ["nz-row", ""], ["id", "the-diets", 1, "main-content", "text-bmd-blue", "full-width-section"], [1, "text-center"], [1, "uppercase", "text-bmd-blue"], [1, "uncolored", "underline", 3, "click"], [1, "text-bmd-red", "large-text"], [1, "explanation"]],
       template: function IntroComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "section", 2)(3, "h1", 3)(4, "span", 4);
@@ -2272,57 +2272,47 @@ class IntroComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](77, "i");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](78, "\u201Cparanoid,\u201D \u201Cwacky,\u201D \u201Cconspiracy theorist.\u201D");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](79, "div", 19)(80, "section", 20)(81, "h1")(82, "span", 21);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](83, "THE DIETS");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](84, "h2")(85, "span", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](86, "VIEW ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](87, "span", 22);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](88, "2");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](79, "div", 19)(80, "section", 20)(81, "h1", 21);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](82, "HOW TO GET STARTED");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](89, " EPISODES OR ARTICLES");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](90, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](91, "FROM THE DAY'S SOURCES");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](92, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](93, "The diets are below. There are three levels, so pick which best fits your appetite. How much time will you spend? ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](94, "ul")(95, "li")(96, "a", 23);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_96_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](83, "h2", 22);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](84, "1. Choose a diet: ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](85, "a", 23);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_85_listener() {
             return ctx.scroll("Basic");
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](97, "30 minutes");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](86, "Basic");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](98, " each day will tremendously impact your awareness of the country and world around us.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](99, "li");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](100, "Step it up to ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](101, "a", 23);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_101_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](87, ", ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](88, "a", 23);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_88_listener() {
             return ctx.scroll("Intermediate");
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](102, "60 minutes");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](89, "Intermediate");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](103, " for greater depth with the \u201CInformed Journalist\u201D diet. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](104, "li");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](105, "Devote ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](106, "a", 23);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_106_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](90, ", or ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](91, "a", 23);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_91_listener() {
             return ctx.scroll("Expert");
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](107, "two hours");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](92, "Expert");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](108, " each day to become an expert \u201CMedia Critic\u201D and accelerate your journey to ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](109, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](110, "media consciousness");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](93, ". ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](111, ".");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](94, "h2", 22);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](95, "2. Each day, VIEW ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](96, "span", 24);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](97, "2");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](98, " EPISODES OR ARTICLES. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](99, "div", 25);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](100, " That's it. The diets are below. Pick which best fits your appetite. Get your balanced news emailed to you daily if you like. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
         }
       },
       dependencies: [ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__.NzButtonComponent, ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__.NzWaveDirective, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__.NzColDirective, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__.NzRowDirective],
-      styles: ["#iphone-image-container[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 50vw;\n}\n\n#the-diets[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  text-align: left;\n}\n\n.sqsrte-fadeIn[_ngcontent-%COMP%] {\n  white-space: pre-wrap;\n  transition-timing-function: ease;\n  transition-duration: 0.65s;\n  transition-delay: 0.0555556s;\n  animation-duration: 0.65s;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvaG9tZS9pbnRyby9pbnRyby5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQUE7QUFDRjs7QUFFQTtFQUNFLGdCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxxQkFBQTtFQUNBLGdDQUFBO0VBQ0EsMEJBQUE7RUFDQSw0QkFBQTtFQUNBLHlCQUFBO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIjaXBob25lLWltYWdlLWNvbnRhaW5lciBpbWcge1xuICBtYXgtd2lkdGg6IDUwdnc7XG59XG5cbiN0aGUtZGlldHMgdWwge1xuICB0ZXh0LWFsaWduOiBsZWZ0O1xufVxuXG4uc3FzcnRlLWZhZGVJbiB7XG4gIHdoaXRlLXNwYWNlOiBwcmUtd3JhcDtcbiAgdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2U7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IDAuNjVzO1xuICB0cmFuc2l0aW9uLWRlbGF5OiAwLjA1NTU1NTZzO1xuICBhbmltYXRpb24tZHVyYXRpb246IDAuNjVzO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */"]
+      styles: ["#iphone-image-container[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 50vw;\n}\n\n#the-diets[_ngcontent-%COMP%] {\n  background: var(--background-very-light-blue);\n  border-radius: 35%;\n  padding: 3vw 8vw;\n}\n#the-diets[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  text-align: left;\n}\n#the-diets[_ngcontent-%COMP%]   .explanation[_ngcontent-%COMP%] {\n  margin-top: 30px;\n  font-style: italic;\n}\n\n.sqsrte-fadeIn[_ngcontent-%COMP%] {\n  white-space: pre-wrap;\n  transition-timing-function: ease;\n  transition-duration: 0.65s;\n  transition-delay: 0.0555556s;\n  animation-duration: 0.65s;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvaG9tZS9pbnRyby9pbnRyby5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQUE7QUFDRjs7QUFFQTtFQUNFLDZDQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtBQUNGO0FBQUU7RUFDRSxnQkFBQTtBQUVKO0FBQUU7RUFDRSxnQkFBQTtFQUNBLGtCQUFBO0FBRUo7O0FBRUE7RUFDRSxxQkFBQTtFQUNBLGdDQUFBO0VBQ0EsMEJBQUE7RUFDQSw0QkFBQTtFQUNBLHlCQUFBO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIjaXBob25lLWltYWdlLWNvbnRhaW5lciBpbWcge1xuICBtYXgtd2lkdGg6IDUwdnc7XG59XG5cbiN0aGUtZGlldHMge1xuICBiYWNrZ3JvdW5kOiB2YXIoLS1iYWNrZ3JvdW5kLXZlcnktbGlnaHQtYmx1ZSk7XG4gIGJvcmRlci1yYWRpdXM6IDM1JTtcbiAgcGFkZGluZzogM3Z3IDh2dztcbiAgdWwge1xuICAgIHRleHQtYWxpZ246IGxlZnQ7XG4gIH1cbiAgLmV4cGxhbmF0aW9uIHtcbiAgICBtYXJnaW4tdG9wOiAzMHB4O1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgfVxufVxuXG4uc3FzcnRlLWZhZGVJbiB7XG4gIHdoaXRlLXNwYWNlOiBwcmUtd3JhcDtcbiAgdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2U7XG4gIHRyYW5zaXRpb24tZHVyYXRpb246IDAuNjVzO1xuICB0cmFuc2l0aW9uLWRlbGF5OiAwLjA1NTU1NTZzO1xuICBhbmltYXRpb24tZHVyYXRpb246IDAuNjVzO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */"]
     });
   }
 }
@@ -3219,16 +3209,18 @@ const _forTrack0 = ($index, $item) => $item.abbrev;
 const _c0 = a0 => ({
   "screen-back": a0
 });
-function LoginComponent_Conditional_1_Template(rf, ctx) {
+function LoginComponent_Conditional_2_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 4)(1, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, "COMING SOON");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
   }
 }
-function LoginComponent_Conditional_2_ng_template_11_Template(rf, ctx) {
+function LoginComponent_Conditional_3_ng_template_15_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "span", 43);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function LoginComponent_Conditional_2_ng_template_11_Template_span_click_0_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "span", 44);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function LoginComponent_Conditional_3_ng_template_15_Template_span_click_0_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r3);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
       return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r1.passwordVisible = !ctx_r1.passwordVisible);
@@ -3240,19 +3232,19 @@ function LoginComponent_Conditional_2_ng_template_11_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzType", ctx_r1.passwordVisible ? "eye-invisible" : "eye");
   }
 }
-function LoginComponent_Conditional_2_ng_template_42_Conditional_0_Template(rf, ctx) {
+function LoginComponent_Conditional_3_ng_template_46_Conditional_0_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](0, " Please confirm your password! ");
   }
 }
-function LoginComponent_Conditional_2_ng_template_42_Conditional_1_Template(rf, ctx) {
+function LoginComponent_Conditional_3_ng_template_46_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](0, " Two passwords that you enter is inconsistent! ");
   }
 }
-function LoginComponent_Conditional_2_ng_template_42_Template(rf, ctx) {
+function LoginComponent_Conditional_3_ng_template_46_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, LoginComponent_Conditional_2_ng_template_42_Conditional_0_Template, 1, 0)(1, LoginComponent_Conditional_2_ng_template_42_Conditional_1_Template, 1, 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, LoginComponent_Conditional_3_ng_template_46_Conditional_0_Template, 1, 0)(1, LoginComponent_Conditional_3_ng_template_46_Conditional_1_Template, 1, 0);
   }
   if (rf & 2) {
     const control_r4 = ctx.$implicit;
@@ -3261,9 +3253,9 @@ function LoginComponent_Conditional_2_ng_template_42_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵconditional"]((control_r4.errors == null ? null : control_r4.errors["confirm"]) ? 1 : -1);
   }
 }
-function LoginComponent_Conditional_2_For_63_Template(rf, ctx) {
+function LoginComponent_Conditional_3_For_67_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "nz-option", 33);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "nz-option", 34);
   }
   if (rf & 2) {
     const state_r5 = ctx.$implicit;
@@ -3271,9 +3263,9 @@ function LoginComponent_Conditional_2_For_63_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpropertyInterpolate"]("nzLabel", state_r5.name);
   }
 }
-function LoginComponent_Conditional_2_Conditional_81_Template(rf, ctx) {
+function LoginComponent_Conditional_3_Conditional_85_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 42);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 43);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
   }
@@ -3283,15 +3275,15 @@ function LoginComponent_Conditional_2_Conditional_81_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx_r1.authMessage);
   }
 }
-function LoginComponent_Conditional_2_Conditional_82_Template(rf, ctx) {
+function LoginComponent_Conditional_3_Conditional_86_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "button", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "button", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1, " Send Reset ");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, " Or ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "a", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function LoginComponent_Conditional_2_Conditional_82_Template_a_click_3_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "a", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function LoginComponent_Conditional_3_Conditional_86_Template_a_click_3_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r6);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
       return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r1.signupWithGoogle.set(true));
@@ -3304,113 +3296,119 @@ function LoginComponent_Conditional_2_Conditional_82_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzLoading", ctx_r1.loading())("disabled", ctx_r1.forgotPasswordForm.pristine || ctx_r1.forgotPasswordForm.invalid);
   }
 }
-function LoginComponent_Conditional_2_Template(rf, ctx) {
+function LoginComponent_Conditional_3_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "nz-tabset")(1, "nz-tab", 4)(2, "form", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngSubmit", function LoginComponent_Conditional_2_Template_form_ngSubmit_2_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "nz-tabset")(1, "nz-tab", 5)(2, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3, " It's completely free to sign up, and your email address will never be shared with anyone. You'll get an email each morning with your balanced news. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5, " In the future, you'll be able to customize your diet. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](6, "form", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngSubmit", function LoginComponent_Conditional_3_Template_form_ngSubmit_6_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r1);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r1.signIn());
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "nz-form-item")(4, "nz-form-control", 6)(5, "nz-input-group");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](6, "input", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "nz-form-item")(8, "nz-form-control", 7)(9, "nz-input-group");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](10, "input", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "nz-form-item")(8, "nz-form-control", 8)(9, "nz-input-group", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](10, "input", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](11, "nz-form-item")(12, "nz-form-control", 9)(13, "nz-input-group", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](14, "input", 11);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](11, LoginComponent_Conditional_2_ng_template_11_Template, 1, 1, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](15, LoginComponent_Conditional_3_ng_template_15_Template, 1, 1, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](13, "div", 11)(14, "div", 12)(15, "label", 13)(16, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](17, "Remember me");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](17, "div", 12)(18, "div", 13)(19, "label", 14)(20, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](21, "Remember me");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](18, "button", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](19, " Sign in ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](22, "button", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](23, " Sign in ");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](20, " Or ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](21, "a", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function LoginComponent_Conditional_2_Template_a_click_21_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](24, " Or ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](25, "a", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function LoginComponent_Conditional_3_Template_a_click_25_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r1);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r1.signupWithGoogle.set(true));
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](22, "sign in with Google");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](26, "sign in with Google");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](23, "nz-tab", 16)(24, "form", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngSubmit", function LoginComponent_Conditional_2_Template_form_ngSubmit_24_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](27, "nz-tab", 17)(28, "form", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngSubmit", function LoginComponent_Conditional_3_Template_form_ngSubmit_28_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r1);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r1.signUp());
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](25, "nz-form-item")(26, "nz-form-label", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](27, "E-mail");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](29, "nz-form-item")(30, "nz-form-label", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](31, "E-mail");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](28, "nz-form-control", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](29, "input", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](32, "nz-form-control", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](33, "input", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](30, "nz-form-item")(31, "nz-form-label", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](32, "Password");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](34, "nz-form-item")(35, "nz-form-label", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](36, "Password");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](33, "nz-form-control", 21)(34, "nz-input-group", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](35, "input", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](37, "nz-form-control", 22)(38, "nz-input-group", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](39, "input", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](36, "nz-form-item")(37, "nz-form-label", 23);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](38, "Confirm");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](40, "nz-form-item")(41, "nz-form-label", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](42, "Confirm");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](39, "nz-form-control", 24)(40, "nz-input-group", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](41, "input", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](43, "nz-form-control", 25)(44, "nz-input-group", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](45, "input", 26);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](42, LoginComponent_Conditional_2_ng_template_42_Template, 2, 2, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](46, LoginComponent_Conditional_3_ng_template_46_Template, 2, 2, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](44, "nz-divider");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](45, "nz-form-item")(46, "nz-form-label", 26);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](47, "First Name");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](48, "nz-divider");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](49, "nz-form-item")(50, "nz-form-label", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](51, "First Name");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](48, "nz-form-control", 27);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](49, "input", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](52, "nz-form-control", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](53, "input", 29);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](50, "nz-form-item")(51, "nz-form-label", 26);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](52, "Last Name");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](54, "nz-form-item")(55, "nz-form-label", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](56, "Last Name");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](53, "nz-form-control", 27);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](54, "input", 29);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](57, "nz-form-control", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](58, "input", 30);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](55, "nz-form-item")(56, "nz-form-label", 30)(57, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](58, "State");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](59, "nz-form-item")(60, "nz-form-label", 31)(61, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](62, "State");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](59, "nz-form-control", 27)(60, "nz-select", 31);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](61, "nz-option", 32);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrepeaterCreate"](62, LoginComponent_Conditional_2_For_63_Template, 1, 2, "nz-option", 33, _forTrack0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](63, "nz-form-control", 28)(64, "nz-select", 32);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](65, "nz-option", 33);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrepeaterCreate"](66, LoginComponent_Conditional_3_For_67_Template, 1, 2, "nz-option", 34, _forTrack0);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](64, "nz-form-item")(65, "nz-form-label", 34);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](66, " Zip Code");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](68, "nz-form-item")(69, "nz-form-label", 35);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](70, " Zip Code");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](67, "nz-form-control", 35);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](68, "input", 36);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](71, "nz-form-control", 36);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](72, "input", 37);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](69, "nz-form-item", 37);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](70, "nz-form-item", 37)(71, "nz-form-control", 38)(72, "button", 39);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](73, " Sign up ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](73, "nz-form-item", 38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](74, "nz-form-item", 38)(75, "nz-form-control", 39)(76, "button", 40);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](77, " Sign up ");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](74, "nz-tab", 40);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](75, " If you've forgotten your password, enter your email address here and we'll send you a reset link. ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](76, "form", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngSubmit", function LoginComponent_Conditional_2_Template_form_ngSubmit_76_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](78, "nz-tab", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](79, " If you've forgotten your password, enter your email address here and we'll send you a reset link. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](80, "form", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngSubmit", function LoginComponent_Conditional_3_Template_form_ngSubmit_80_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r1);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r1.forgotPassword());
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](77, "nz-form-item")(78, "nz-form-control", 6)(79, "nz-input-group");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](80, "input", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](81, "nz-form-item")(82, "nz-form-control", 7)(83, "nz-input-group");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](84, "input", 42);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](81, LoginComponent_Conditional_2_Conditional_81_Template, 2, 1, "div", 42)(82, LoginComponent_Conditional_2_Conditional_82_Template, 5, 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](85, LoginComponent_Conditional_3_Conditional_85_Template, 2, 1, "div", 43)(86, LoginComponent_Conditional_3_Conditional_86_Template, 5, 2);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
   }
   if (rf & 2) {
-    const passwordEyeTemplate_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](12);
-    const errorTpl_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](43);
+    const passwordEyeTemplate_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](16);
+    const errorTpl_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](47);
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("formGroup", ctx_r1.loginForm);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzSuffix", passwordEyeTemplate_r7);
@@ -3467,7 +3465,7 @@ function LoginComponent_Conditional_2_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("formGroup", ctx_r1.forgotPasswordForm);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵconditional"](ctx_r1.passwordReset() ? 81 : 82);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵconditional"](ctx_r1.passwordReset() ? 85 : 86);
   }
 }
 class LoginComponent {
@@ -3592,21 +3590,22 @@ class LoginComponent {
       selectors: [["login"]],
       standalone: true,
       features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵStandaloneFeature"]],
-      decls: 3,
+      decls: 4,
       vars: 6,
-      consts: [["passwordEyeTemplate", ""], ["errorTpl", ""], ["id", "login"], ["id", "firebaseui-auth-container", 1, "auth-container"], ["nzTitle", "Sign In"], ["nz-form", "", 1, "login-form", 3, "ngSubmit", "formGroup"], ["nzErrorTip", "Please input your E-mail"], ["type", "text", "nz-input", "", "formControlName", "email", "placeholder", "Email"], ["nzErrorTip", "Please input your Password!"], [3, "nzSuffix"], ["nz-input", "", "formControlName", "password", "placeholder", "Password", 3, "type"], ["nz-row", "", 1, "login-form-margin"], ["nz-col", "", 3, "nzSpan"], ["nz-checkbox", "", "formControlName", "remember"], ["nz-button", "", "nzType", "primary", 1, "login-form-button", "login-form-margin", 3, "nzLoading", "disabled"], [3, "click"], ["nzTitle", "Sign up"], ["nzRequired", "", "nzFor", "email", 3, "nzSm", "nzXs"], ["nzErrorTip", "The input is not valid E-mail!", 3, "nzSm", "nzXs"], ["nz-input", "", "formControlName", "email", "id", "email"], ["nzFor", "password", "nzRequired", "", 3, "nzSm", "nzXs"], ["nzErrorTip", "Please input your password!", 3, "nzSm", "nzXs"], ["nz-input", "", "id", "password", "formControlName", "password", 3, "type"], ["nzFor", "checkPassword", "nzRequired", "", 3, "nzSm", "nzXs"], [3, "nzSm", "nzXs", "nzErrorTip"], ["nz-input", "", "formControlName", "checkPassword", "id", "checkPassword", 3, "type"], ["nzFor", "email", 3, "nzSm", "nzXs"], [3, "nzSm", "nzXs"], ["nz-input", "", "formControlName", "firstName", "id", "firstName"], ["nz-input", "", "formControlName", "lastName", "id", "lastName"], ["nzFor", "state", "nzTooltipTitle", "Used to determine your local news sources.", 3, "nzSm", "nzXs"], ["id", "state", "formControlName", "state"], ["nzValue", "--", "nzLabel", ""], [3, "nzValue", "nzLabel"], ["nzFor", "zipcode", "nzTooltipTitle", "Used to determine your local news sources.", 3, "nzSm", "nzXs"], ["nzErrorTip", "Please input website!", 3, "nzSm", "nzXs"], ["nz-input", "", "maxlength", "5", "type", "number", "id", "zipcode", "formControlName", "zipcode"], ["nz-row", "", 1, "register-area"], [3, "nzSpan", "nzOffset"], ["nz-button", "", "nzType", "primary", 3, "disabled", "nzLoading"], ["nzTitle", "Forgot"], ["type", "email", "nz-input", "", "formControlName", "email", "placeholder", "Email"], [1, "bold", "italic", "password-message"], ["nz-icon", "", 1, "ant-input-password-icon", 3, "click", "nzType"]],
+      consts: [["passwordEyeTemplate", ""], ["errorTpl", ""], ["id", "login"], ["src", "../../assets/main_nameplate-Balanced-Media-Diet.png", 1, "bmd-nameplate"], ["id", "firebaseui-auth-container", 1, "auth-container"], ["nzTitle", "Sign In"], ["nz-form", "", 1, "login-form", 3, "ngSubmit", "formGroup"], ["nzErrorTip", "Please input your E-mail"], ["type", "text", "nz-input", "", "formControlName", "email", "placeholder", "Email"], ["nzErrorTip", "Please input your Password!"], [3, "nzSuffix"], ["nz-input", "", "formControlName", "password", "placeholder", "Password", 3, "type"], ["nz-row", "", 1, "login-form-margin"], ["nz-col", "", 3, "nzSpan"], ["nz-checkbox", "", "formControlName", "remember"], ["nz-button", "", "nzType", "primary", 1, "login-form-button", "login-form-margin", 3, "nzLoading", "disabled"], [3, "click"], ["nzTitle", "Sign up"], ["nzRequired", "", "nzFor", "email", 3, "nzSm", "nzXs"], ["nzErrorTip", "The input is not valid E-mail!", 3, "nzSm", "nzXs"], ["nz-input", "", "formControlName", "email", "id", "email"], ["nzFor", "password", "nzRequired", "", 3, "nzSm", "nzXs"], ["nzErrorTip", "Please input your password!", 3, "nzSm", "nzXs"], ["nz-input", "", "id", "password", "formControlName", "password", 3, "type"], ["nzFor", "checkPassword", "nzRequired", "", 3, "nzSm", "nzXs"], [3, "nzSm", "nzXs", "nzErrorTip"], ["nz-input", "", "formControlName", "checkPassword", "id", "checkPassword", 3, "type"], ["nzFor", "email", 3, "nzSm", "nzXs"], [3, "nzSm", "nzXs"], ["nz-input", "", "formControlName", "firstName", "id", "firstName"], ["nz-input", "", "formControlName", "lastName", "id", "lastName"], ["nzFor", "state", "nzTooltipTitle", "Used to determine your local news sources.", 3, "nzSm", "nzXs"], ["id", "state", "formControlName", "state"], ["nzValue", "--", "nzLabel", ""], [3, "nzValue", "nzLabel"], ["nzFor", "zipcode", "nzTooltipTitle", "Used to determine your local news sources.", 3, "nzSm", "nzXs"], ["nzErrorTip", "Please input website!", 3, "nzSm", "nzXs"], ["nz-input", "", "maxlength", "5", "type", "number", "id", "zipcode", "formControlName", "zipcode"], ["nz-row", "", 1, "register-area"], [3, "nzSpan", "nzOffset"], ["nz-button", "", "nzType", "primary", 3, "disabled", "nzLoading"], ["nzTitle", "Forgot"], ["type", "email", "nz-input", "", "formControlName", "email", "placeholder", "Email"], [1, "bold", "italic", "password-message"], ["nz-icon", "", 1, "ant-input-password-icon", 3, "click", "nzType"]],
       template: function LoginComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, LoginComponent_Conditional_1_Template, 1, 0, "div", 3)(2, LoginComponent_Conditional_2_Template, 83, 46, "nz-tabset");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](1, "img", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, LoginComponent_Conditional_2_Template, 3, 0, "div", 4)(3, LoginComponent_Conditional_3_Template, 87, 46, "nz-tabset");
           _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         }
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassMap"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](4, _c0, ctx.loading()));
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵconditional"](ctx.signupWithGoogle() ? 2 : -1);
           _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵconditional"](ctx.signupWithGoogle() ? 1 : -1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵconditional"](!ctx.signupWithGoogle() ? 2 : -1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵconditional"](!ctx.signupWithGoogle() ? 3 : -1);
         }
       },
       dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NumberValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.MaxLengthValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormControlName, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_8__.NzButtonModule, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_8__.NzButtonComponent, ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_9__["ɵNzTransitionPatchDirective"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_10__.NzWaveDirective, ng_zorro_antd_checkbox__WEBPACK_IMPORTED_MODULE_11__.NzCheckboxModule, ng_zorro_antd_checkbox__WEBPACK_IMPORTED_MODULE_11__.NzCheckboxComponent, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_12__.NzFormModule, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__.NzColDirective, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__.NzRowDirective, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_12__.NzFormDirective, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_12__.NzFormItemComponent, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_12__.NzFormLabelComponent, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_12__.NzFormControlComponent, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_14__.NzInputModule, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_14__.NzInputDirective, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_14__.NzInputGroupComponent, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_14__.NzInputGroupWhitSuffixOrPrefixDirective, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_15__.NzSelectModule, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_15__.NzOptionComponent, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_15__.NzSelectComponent, ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_16__.NzDividerModule, ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_16__.NzDividerComponent, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_17__.NzIconModule, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_17__.NzIconDirective, ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_18__.NzTabsModule, ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_18__.NzTabSetComponent, ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_18__.NzTabComponent],
