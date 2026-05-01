@@ -1994,15 +1994,6 @@ const _c0 = () => ({
 const _c1 = () => ({
   standalone: true
 });
-function DietCreateComponent_div_35_nz_option_6_Template(rf, ctx) {
-  if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "nz-option", 25);
-  }
-  if (rf & 2) {
-    const source_r4 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzValue", source_r4.id)("nzLabel", source_r4.name + " \u2014 " + source_r4.foodGroup);
-  }
-}
 function DietCreateComponent_div_35_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
@@ -2015,7 +2006,6 @@ function DietCreateComponent_div_35_Template(rf, ctx) {
       const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r2.onSourcesChange(weekday_r2, $event));
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, DietCreateComponent_div_35_nz_option_6_Template, 1, 2, "nz-option", 24);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
   }
   if (rf & 2) {
@@ -2025,14 +2015,12 @@ function DietCreateComponent_div_35_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](weekday_r2.name);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate1"]("nzPlaceHolder", "Select sources for ", weekday_r2.name, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", weekday_r2.selectedSourceIds)("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](8, _c1))("nzShowArrow", true)("nzMaxTagCount", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r2.newsSources);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", weekday_r2.selectedDocIds)("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](8, _c1))("nzShowArrow", true)("nzMaxTagCount", 4)("nzOptions", ctx_r2.sourceOptions);
   }
 }
 function DietCreateComponent_p_39_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p", 24);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Title and description are required.");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
@@ -2046,35 +2034,36 @@ class DietCreateComponent {
     this.description = '';
     this.year = new Date().getFullYear();
     this.newsSources = [];
+    this.sourceOptions = [];
     this.isSaving = false;
     this.weekdays = [{
       name: 'Sunday',
       day: 0,
-      selectedSourceIds: []
+      selectedDocIds: []
     }, {
       name: 'Monday',
       day: 1,
-      selectedSourceIds: []
+      selectedDocIds: []
     }, {
       name: 'Tuesday',
       day: 2,
-      selectedSourceIds: []
+      selectedDocIds: []
     }, {
       name: 'Wednesday',
       day: 3,
-      selectedSourceIds: []
+      selectedDocIds: []
     }, {
       name: 'Thursday',
       day: 4,
-      selectedSourceIds: []
+      selectedDocIds: []
     }, {
       name: 'Friday',
       day: 5,
-      selectedSourceIds: []
+      selectedDocIds: []
     }, {
       name: 'Saturday',
       day: 6,
-      selectedSourceIds: []
+      selectedDocIds: []
     }];
     this.sourceSub = null;
   }
@@ -2083,12 +2072,16 @@ class DietCreateComponent {
       this.newsSources = snapshot.docs.map(doc => {
         const data = doc.data();
         return {
-          id: typeof data['id'] === 'number' ? data['id'] : parseInt(doc.id, 10),
+          docId: doc.id,
           name: data['name'] ?? '',
           foodGroup: data['foodGroup'] ?? '',
           viewpoint: data['viewpoint'] ?? ''
         };
       });
+      this.sourceOptions = this.newsSources.map(s => ({
+        label: `${s.name} — ${s.foodGroup}`,
+        value: s.docId
+      }));
     });
   }
   ngOnDestroy() {
@@ -2097,8 +2090,8 @@ class DietCreateComponent {
   trackByDay(_index, weekday) {
     return weekday.day;
   }
-  onSourcesChange(weekday, ids) {
-    weekday.selectedSourceIds = ids;
+  onSourcesChange(weekday, docIds) {
+    weekday.selectedDocIds = docIds;
   }
   get isFormValid() {
     return this.title.trim().length > 0 && this.description.trim().length > 0;
@@ -2110,7 +2103,7 @@ class DietCreateComponent {
       const dietDays = _this.weekdays.map(weekday => ({
         day: weekday.day,
         dayName: weekday.name,
-        newsSourceIds: [...weekday.selectedSourceIds]
+        newsSourceDocIds: [...weekday.selectedDocIds]
       }));
       _this.isSaving = true;
       try {
@@ -2136,7 +2129,7 @@ class DietCreateComponent {
     this.subtitle = '';
     this.description = '';
     this.year = new Date().getFullYear();
-    this.weekdays.forEach(wd => wd.selectedSourceIds = []);
+    this.weekdays.forEach(wd => wd.selectedDocIds = []);
   }
   static {
     this.ɵfac = function DietCreateComponent_Factory(__ngFactoryType__) {
@@ -2149,7 +2142,7 @@ class DietCreateComponent {
       selectors: [["app-diet-create"]],
       decls: 40,
       vars: 14,
-      consts: [["id", "diet-create"], [1, "text-bmd-blue"], [1, "section-subtitle"], [3, "ngSubmit"], [1, "form-section"], [1, "form-row"], [1, "form-field"], [1, "required"], ["nz-input", "", "name", "title", "placeholder", "e.g. Basic", 3, "ngModelChange", "ngModel"], ["nz-input", "", "name", "subtitle", "placeholder", "e.g. Conscious Citizen", 3, "ngModelChange", "ngModel"], [1, "form-field", "form-field--narrow"], ["name", "year", 3, "ngModelChange", "ngModel", "nzMin", "nzMax", "nzStep"], [1, "form-field", "form-field--full"], ["nz-input", "", "name", "description", "placeholder", "Describe this diet and how to use it\u2026", 3, "ngModelChange", "ngModel", "nzAutosize"], [1, "section-hint"], ["class", "day-row", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "form-actions"], ["nz-button", "", "nzType", "primary", "nzSize", "large", 3, "disabled", "nzLoading"], ["class", "validation-hint", 4, "ngIf"], [1, "day-row"], [1, "day-label"], [1, "day-name"], [1, "day-sources"], ["nzMode", "multiple", 2, "width", "100%", 3, "ngModelChange", "ngModel", "ngModelOptions", "nzPlaceHolder", "nzShowArrow", "nzMaxTagCount"], [3, "nzValue", "nzLabel", 4, "ngFor", "ngForOf"], [3, "nzValue", "nzLabel"], [1, "validation-hint"]],
+      consts: [["id", "diet-create"], [1, "text-bmd-blue"], [1, "section-subtitle"], [3, "ngSubmit"], [1, "form-section"], [1, "form-row"], [1, "form-field"], [1, "required"], ["nz-input", "", "name", "title", "placeholder", "e.g. Basic", 3, "ngModelChange", "ngModel"], ["nz-input", "", "name", "subtitle", "placeholder", "e.g. Conscious Citizen", 3, "ngModelChange", "ngModel"], [1, "form-field", "form-field--narrow"], ["name", "year", 3, "ngModelChange", "ngModel", "nzMin", "nzMax", "nzStep"], [1, "form-field", "form-field--full"], ["nz-input", "", "name", "description", "placeholder", "Describe this diet and how to use it\u2026", 3, "ngModelChange", "ngModel", "nzAutosize"], [1, "section-hint"], ["class", "day-row", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "form-actions"], ["nz-button", "", "nzType", "primary", "nzSize", "large", 3, "disabled", "nzLoading"], ["class", "validation-hint", 4, "ngIf"], [1, "day-row"], [1, "day-label"], [1, "day-name"], [1, "day-sources"], ["nzMode", "multiple", 2, "width", "100%", 3, "ngModelChange", "ngModel", "ngModelOptions", "nzPlaceHolder", "nzShowArrow", "nzMaxTagCount", "nzOptions"], [1, "validation-hint"]],
       template: function DietCreateComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "h1", 1);
@@ -2211,7 +2204,7 @@ class DietCreateComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "p", 14);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Select one or more news sources for each day of the week.");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](35, DietCreateComponent_div_35_Template, 7, 9, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](35, DietCreateComponent_div_35_Template, 6, 9, "div", 15);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](36, "div", 16)(37, "button", 17);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, " Save Diet ");
@@ -2238,7 +2231,7 @@ class DietCreateComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx.isFormValid);
         }
       },
-      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgForm, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_6__.NzButtonComponent, ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_7__["ɵNzTransitionPatchDirective"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_8__.NzWaveDirective, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_9__.NzInputDirective, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_9__.NzAutosizeDirective, ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_10__.NzInputNumberComponent, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_11__.NzOptionComponent, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_11__.NzSelectComponent],
+      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgForm, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_6__.NzButtonComponent, ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_7__["ɵNzTransitionPatchDirective"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_8__.NzWaveDirective, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_9__.NzInputDirective, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_9__.NzAutosizeDirective, ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_10__.NzInputNumberComponent, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_11__.NzSelectComponent],
       styles: ["#diet-create[_ngcontent-%COMP%] {\n  max-width: 860px;\n  margin: 40px auto 100px;\n  padding: 0 24px;\n}\n#diet-create[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: \"Montserrat\", \"Open Sans\", sans-serif;\n  margin-bottom: 8px;\n}\n#diet-create[_ngcontent-%COMP%]   .section-subtitle[_ngcontent-%COMP%] {\n  color: #666;\n  margin-bottom: 36px;\n}\n\n.form-section[_ngcontent-%COMP%] {\n  background: #fff;\n  border: 1px solid #e8e8e8;\n  border-radius: 8px;\n  padding: 28px 32px;\n  margin-bottom: 24px;\n}\n.form-section[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  font-family: \"Montserrat\", \"Open Sans\", sans-serif;\n  font-size: 18px;\n  margin-bottom: 20px;\n}\n\n.form-row[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 20px;\n  flex-wrap: wrap;\n  margin-bottom: 20px;\n}\n\n.form-field[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  flex: 1;\n  min-width: 180px;\n}\n.form-field--narrow[_ngcontent-%COMP%] {\n  flex: 0 0 120px;\n  min-width: 120px;\n}\n.form-field--full[_ngcontent-%COMP%] {\n  width: 100%;\n}\n.form-field[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  font-size: 13px;\n  font-weight: 600;\n  color: #444;\n  margin-bottom: 6px;\n}\n.form-field[_ngcontent-%COMP%]   .required[_ngcontent-%COMP%] {\n  color: var(--primary-red);\n}\n\n.section-hint[_ngcontent-%COMP%] {\n  font-size: 13px;\n  color: #888;\n  margin-bottom: 16px;\n}\n\n.day-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 16px;\n  padding: 10px 0;\n  border-bottom: 1px solid #f0f0f0;\n}\n.day-row[_ngcontent-%COMP%]:last-child {\n  border-bottom: none;\n}\n\n.day-label[_ngcontent-%COMP%] {\n  width: 100px;\n  flex-shrink: 0;\n}\n\n.day-name[_ngcontent-%COMP%] {\n  font-weight: 600;\n  color: var(--primary-blue);\n  font-size: 14px;\n}\n\n.day-sources[_ngcontent-%COMP%] {\n  flex: 1;\n}\n\n.form-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 16px;\n  margin-top: 8px;\n}\n\n.validation-hint[_ngcontent-%COMP%] {\n  font-size: 13px;\n  color: #888;\n  margin: 0;\n}\n\n@media (max-width: 767px) {\n  #diet-create[_ngcontent-%COMP%] {\n    margin: 20px auto 60px;\n    padding: 0 16px;\n  }\n  .form-section[_ngcontent-%COMP%] {\n    padding: 20px 16px;\n  }\n  .form-row[_ngcontent-%COMP%] {\n    flex-direction: column;\n    gap: 12px;\n  }\n  .form-field--narrow[_ngcontent-%COMP%] {\n    flex: 1;\n  }\n  .day-row[_ngcontent-%COMP%] {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 8px;\n  }\n  .day-label[_ngcontent-%COMP%] {\n    width: auto;\n  }\n  .day-sources[_ngcontent-%COMP%] {\n    width: 100%;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZGlldC9kaWV0LWNyZWF0ZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFBO0VBQ0EsdUJBQUE7RUFDQSxlQUFBO0FBQ0Y7QUFDRTtFQUNFLGtEQUFBO0VBQ0Esa0JBQUE7QUFDSjtBQUVFO0VBQ0UsV0FBQTtFQUNBLG1CQUFBO0FBQUo7O0FBSUE7RUFDRSxnQkFBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0FBREY7QUFHRTtFQUNFLGtEQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0FBREo7O0FBS0E7RUFDRSxhQUFBO0VBQ0EsU0FBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtBQUZGOztBQUtBO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsT0FBQTtFQUNBLGdCQUFBO0FBRkY7QUFJRTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQUZKO0FBS0U7RUFDRSxXQUFBO0FBSEo7QUFNRTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtBQUpKO0FBT0U7RUFDRSx5QkFBQTtBQUxKOztBQVNBO0VBQ0UsZUFBQTtFQUNBLFdBQUE7RUFDQSxtQkFBQTtBQU5GOztBQVNBO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsU0FBQTtFQUNBLGVBQUE7RUFDQSxnQ0FBQTtBQU5GO0FBUUU7RUFDRSxtQkFBQTtBQU5KOztBQVVBO0VBQ0UsWUFBQTtFQUNBLGNBQUE7QUFQRjs7QUFVQTtFQUNFLGdCQUFBO0VBQ0EsMEJBQUE7RUFDQSxlQUFBO0FBUEY7O0FBVUE7RUFDRSxPQUFBO0FBUEY7O0FBVUE7RUFDRSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxTQUFBO0VBQ0EsZUFBQTtBQVBGOztBQVVBO0VBQ0UsZUFBQTtFQUNBLFdBQUE7RUFDQSxTQUFBO0FBUEY7O0FBVUE7RUFDRTtJQUNFLHNCQUFBO0lBQ0EsZUFBQTtFQVBGO0VBVUE7SUFDRSxrQkFBQTtFQVJGO0VBV0E7SUFDRSxzQkFBQTtJQUNBLFNBQUE7RUFURjtFQVlBO0lBQ0UsT0FBQTtFQVZGO0VBYUE7SUFDRSxzQkFBQTtJQUNBLHVCQUFBO0lBQ0EsUUFBQTtFQVhGO0VBY0E7SUFDRSxXQUFBO0VBWkY7RUFlQTtJQUNFLFdBQUE7RUFiRjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiI2RpZXQtY3JlYXRlIHtcbiAgbWF4LXdpZHRoOiA4NjBweDtcbiAgbWFyZ2luOiA0MHB4IGF1dG8gMTAwcHg7XG4gIHBhZGRpbmc6IDAgMjRweDtcblxuICBoMSB7XG4gICAgZm9udC1mYW1pbHk6ICdNb250c2VycmF0JywgJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG4gICAgbWFyZ2luLWJvdHRvbTogOHB4O1xuICB9XG5cbiAgLnNlY3Rpb24tc3VidGl0bGUge1xuICAgIGNvbG9yOiAjNjY2O1xuICAgIG1hcmdpbi1ib3R0b206IDM2cHg7XG4gIH1cbn1cblxuLmZvcm0tc2VjdGlvbiB7XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNlOGU4ZTg7XG4gIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgcGFkZGluZzogMjhweCAzMnB4O1xuICBtYXJnaW4tYm90dG9tOiAyNHB4O1xuXG4gIGgyIHtcbiAgICBmb250LWZhbWlseTogJ01vbnRzZXJyYXQnLCAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgfVxufVxuXG4uZm9ybS1yb3cge1xuICBkaXNwbGF5OiBmbGV4O1xuICBnYXA6IDIwcHg7XG4gIGZsZXgtd3JhcDogd3JhcDtcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cblxuLmZvcm0tZmllbGQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBmbGV4OiAxO1xuICBtaW4td2lkdGg6IDE4MHB4O1xuXG4gICYtLW5hcnJvdyB7XG4gICAgZmxleDogMCAwIDEyMHB4O1xuICAgIG1pbi13aWR0aDogMTIwcHg7XG4gIH1cblxuICAmLS1mdWxsIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuXG4gIGxhYmVsIHtcbiAgICBmb250LXNpemU6IDEzcHg7XG4gICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICBjb2xvcjogIzQ0NDtcbiAgICBtYXJnaW4tYm90dG9tOiA2cHg7XG4gIH1cblxuICAucmVxdWlyZWQge1xuICAgIGNvbG9yOiB2YXIoLS1wcmltYXJ5LXJlZCk7XG4gIH1cbn1cblxuLnNlY3Rpb24taGludCB7XG4gIGZvbnQtc2l6ZTogMTNweDtcbiAgY29sb3I6ICM4ODg7XG4gIG1hcmdpbi1ib3R0b206IDE2cHg7XG59XG5cbi5kYXktcm93IHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgZ2FwOiAxNnB4O1xuICBwYWRkaW5nOiAxMHB4IDA7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZjBmMGYwO1xuXG4gICY6bGFzdC1jaGlsZCB7XG4gICAgYm9yZGVyLWJvdHRvbTogbm9uZTtcbiAgfVxufVxuXG4uZGF5LWxhYmVsIHtcbiAgd2lkdGg6IDEwMHB4O1xuICBmbGV4LXNocmluazogMDtcbn1cblxuLmRheS1uYW1lIHtcbiAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgY29sb3I6IHZhcigtLXByaW1hcnktYmx1ZSk7XG4gIGZvbnQtc2l6ZTogMTRweDtcbn1cblxuLmRheS1zb3VyY2VzIHtcbiAgZmxleDogMTtcbn1cblxuLmZvcm0tYWN0aW9ucyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGdhcDogMTZweDtcbiAgbWFyZ2luLXRvcDogOHB4O1xufVxuXG4udmFsaWRhdGlvbi1oaW50IHtcbiAgZm9udC1zaXplOiAxM3B4O1xuICBjb2xvcjogIzg4ODtcbiAgbWFyZ2luOiAwO1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgI2RpZXQtY3JlYXRlIHtcbiAgICBtYXJnaW46IDIwcHggYXV0byA2MHB4O1xuICAgIHBhZGRpbmc6IDAgMTZweDtcbiAgfVxuXG4gIC5mb3JtLXNlY3Rpb24ge1xuICAgIHBhZGRpbmc6IDIwcHggMTZweDtcbiAgfVxuXG4gIC5mb3JtLXJvdyB7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBnYXA6IDEycHg7XG4gIH1cblxuICAuZm9ybS1maWVsZC0tbmFycm93IHtcbiAgICBmbGV4OiAxO1xuICB9XG5cbiAgLmRheS1yb3cge1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XG4gICAgZ2FwOiA4cHg7XG4gIH1cblxuICAuZGF5LWxhYmVsIHtcbiAgICB3aWR0aDogYXV0bztcbiAgfVxuXG4gIC5kYXktc291cmNlcyB7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */"]
     });
   }
