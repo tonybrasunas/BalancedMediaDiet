@@ -2022,7 +2022,7 @@ function DietCreateComponent_div_35_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](weekday_r2.name);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate1"]("nzPlaceHolder", "Select sources for ", weekday_r2.name, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", weekday_r2.selectedDocIds)("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](8, _c1))("nzShowArrow", true)("nzMaxTagCount", 4)("nzOptions", ctx_r2.sourceOptions);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", weekday_r2.selectedDocIds)("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](9, _c1))("nzShowArrow", true)("nzMaxTagCount", 4)("nzMaxMultipleCount", 4)("nzOptions", ctx_r2.sourceOptions);
   }
 }
 function DietCreateComponent_p_39_Template(rf, ctx) {
@@ -2149,7 +2149,7 @@ class DietCreateComponent {
       selectors: [["app-diet-create"]],
       decls: 40,
       vars: 14,
-      consts: [["id", "diet-create"], [1, "text-bmd-blue"], [1, "section-subtitle"], [3, "ngSubmit"], [1, "form-section"], [1, "form-row"], [1, "form-field"], [1, "required"], ["nz-input", "", "name", "title", "placeholder", "e.g. Basic", 3, "ngModelChange", "ngModel"], ["nz-input", "", "name", "subtitle", "placeholder", "e.g. Conscious Citizen", 3, "ngModelChange", "ngModel"], [1, "form-field", "form-field--narrow"], ["name", "year", 3, "ngModelChange", "ngModel", "nzMin", "nzMax", "nzStep"], [1, "form-field", "form-field--full"], ["nz-input", "", "name", "description", "placeholder", "Describe this diet and how to use it\u2026", 3, "ngModelChange", "ngModel", "nzAutosize"], [1, "section-hint"], ["class", "day-row", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "form-actions"], ["nz-button", "", "nzType", "primary", "nzSize", "large", 3, "disabled", "nzLoading"], ["class", "validation-hint", 4, "ngIf"], [1, "day-row"], [1, "day-label"], [1, "day-name"], [1, "day-sources"], ["nzMode", "multiple", 2, "width", "100%", 3, "ngModelChange", "ngModel", "ngModelOptions", "nzPlaceHolder", "nzShowArrow", "nzMaxTagCount", "nzOptions"], [1, "validation-hint"]],
+      consts: [["id", "diet-create"], [1, "text-bmd-blue"], [1, "section-subtitle"], [3, "ngSubmit"], [1, "form-section"], [1, "form-row"], [1, "form-field"], [1, "required"], ["nz-input", "", "name", "title", "placeholder", "e.g. Basic", 3, "ngModelChange", "ngModel"], ["nz-input", "", "name", "subtitle", "placeholder", "e.g. Conscious Citizen", 3, "ngModelChange", "ngModel"], [1, "form-field", "form-field--narrow"], ["name", "year", 3, "ngModelChange", "ngModel", "nzMin", "nzMax", "nzStep"], [1, "form-field", "form-field--full"], ["nz-input", "", "name", "description", "placeholder", "Describe this diet and how to use it\u2026", 3, "ngModelChange", "ngModel", "nzAutosize"], [1, "section-hint"], ["class", "day-row", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "form-actions"], ["nz-button", "", "nzType", "primary", "nzSize", "large", 3, "disabled", "nzLoading"], ["class", "validation-hint", 4, "ngIf"], [1, "day-row"], [1, "day-label"], [1, "day-name"], [1, "day-sources"], ["nzMode", "multiple", 2, "width", "100%", 3, "ngModelChange", "ngModel", "ngModelOptions", "nzPlaceHolder", "nzShowArrow", "nzMaxTagCount", "nzMaxMultipleCount", "nzOptions"], [1, "validation-hint"]],
       template: function DietCreateComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "h1", 1);
@@ -2209,9 +2209,9 @@ class DietCreateComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Weekly Schedule");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "p", 14);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Select one or more news sources for each day of the week.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Select up to four (4) news sources for each day of the week.");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](35, DietCreateComponent_div_35_Template, 6, 9, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](35, DietCreateComponent_div_35_Template, 6, 10, "div", 15);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](36, "div", 16)(37, "button", 17);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, " Save Diet ");
@@ -2375,17 +2375,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   HomeComponent: () => (/* binding */ HomeComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _today_today_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./today/today.component */ 3082);
-/* harmony import */ var _services_diets_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../services/diets.service */ 5529);
-/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/modal */ 1663);
-/* harmony import */ var _services_utility_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/utility.service */ 5190);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ 316);
-/* harmony import */ var _diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../diet-grid/diet-grid.component */ 9016);
-/* harmony import */ var _intro_intro_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./intro/intro.component */ 6426);
-/* harmony import */ var _the_author_the_author_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./the-author/the-author.component */ 6558);
-/* harmony import */ var _the_book_the_book_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./the-book/the-book.component */ 1594);
-
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _services_diets_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../services/diets.service */ 5529);
+/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/modal */ 1663);
+/* harmony import */ var _services_utility_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/utility.service */ 5190);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 316);
+/* harmony import */ var _diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../diet-grid/diet-grid.component */ 9016);
+/* harmony import */ var _intro_intro_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./intro/intro.component */ 6426);
+/* harmony import */ var _the_author_the_author_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./the-author/the-author.component */ 6558);
+/* harmony import */ var _the_book_the_book_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./the-book/the-book.component */ 1594);
 
 
 
@@ -2398,12 +2396,12 @@ __webpack_require__.r(__webpack_exports__);
 
 function HomeComponent_diet_grid_2_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](0, "diet-grid", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](0, "diet-grid", 2);
   }
   if (rf & 2) {
     const diet_r1 = ctx.$implicit;
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("dietId", diet_r1.id)("open", ctx_r1.isDietOpen(diet_r1));
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("dietId", diet_r1.id)("open", ctx_r1.isDietOpen(diet_r1));
   }
 }
 /* FOR DATA LOADING SCRIPTS */
@@ -2417,9 +2415,9 @@ class HomeComponent {
     this.modal = modal;
     this.vcf = vcf;
     this.util = util;
-    this.currentDiet = (0,_angular_core__WEBPACK_IMPORTED_MODULE_7__.signal)(null);
+    this.currentDiet = (0,_angular_core__WEBPACK_IMPORTED_MODULE_6__.signal)(null);
     this.today = new Date().getDay();
-    this.currentYear = 2024;
+    this.currentYear = 2026;
     this.currentYearDiets = [];
     this.isDietOpen = diet => this.dietsSvc.homeDietsOpen.includes(diet.title);
   }
@@ -2442,33 +2440,19 @@ class HomeComponent {
         this.currentYearDiets.push(diet);
         if (diet.title === 'Basic') {
           this.currentDiet.set(diet);
-          /* Show Pop Up With Today's Featured Diet Sources */
+          /* Show Pop Up With Today's Featured Diet Source(s) */
           // this.popupDaysDietSources();
         }
       });
     });
   }
-  popupDaysDietSources() {
-    const modal = this.modal.create({
-      nzTitle: null,
-      nzFooter: null,
-      nzWidth: 650,
-      nzCentered: true,
-      nzClassName: 'news-source-modal',
-      nzContent: _today_today_component__WEBPACK_IMPORTED_MODULE_0__.TodayComponent,
-      nzViewContainerRef: this.vcf,
-      nzData: {
-        diet: this.currentDiet()
-      }
-    });
-  }
   static {
     this.ɵfac = function HomeComponent_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_services_diets_service__WEBPACK_IMPORTED_MODULE_1__.DietsService), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_8__.NzModalService), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_services_utility_service__WEBPACK_IMPORTED_MODULE_2__.UtilityService));
+      return new (__ngFactoryType__ || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_services_diets_service__WEBPACK_IMPORTED_MODULE_0__.DietsService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_7__.NzModalService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_6__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_services_utility_service__WEBPACK_IMPORTED_MODULE_1__.UtilityService));
     };
   }
   static {
-    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineComponent"]({
+    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({
       type: HomeComponent,
       selectors: [["home"]],
       decls: 5,
@@ -2476,16 +2460,16 @@ class HomeComponent {
       consts: [["name", "diet-grid", "id", "diet-grid"], [3, "dietId", "open", 4, "ngFor", "ngForOf"], [3, "dietId", "open"]],
       template: function HomeComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](0, "intro")(1, "a", 0);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](2, HomeComponent_diet_grid_2_Template, 1, 2, "diet-grid", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](3, "the-author")(4, "the-book");
+          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](0, "intro")(1, "a", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtemplate"](2, HomeComponent_diet_grid_2_Template, 1, 2, "diet-grid", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](3, "the-author")(4, "the-book");
         }
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngForOf", ctx.currentYearDiets);
+          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("ngForOf", ctx.currentYearDiets);
         }
       },
-      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_9__.NgForOf, _diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_3__.DietGridComponent, _intro_intro_component__WEBPACK_IMPORTED_MODULE_4__.IntroComponent, _the_author_the_author_component__WEBPACK_IMPORTED_MODULE_5__.TheAuthorComponent, _the_book_the_book_component__WEBPACK_IMPORTED_MODULE_6__.TheBookComponent],
+      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgForOf, _diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_2__.DietGridComponent, _intro_intro_component__WEBPACK_IMPORTED_MODULE_3__.IntroComponent, _the_author_the_author_component__WEBPACK_IMPORTED_MODULE_4__.TheAuthorComponent, _the_book_the_book_component__WEBPACK_IMPORTED_MODULE_5__.TheBookComponent],
       styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
     });
   }
