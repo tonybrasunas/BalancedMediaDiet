@@ -52,10 +52,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   AppRoutingModule: () => (/* binding */ AppRoutingModule)
 /* harmony export */ });
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home/home.component */ 7824);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ 5072);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ 5072);
 /* harmony import */ var _user_custom_diet_custom_diet_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./user/custom-diet/custom-diet.component */ 7686);
 /* harmony import */ var _diet_diet_create_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./diet/diet-create.component */ 1201);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _go_go_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./go/go.component */ 7362);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 7580);
+
 
 
 
@@ -78,6 +80,9 @@ const routes = [{
 }, {
   path: 'diet',
   component: _diet_diet_create_component__WEBPACK_IMPORTED_MODULE_2__.DietCreateComponent
+}, {
+  path: 'go',
+  component: _go_go_component__WEBPACK_IMPORTED_MODULE_3__.GoComponent
 }
 // { path: 'news-source/:id', component: NewsSourceComponent },
 // { path: 'home', component: HomeComponent },
@@ -95,20 +100,20 @@ class AppRoutingModule {
     };
   }
   static {
-    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({
+    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineNgModule"]({
       type: AppRoutingModule
     });
   }
   static {
-    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule]
+    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector"]({
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule]
     });
   }
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](AppRoutingModule, {
-    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule],
-    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsetNgModuleScope"](AppRoutingModule, {
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule],
+    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule]
   });
 })();
 
@@ -187,28 +192,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AppModule: () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/platform-browser */ 436);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/forms */ 4456);
-/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @angular/cdk/drag-drop */ 854);
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ng-zorro-antd/button */ 6104);
-/* harmony import */ var ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ng-zorro-antd/form */ 1034);
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ng-zorro-antd/grid */ 904);
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ng-zorro-antd/input */ 7084);
-/* harmony import */ var ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ng-zorro-antd/input-number */ 5346);
-/* harmony import */ var ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ng-zorro-antd/layout */ 5730);
-/* harmony import */ var ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ng-zorro-antd/menu */ 6993);
-/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ng-zorro-antd/message */ 9917);
-/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ng-zorro-antd/modal */ 1663);
-/* harmony import */ var ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ng-zorro-antd/select */ 4328);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @angular/platform-browser */ 436);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @angular/forms */ 4456);
+/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/cdk/drag-drop */ 854);
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ng-zorro-antd/button */ 6104);
+/* harmony import */ var ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ng-zorro-antd/form */ 1034);
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ng-zorro-antd/grid */ 904);
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ng-zorro-antd/input */ 7084);
+/* harmony import */ var ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ng-zorro-antd/input-number */ 5346);
+/* harmony import */ var ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ng-zorro-antd/layout */ 5730);
+/* harmony import */ var ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ng-zorro-antd/menu */ 6993);
+/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ng-zorro-antd/message */ 9917);
+/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ng-zorro-antd/modal */ 1663);
+/* harmony import */ var ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ng-zorro-antd/select */ 4328);
 /* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/environments/environment */ 5312);
-/* harmony import */ var _angular_fire_compat__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/fire/compat */ 8942);
-/* harmony import */ var _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/fire/compat/auth */ 8245);
-/* harmony import */ var _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/fire/compat/storage */ 4914);
-/* harmony import */ var _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/fire/compat/firestore */ 2450);
-/* harmony import */ var _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/fire/compat/database */ 608);
-/* harmony import */ var _angular_fire_compat_functions__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/fire/compat/functions */ 370);
+/* harmony import */ var _angular_fire_compat__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/fire/compat */ 8942);
+/* harmony import */ var _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/fire/compat/auth */ 8245);
+/* harmony import */ var _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/fire/compat/storage */ 4914);
+/* harmony import */ var _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/fire/compat/firestore */ 2450);
+/* harmony import */ var _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/fire/compat/database */ 608);
+/* harmony import */ var _angular_fire_compat_functions__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/fire/compat/functions */ 370);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 92);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @angular/platform-browser/animations */ 3835);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @angular/platform-browser/animations */ 3835);
 /* harmony import */ var _news_source_news_source_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./news-source/news-source.component */ 8624);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ 4114);
 /* harmony import */ var _diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./diet-grid/diet-grid.component */ 9016);
@@ -221,14 +226,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/home.component */ 7824);
 /* harmony import */ var _nav_nav_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./nav/nav.component */ 9464);
 /* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./footer/footer.component */ 708);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/common */ 316);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/common/http */ 6443);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/common */ 316);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/common/http */ 6443);
 /* harmony import */ var _home_intro_intro_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./home/intro/intro.component */ 6426);
 /* harmony import */ var _home_the_author_the_author_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./home/the-author/the-author.component */ 6558);
 /* harmony import */ var _home_the_book_the_book_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./home/the-book/the-book.component */ 1594);
 /* harmony import */ var _user_custom_diet_custom_diet_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./user/custom-diet/custom-diet.component */ 7686);
 /* harmony import */ var _diet_diet_create_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./diet/diet-create.component */ 1201);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _go_go_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./go/go.component */ 7362);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/core */ 7580);
 
 
 // import { MatButtonModule } from '@angular/material/button';
@@ -280,6 +286,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 class AppModule {
   static {
     this.ɵfac = function AppModule_Factory(__ngFactoryType__) {
@@ -287,36 +294,36 @@ class AppModule {
     };
   }
   static {
-    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_19__["ɵɵdefineNgModule"]({
+    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵdefineNgModule"]({
       type: AppModule,
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
     });
   }
   static {
-    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_19__["ɵɵdefineInjector"]({
+    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵdefineInjector"]({
       providers: [{
-        provide: _angular_common__WEBPACK_IMPORTED_MODULE_20__.LocationStrategy,
-        useClass: _angular_common__WEBPACK_IMPORTED_MODULE_20__.HashLocationStrategy
+        provide: _angular_common__WEBPACK_IMPORTED_MODULE_21__.LocationStrategy,
+        useClass: _angular_common__WEBPACK_IMPORTED_MODULE_21__.HashLocationStrategy
       }, {
-        provide: _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_21__.USE_EMULATOR,
+        provide: _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_22__.USE_EMULATOR,
         useValue: src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.useEmulators ? ['http://localhost:9099'] : undefined
       }, {
-        provide: _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_22__.USE_EMULATOR,
+        provide: _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_23__.USE_EMULATOR,
         useValue: src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.useEmulators ? ['http://localhost:8080'] : undefined
       }, {
-        provide: _angular_fire_compat_functions__WEBPACK_IMPORTED_MODULE_23__.USE_EMULATOR,
+        provide: _angular_fire_compat_functions__WEBPACK_IMPORTED_MODULE_24__.USE_EMULATOR,
         useValue: src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.useEmulators ? ['http://localhost:5001'] : undefined
       }],
-      imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_24__.HttpClientModule, _angular_fire_compat__WEBPACK_IMPORTED_MODULE_25__.AngularFireModule.initializeApp(src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.firebase), _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_22__.AngularFirestoreModule, _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_26__.AngularFireStorageModule, _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_21__.AngularFireAuthModule, _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_27__.AngularFireDatabaseModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_28__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_29__.BrowserAnimationsModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_30__.DragDropModule, _angular_forms__WEBPACK_IMPORTED_MODULE_31__.FormsModule, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_32__.NzButtonModule, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_33__.NzFormModule, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_34__.NzGridModule, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_35__.NzInputModule, ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_36__.NzInputNumberModule, ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_37__.NzLayoutModule, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_38__.NzMenuModule, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_39__.NzMessageModule, ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_40__.NzModalModule, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_41__.NzSelectModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_3__.AppRoutingModule]
+      imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_25__.HttpClientModule, _angular_fire_compat__WEBPACK_IMPORTED_MODULE_26__.AngularFireModule.initializeApp(src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.firebase), _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_23__.AngularFirestoreModule, _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_27__.AngularFireStorageModule, _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_22__.AngularFireAuthModule, _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_28__.AngularFireDatabaseModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_29__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_30__.BrowserAnimationsModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_31__.DragDropModule, _angular_forms__WEBPACK_IMPORTED_MODULE_32__.FormsModule, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_33__.NzButtonModule, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_34__.NzFormModule, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_35__.NzGridModule, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_36__.NzInputModule, ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_37__.NzInputNumberModule, ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_38__.NzLayoutModule, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_39__.NzMenuModule, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_40__.NzMessageModule, ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_41__.NzModalModule, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_42__.NzSelectModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_3__.AppRoutingModule]
     });
   }
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_19__["ɵɵsetNgModuleScope"](AppModule, {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵsetNgModuleScope"](AppModule, {
     declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _news_source_news_source_component__WEBPACK_IMPORTED_MODULE_2__.NewsSourceComponent,
     // NewsSourceDialogComponent,
-    _diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_4__.DietGridComponent, _diet_grid_grid_spot_grid_spot_component__WEBPACK_IMPORTED_MODULE_5__.GridSpotComponent, _archived_to_delete_food_groups_food_groups_component__WEBPACK_IMPORTED_MODULE_6__.FoodGroupsComponent, _archived_to_delete_news_sources_news_sources_component__WEBPACK_IMPORTED_MODULE_7__.NewsSourcesComponent, _home_today_today_component__WEBPACK_IMPORTED_MODULE_8__.TodayComponent, _about_about_component__WEBPACK_IMPORTED_MODULE_9__.AboutComponent, _archived_to_delete_guide_guide_component__WEBPACK_IMPORTED_MODULE_10__.GuideComponent, _home_home_component__WEBPACK_IMPORTED_MODULE_11__.HomeComponent, _home_intro_intro_component__WEBPACK_IMPORTED_MODULE_14__.IntroComponent, _home_the_author_the_author_component__WEBPACK_IMPORTED_MODULE_15__.TheAuthorComponent, _home_the_book_the_book_component__WEBPACK_IMPORTED_MODULE_16__.TheBookComponent, _nav_nav_component__WEBPACK_IMPORTED_MODULE_12__.NavComponent, _footer_footer_component__WEBPACK_IMPORTED_MODULE_13__.FooterComponent, _user_custom_diet_custom_diet_component__WEBPACK_IMPORTED_MODULE_17__.CustomDietComponent, _diet_diet_create_component__WEBPACK_IMPORTED_MODULE_18__.DietCreateComponent],
-    imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_24__.HttpClientModule, _angular_fire_compat__WEBPACK_IMPORTED_MODULE_25__.AngularFireModule, _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_22__.AngularFirestoreModule, _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_26__.AngularFireStorageModule, _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_21__.AngularFireAuthModule, _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_27__.AngularFireDatabaseModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_28__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_29__.BrowserAnimationsModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_30__.DragDropModule, _angular_forms__WEBPACK_IMPORTED_MODULE_31__.FormsModule, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_32__.NzButtonModule, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_33__.NzFormModule, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_34__.NzGridModule, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_35__.NzInputModule, ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_36__.NzInputNumberModule, ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_37__.NzLayoutModule, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_38__.NzMenuModule, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_39__.NzMessageModule, ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_40__.NzModalModule, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_41__.NzSelectModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_3__.AppRoutingModule]
+    _diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_4__.DietGridComponent, _diet_grid_grid_spot_grid_spot_component__WEBPACK_IMPORTED_MODULE_5__.GridSpotComponent, _archived_to_delete_food_groups_food_groups_component__WEBPACK_IMPORTED_MODULE_6__.FoodGroupsComponent, _archived_to_delete_news_sources_news_sources_component__WEBPACK_IMPORTED_MODULE_7__.NewsSourcesComponent, _home_today_today_component__WEBPACK_IMPORTED_MODULE_8__.TodayComponent, _about_about_component__WEBPACK_IMPORTED_MODULE_9__.AboutComponent, _archived_to_delete_guide_guide_component__WEBPACK_IMPORTED_MODULE_10__.GuideComponent, _home_home_component__WEBPACK_IMPORTED_MODULE_11__.HomeComponent, _home_intro_intro_component__WEBPACK_IMPORTED_MODULE_14__.IntroComponent, _home_the_author_the_author_component__WEBPACK_IMPORTED_MODULE_15__.TheAuthorComponent, _home_the_book_the_book_component__WEBPACK_IMPORTED_MODULE_16__.TheBookComponent, _nav_nav_component__WEBPACK_IMPORTED_MODULE_12__.NavComponent, _footer_footer_component__WEBPACK_IMPORTED_MODULE_13__.FooterComponent, _user_custom_diet_custom_diet_component__WEBPACK_IMPORTED_MODULE_17__.CustomDietComponent, _diet_diet_create_component__WEBPACK_IMPORTED_MODULE_18__.DietCreateComponent, _go_go_component__WEBPACK_IMPORTED_MODULE_19__.GoComponent],
+    imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_25__.HttpClientModule, _angular_fire_compat__WEBPACK_IMPORTED_MODULE_26__.AngularFireModule, _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_23__.AngularFirestoreModule, _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_27__.AngularFireStorageModule, _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_22__.AngularFireAuthModule, _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_28__.AngularFireDatabaseModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_29__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_30__.BrowserAnimationsModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_31__.DragDropModule, _angular_forms__WEBPACK_IMPORTED_MODULE_32__.FormsModule, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_33__.NzButtonModule, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_34__.NzFormModule, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_35__.NzGridModule, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_36__.NzInputModule, ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_37__.NzInputNumberModule, ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_38__.NzLayoutModule, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_39__.NzMenuModule, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_40__.NzMessageModule, ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_41__.NzModalModule, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_42__.NzSelectModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_3__.AppRoutingModule]
   });
 })();
 
@@ -2302,6 +2309,56 @@ class FooterComponent {
         }
       },
       styles: ["#footer[_ngcontent-%COMP%] {\n  display: flex;\n  background-color: var(--primary-red);\n  justify-content: space-around;\n  align-items: center;\n  padding: 18px 10px;\n}\n#footer[_ngcontent-%COMP%]   div[_ngcontent-%COMP%] {\n  padding: 25px 10px;\n  color: var(--faint-white);\n}\n#footer[_ngcontent-%COMP%]   div[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: var(--faint-white);\n  text-decoration: underline;\n}\n#footer[_ngcontent-%COMP%]   #social-icons[_ngcontent-%COMP%] {\n  display: flex;\n}\n#footer[_ngcontent-%COMP%]   #social-icons[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 45px;\n  margin: 12px;\n}\n\n\n\n\n\n@media (max-width: 767px) {\n  #footer[_ngcontent-%COMP%] {\n    flex-wrap: wrap;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQUE7RUFDQSxvQ0FBQTtFQUNBLDZCQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtBQUNGO0FBQUU7RUFDRSxrQkFBQTtFQUNBLHlCQUFBO0FBRUo7QUFESTtFQUNFLHlCQUFBO0VBQ0EsMEJBQUE7QUFHTjtBQUFFO0VBQ0UsYUFBQTtBQUVKO0FBREk7RUFDRSxXQUFBO0VBQ0EsWUFBQTtBQUdOOztBQUVBLGtCQUFBO0FBRUEscUJBQUE7QUFDQTtFQUNFO0lBQ0UsZUFBQTtFQUFGO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIjZm9vdGVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tcHJpbWFyeS1yZWQpO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgcGFkZGluZzogMThweCAxMHB4O1xuICBkaXYge1xuICAgIHBhZGRpbmc6IDI1cHggMTBweDtcbiAgICBjb2xvcjogdmFyKC0tZmFpbnQtd2hpdGUpO1xuICAgIGEge1xuICAgICAgY29sb3I6IHZhcigtLWZhaW50LXdoaXRlKTtcbiAgICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xuICAgIH1cbiAgfVxuICAjc29jaWFsLWljb25zIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGltZyB7XG4gICAgICB3aWR0aDogNDVweDtcbiAgICAgIG1hcmdpbjogMTJweDtcbiAgICB9XG4gIH1cbn1cblxuLyogTUVESUEgUVVFUklFUyAqL1xuXG4vKiogc21hbGwgLSBtb2JpbGUgKiovXG5AbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgI2Zvb3RlciB7XG4gICAgZmxleC13cmFwOiB3cmFwO1xuICB9XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */"]
+    });
+  }
+}
+
+/***/ }),
+
+/***/ 7362:
+/*!************************************!*\
+  !*** ./src/app/go/go.component.ts ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   GoComponent: () => (/* binding */ GoComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 5072);
+
+
+class GoComponent {
+  constructor(route) {
+    this.route = route;
+  }
+  ngOnInit() {
+    const to = this.route.snapshot.queryParamMap.get('to');
+    if (to) {
+      window.location.href = to;
+    }
+  }
+  static {
+    this.ɵfac = function GoComponent_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || GoComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__.ActivatedRoute));
+    };
+  }
+  static {
+    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: GoComponent,
+      selectors: [["app-go"]],
+      decls: 3,
+      vars: 0,
+      consts: [[2, "padding", "40px", "text-align", "center", "font-family", "sans-serif", "color", "#555"]],
+      template: function GoComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "p");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Redirecting you now\u2026");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        }
+      },
+      encapsulation: 2
     });
   }
 }
