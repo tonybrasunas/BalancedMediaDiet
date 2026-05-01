@@ -2080,7 +2080,7 @@ class DietCreateComponent {
     this.sourceSub = null;
   }
   ngOnInit() {
-    this.sourceSub = this.firestore.collection('NewsSources', ref => ref.orderBy('name')).get().subscribe(snapshot => {
+    this.sourceSub = this.firestore.collection('newsSources', ref => ref.orderBy('name')).get().subscribe(snapshot => {
       this.newsSources = snapshot.docs.map(doc => {
         const data = doc.data();
         return {
@@ -2109,7 +2109,7 @@ class DietCreateComponent {
       }));
       _this.isSaving = true;
       try {
-        yield _this.firestore.collection('Diets').add({
+        yield _this.firestore.collection('diets').add({
           title: _this.title.trim(),
           subtitle: _this.subtitle.trim(),
           description: _this.description.trim(),
