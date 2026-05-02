@@ -2179,7 +2179,7 @@ class DietCreateComponent {
       selectors: [["app-diet-create"]],
       decls: 56,
       vars: 20,
-      consts: [["id", "diet-create"], [1, "text-bmd-blue"], [1, "section-subtitle"], [3, "ngSubmit"], [1, "form-section"], [1, "form-row"], [1, "form-field"], [1, "required"], ["nz-input", "", "name", "title", "placeholder", "e.g. Basic", 3, "ngModelChange", "ngModel"], ["nz-input", "", "name", "subtitle", "placeholder", "e.g. Conscious Citizen", 3, "ngModelChange", "ngModel"], [1, "form-field", "form-field--narrow"], ["nz-input", "", "name", "time", "placeholder", "e.g. 30 min daily", 3, "ngModelChange", "ngModel"], ["name", "year", 3, "ngModelChange", "ngModel", "nzMin", "nzMax", "nzStep"], ["name", "dietLevel", 3, "ngModelChange", "ngModel", "nzOptions"], ["name", "custom", 3, "ngModelChange", "ngModel"], ["nz-radio", "", 3, "nzValue"], [1, "form-field", "form-field--full"], ["nz-input", "", "name", "description", "placeholder", "Describe this diet and how to use it\u2026", 3, "ngModelChange", "ngModel", "nzAutosize"], [1, "section-hint"], ["class", "day-row", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "form-actions"], ["nz-button", "", "nzType", "primary", "nzSize", "large", 3, "disabled", "nzLoading"], ["class", "validation-hint", 4, "ngIf"], [1, "day-row"], [1, "day-label"], [1, "day-name"], [1, "day-sources"], ["nzMode", "multiple", 2, "width", "100%", 3, "ngModelChange", "ngModel", "ngModelOptions", "nzPlaceHolder", "nzShowArrow", "nzMaxTagCount", "nzMaxMultipleCount", "nzOptions"], [1, "validation-hint"]],
+      consts: [["id", "diet-create"], [1, "text-bmd-blue"], [1, "section-subtitle"], [3, "ngSubmit"], [1, "form-section"], [1, "form-row"], [1, "form-field"], [1, "required"], ["nz-input", "", "name", "title", "placeholder", "e.g. Basic", 3, "ngModelChange", "ngModel"], ["nz-input", "", "name", "subtitle", "placeholder", "e.g. Conscious Citizen", 3, "ngModelChange", "ngModel"], [1, "form-field", "form-field--narrow"], ["name", "year", 3, "ngModelChange", "ngModel", "nzMin", "nzMax", "nzStep"], ["name", "dietLevel", 3, "ngModelChange", "ngModel", "nzOptions"], ["nz-input", "", "name", "time", "placeholder", "e.g. 30 min daily", 3, "ngModelChange", "ngModel"], ["name", "custom", 3, "ngModelChange", "ngModel"], ["nz-radio", "", 3, "nzValue"], [1, "form-field", "form-field--full"], ["nz-input", "", "name", "description", "placeholder", "Describe this diet and how to use it\u2026", 3, "ngModelChange", "ngModel", "nzAutosize"], [1, "section-hint"], ["class", "day-row", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "form-actions"], ["nz-button", "", "nzType", "primary", "nzSize", "large", 3, "disabled", "nzLoading"], ["class", "validation-hint", 4, "ngIf"], [1, "day-row"], [1, "day-label"], [1, "day-name"], [1, "day-sources"], ["nzMode", "multiple", 2, "width", "100%", 3, "ngModelChange", "ngModel", "ngModelOptions", "nzPlaceHolder", "nzShowArrow", "nzMaxTagCount", "nzMaxMultipleCount", "nzOptions"], [1, "validation-hint"]],
       template: function DietCreateComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "h1", 1);
@@ -2216,29 +2216,29 @@ class DietCreateComponent {
           });
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "div", 10)(21, "label");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Time");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Year");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "input", 11);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function DietCreateComponent_Template_input_ngModelChange_23_listener($event) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.time, $event) || (ctx.time = $event);
-            return $event;
-          });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "div", 10)(25, "label");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Year");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "nz-input-number", 12);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function DietCreateComponent_Template_nz_input_number_ngModelChange_27_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "nz-input-number", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function DietCreateComponent_Template_nz_input_number_ngModelChange_23_listener($event) {
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.year, $event) || (ctx.year = $event);
             return $event;
           });
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "div", 10)(29, "label");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Diet Level");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "div", 10)(25, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Diet Level");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "nz-select", 13);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function DietCreateComponent_Template_nz_select_ngModelChange_31_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "nz-select", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function DietCreateComponent_Template_nz_select_ngModelChange_27_listener($event) {
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.dietLevel, $event) || (ctx.dietLevel = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "div", 10)(29, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Time");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "input", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function DietCreateComponent_Template_input_ngModelChange_31_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.time, $event) || (ctx.time = $event);
             return $event;
           });
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
@@ -2287,13 +2287,13 @@ class DietCreateComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.subtitle);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.time);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.year);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzMin", 2000)("nzMax", 2100)("nzStep", 1);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.dietLevel);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzOptions", ctx.dietLevelOptions);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.time);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.custom);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
@@ -2586,7 +2586,7 @@ class IntroComponent {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
       type: IntroComponent,
       selectors: [["intro"]],
-      decls: 98,
+      decls: 93,
       vars: 0,
       consts: [["nz-row", "", 1, "main-content", "page-top", "bg-triangle"], ["nz-col", "", "nzMd", "12", "nzSm", "24", "nzXs", "24"], ["id", "home"], ["id", "home-header"], [1, "text-bmd-red"], [1, "sqsrte-fadeIn"], [1, "text-bmd-blue"], [1, "sqsrte-fadeIn", 2, "transition-delay", "0.0524691s"], [1, "underline", "uncolored", 3, "click"], [1, "fe-block", "fe-block-feca87e66e60df57b25d"], ["nz-button", "", "nzType", "primary", 1, "home", 3, "click"], ["nz-col", "", "nzMd", "12", "nzSm", "0", "nzXs", "0", "id", "iphone-image-container"], ["src", "../../assets/iphone.png"], [1, "bg-pyramid-mobile", "mobile-only"], [1, "text-bmd-blue", "text-center"], ["nz-row", "", 1, "bg-pyramid-desktop"], ["nz-col", "", "nzMd", "8", "nzSm", "0", "nzXs", "0"], ["nz-col", "", "nzMd", "16", "nzSm", "24", "nzXs", "24"], ["id", "the-food-groups", 1, "main-content"], ["nz-row", ""], ["id", "the-diets", 1, "main-content", "text-bmd-blue", "full-width-section"], [1, "text-center"], [1, "uppercase", "text-bmd-blue"], [1, "uncolored", "underline", 3, "click"], [1, "text-bmd-red", "large-text"], [1, "explanation"]],
       template: function IntroComponent_Template(rf, ctx) {
@@ -2605,119 +2605,106 @@ class IntroComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](14, " opinions rather than those assigned to you by one party or publisher. Gain a new outlook on world events, build and broaden your mind, and understand the political views of virtually anyone you meet. ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "h2", 5)(16, "span", 6)(17, "strong");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](18, "40 SOURCES, 30 MINUTES, 20 DOLLARS.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](18, "30 MINUTES A DAY. MONEY OPTIONAL.");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "p", 5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "The diet and everything on this website are completely free, but we recommend setting aside a small amount each month to contribute to journalists you appreciate so as to build a new media economy. As for time, devote thirty minutes or more each day, depending on which diet you choose. There are forty sources featured in the ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Thirty minutes is enough for transformative change. The ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "a", 8);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_21_listener() {
-            return ctx.scroll("Expert");
-          });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Expert Diet");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, ", twenty-seven in the ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "a", 8);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_24_listener() {
-            return ctx.scroll("Intermediate");
-          });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Intermediate");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, ", and thirteen in the ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "a", 8);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_27_listener() {
             return ctx.scroll("Basic");
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Basic Diet");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Basic Diet");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, ". ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, " features 6 news sources spread across seven days. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, " As for money, the diets and everything on this website are completely free, but we recommend setting aside a small amount each month to contribute to journalists you appreciate so as to build a new media economy. ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](30, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "div", 9)(32, "button", 10);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_button_click_32_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](25, "p");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](26, "div", 9)(27, "button", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_button_click_27_listener() {
             return ctx.scroll("the-diets");
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "2026 Recommended Diets ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "2026 Recommended Diet ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "div", 11);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](35, "img", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "div", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](30, "img", 12);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](36, "div", 13);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](37, "h1", 14);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "THE SIX MEDIA FOOD GROUPS");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](31, "div", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](32, "h1", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "THE SIX MEDIA FOOD GROUPS");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "div", 15);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](40, "div", 16);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](41, "div", 17)(42, "section", 18)(43, "h2")(44, "span", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](45, "1. FOREIGN NEWS");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](35, "div", 16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](36, "div", 17)(37, "section", 18)(38, "h2")(39, "span", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, "1. FOREIGN NEWS");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](41, "p");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](42, " This group includes all news and viewpoints originating from outside the United States, particularly from non-English speaking countries. Consuming media from this group is critical for reaching an informed opinion not just as a citizen of the country but as a member of the human race. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](43, "h2")(44, "span", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](45, "2. PARTY POLITICS: DEMOCRAT");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](46, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](47, " This group includes all news and viewpoints originating from outside the United States, particularly from non-English speaking countries. Consuming media from this group is critical for reaching an informed opinion not just as a citizen of the country but as a member of the human race. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](47, " News and viewpoints that follow the daily and weekly news cycle of events, scandals, and legislation on the Democrat side. Important to understanding how news is packaged to inform and outrage this party. Generally, the blame is placed on the other party, and there is little deeper analysis. ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](48, "h2")(49, "span", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](50, "2. PARTY POLITICS: DEMOCRAT");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](50, "3. PARTY POLITICS: REPUBLICAN");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](51, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](52, " News and viewpoints that follow the daily and weekly news cycle of events, scandals, and legislation on the Democrat side. Important to understanding how news is packaged to inform and outrage this party. Generally, the blame is placed on the other party, and there is little deeper analysis. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](52, " News and viewpoints that follow the daily and weekly news cycle of events, scandals, and legislation on the Republican side. Important to understanding how news is packaged to inform and outrage this party. Generally, the blame is placed on the other party, and there is little deeper analysis. ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](53, "h2")(54, "span", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](55, "3. PARTY POLITICS: REPUBLICAN");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](55, "4. TRUE POLITICS: PROGRESSIVE & LIBERAL");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](56, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](57, " News and viewpoints that follow the daily and weekly news cycle of events, scandals, and legislation on the Republican side. Important to understanding how news is packaged to inform and outrage this party. Generally, the blame is placed on the other party, and there is little deeper analysis. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](58, "h2")(59, "span", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](60, "4. TRUE POLITICS: PROGRESSIVE & LIBERAL");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](57, " News and analysis that will point out flaws in both parties and that will sometimes suggest that the parties agree about most things and feign disagreement. Progressive analysis includes class analysis that acknowledges that poor Americans suffer more there are wars overseas, no universal healthcare, starvation wages, structural racism, polluted air and water, and crippling debt. Progressive True Politics sources tend to be marginalized by Party Politics sources with these labels: ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](58, "i");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](59, "\u201Cradical,\u201D \u201Csocialist,\u201D \u201Cfar-left,\u201D \u201Ccommunist.\u201D");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](61, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](62, " News and analysis that will point out flaws in both parties and that will sometimes suggest that the parties agree about most things and feign disagreement. Progressive analysis includes class analysis that acknowledges that all Americans suffer when there are wars overseas, no universal healthcare, starvation wages, polluted air and water, and crippling debt. Progressive True Politics sources tend to be marginalized by Party Politics sources with these labels: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](63, "i");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](64, "\u201Cradical,\u201D \u201Csocialist,\u201D \u201Cfar-left,\u201D \u201Ccommunist.\u201D");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](60, "h2")(61, "span", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](62, "5. TRUE POLITICS: LIBERTARIAN & CONSERVATIVE");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](65, "h2")(66, "span", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](67, "5. TRUE POLITICS: LIBERTARIAN & CONSERVATIVE");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](63, "p");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](64, " News and analysis that will point out flaws in both parties and that will sometimes suggest that the parties agree about most things and feign disagreement. Libertarian perspectives include analysis of privacy and collectivism that critiques the encroaching surveillance state, never-ending wars, ballooning taxes, and our shrinking set of personal rights. Conservative perspectives include attention to founding principles and favor deliberate consideration before advocating systemic change. Words used by Party Politics sources to marginalize and silence these sources: ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](65, "i");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](66, "\u201Cradical,\u201D \u201Cfascist,\u201D \u201CNazi,\u201D \u201Calt-right.\u201D");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](68, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](69, " News and analysis that will point out flaws in both parties and that will sometimes suggest that the parties agree about most things and feign disagreement. Libertarian perspectives include analysis of privacy and liberty that critiques the encroaching surveillance state, never-ending wars, and our shrinking set of personal rights. Conservative perspectives include attention to founding principles and favor deliberate consideration before advocating systemic change. Words used by Party Politics sources to marginalize and silence these sources: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](70, "i");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](71, "\u201Cradical,\u201D \u201Cfascist,\u201D \u201CNazi,\u201D \u201Calt-right.\u201D");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](67, "h2")(68, "span", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](69, "6. DEEP POLITICS");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](72, "h2")(73, "span", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](74, "6. DEEP POLITICS");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](75, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](76, " News and analysis covering our country\u2019s underlying power structures. Examining policies\u2014particularly hidden ones\u2014about wars, energy resources, the money supply, drugs, and surveillance that are often constructed by unelected officials permanently ensconced in intelligence organizations, the Pentagon, and other executive departments. Words used to marginalize and silence these sources: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](77, "i");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](78, "\u201Cparanoid,\u201D \u201Cwacky,\u201D \u201Cconspiracy theorist.\u201D");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](70, "p");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](71, " News and analysis covering our country\u2019s underlying power structures. Examining policies\u2014particularly hidden ones\u2014about wars, energy resources, the money supply, drugs, weapons, and surveillance that are controlled by unelected officials permanently ensconced in intelligence organizations, the Pentagon, and the largest finance and tech corporations. Words used to marginalize and silence these sources: ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](72, "i");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](73, "\u201Cparanoid,\u201D \u201Cwacky,\u201D \u201Cconspiracy theorist.\u201D");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](79, "div", 19)(80, "section", 20)(81, "h1", 21);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](82, "HOW TO GET STARTED");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](74, "div", 19)(75, "section", 20)(76, "h1", 21);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](77, "HOW TO GET STARTED");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](83, "h2", 22);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](84, "1. Start with the ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](85, "a", 23);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_85_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](78, "h2", 22);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](79, "1. Start with the ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](80, "a", 23);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_80_listener() {
             return ctx.scroll("Basic");
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](86, "Basic");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](81, "Basic");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](87, " diet. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](82, " diet. ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](88, "h2", 22);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](89, "2. Each day, VIEW ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](90, "span", 24);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](91, "2");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](83, "h2", 22);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](84, "2. Each day, VIEW ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](85, "span", 24);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](86, "2");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](92, " EPISODES OR ARTICLES. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](87, " EPISODES OR ARTICLES. ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](93, "div", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](94, " That's it. Get your balanced news emailed to you daily if you like. Move up to the ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](95, "a", 23);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_95_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](88, "div", 25);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](89, " That's it. Get your balanced news emailed to you daily if you like. Move up to the ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](90, "a", 23);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function IntroComponent_Template_a_click_90_listener() {
             return ctx.scroll("Intermediate");
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](96, "Intermediate");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](91, "Intermediate");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](97, " diet after a few weeks if and when you're ready. ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](92, " diet after a few weeks if and when you're ready. ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
         }
       },
