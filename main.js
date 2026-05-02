@@ -2001,14 +2001,14 @@ const _c0 = () => ({
 const _c1 = () => ({
   standalone: true
 });
-function DietCreateComponent_div_35_Template(rf, ctx) {
+function DietCreateComponent_div_39_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 19)(1, "div", 20)(2, "span", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 20)(1, "div", 21)(2, "span", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "div", 22)(5, "nz-select", 23);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function DietCreateComponent_div_35_Template_nz_select_ngModelChange_5_listener($event) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "div", 23)(5, "nz-select", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function DietCreateComponent_div_39_Template_nz_select_ngModelChange_5_listener($event) {
       const weekday_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r1).$implicit;
       const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r2.onSourcesChange(weekday_r2, $event));
@@ -2025,9 +2025,9 @@ function DietCreateComponent_div_35_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", weekday_r2.selectedDocIds)("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](9, _c1))("nzShowArrow", true)("nzMaxTagCount", 4)("nzMaxMultipleCount", 4)("nzOptions", ctx_r2.sourceOptions);
   }
 }
-function DietCreateComponent_p_39_Template(rf, ctx) {
+function DietCreateComponent_p_43_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Title and description are required.");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
@@ -2040,6 +2040,17 @@ class DietCreateComponent {
     this.subtitle = '';
     this.description = '';
     this.year = new Date().getFullYear();
+    this.dietLevel = 1;
+    this.dietLevelOptions = [{
+      label: '1 - Basic',
+      value: 1
+    }, {
+      label: '2 - Intermediate',
+      value: 2
+    }, {
+      label: '3 - Expert',
+      value: 3
+    }];
     this.newsSources = [];
     this.sourceOptions = [];
     this.isSaving = false;
@@ -2119,6 +2130,7 @@ class DietCreateComponent {
           subtitle: _this.subtitle.trim(),
           description: _this.description.trim(),
           year: _this.year,
+          dietLevel: _this.dietLevel,
           dietDays
         });
         _this.message.success('Diet saved successfully!');
@@ -2136,6 +2148,7 @@ class DietCreateComponent {
     this.subtitle = '';
     this.description = '';
     this.year = new Date().getFullYear();
+    this.dietLevel = 0;
     this.weekdays.forEach(wd => wd.selectedDocIds = []);
   }
   static {
@@ -2147,9 +2160,9 @@ class DietCreateComponent {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
       type: DietCreateComponent,
       selectors: [["app-diet-create"]],
-      decls: 40,
-      vars: 14,
-      consts: [["id", "diet-create"], [1, "text-bmd-blue"], [1, "section-subtitle"], [3, "ngSubmit"], [1, "form-section"], [1, "form-row"], [1, "form-field"], [1, "required"], ["nz-input", "", "name", "title", "placeholder", "e.g. Basic", 3, "ngModelChange", "ngModel"], ["nz-input", "", "name", "subtitle", "placeholder", "e.g. Conscious Citizen", 3, "ngModelChange", "ngModel"], [1, "form-field", "form-field--narrow"], ["name", "year", 3, "ngModelChange", "ngModel", "nzMin", "nzMax", "nzStep"], [1, "form-field", "form-field--full"], ["nz-input", "", "name", "description", "placeholder", "Describe this diet and how to use it\u2026", 3, "ngModelChange", "ngModel", "nzAutosize"], [1, "section-hint"], ["class", "day-row", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "form-actions"], ["nz-button", "", "nzType", "primary", "nzSize", "large", 3, "disabled", "nzLoading"], ["class", "validation-hint", 4, "ngIf"], [1, "day-row"], [1, "day-label"], [1, "day-name"], [1, "day-sources"], ["nzMode", "multiple", 2, "width", "100%", 3, "ngModelChange", "ngModel", "ngModelOptions", "nzPlaceHolder", "nzShowArrow", "nzMaxTagCount", "nzMaxMultipleCount", "nzOptions"], [1, "validation-hint"]],
+      decls: 44,
+      vars: 16,
+      consts: [["id", "diet-create"], [1, "text-bmd-blue"], [1, "section-subtitle"], [3, "ngSubmit"], [1, "form-section"], [1, "form-row"], [1, "form-field"], [1, "required"], ["nz-input", "", "name", "title", "placeholder", "e.g. Basic", 3, "ngModelChange", "ngModel"], ["nz-input", "", "name", "subtitle", "placeholder", "e.g. Conscious Citizen", 3, "ngModelChange", "ngModel"], [1, "form-field", "form-field--narrow"], ["name", "year", 3, "ngModelChange", "ngModel", "nzMin", "nzMax", "nzStep"], ["name", "dietLevel", 3, "ngModelChange", "ngModel", "nzOptions"], [1, "form-field", "form-field--full"], ["nz-input", "", "name", "description", "placeholder", "Describe this diet and how to use it\u2026", 3, "ngModelChange", "ngModel", "nzAutosize"], [1, "section-hint"], ["class", "day-row", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "form-actions"], ["nz-button", "", "nzType", "primary", "nzSize", "large", 3, "disabled", "nzLoading"], ["class", "validation-hint", 4, "ngIf"], [1, "day-row"], [1, "day-label"], [1, "day-name"], [1, "day-sources"], ["nzMode", "multiple", 2, "width", "100%", 3, "ngModelChange", "ngModel", "ngModelOptions", "nzPlaceHolder", "nzShowArrow", "nzMaxTagCount", "nzMaxMultipleCount", "nzOptions"], [1, "validation-hint"]],
       template: function DietCreateComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "h1", 1);
@@ -2193,30 +2206,39 @@ class DietCreateComponent {
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.year, $event) || (ctx.year = $event);
             return $event;
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "div", 12)(25, "label");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Description ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "span", 7);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "*");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "textarea", 13);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function DietCreateComponent_Template_textarea_ngModelChange_29_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "div", 10)(25, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Diet Level");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "nz-select", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function DietCreateComponent_Template_nz_select_ngModelChange_27_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.dietLevel, $event) || (ctx.dietLevel = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "div", 13)(29, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Description ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "span", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "textarea", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function DietCreateComponent_Template_textarea_ngModelChange_33_listener($event) {
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.description, $event) || (ctx.description = $event);
             return $event;
           });
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](30, "div", 4)(31, "h2", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Weekly Schedule");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "div", 4)(35, "h2", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "Weekly Schedule");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "p", 14);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Select up to four (4) news sources for each day of the week.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](37, "p", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Select up to four (4) news sources for each day of the week.");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](35, DietCreateComponent_div_35_Template, 6, 10, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](39, DietCreateComponent_div_39_Template, 6, 10, "div", 16);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](36, "div", 16)(37, "button", 17);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, " Save Diet ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](40, "div", 17)(41, "button", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](42, " Save Diet ");
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](39, DietCreateComponent_p_39_Template, 2, 0, "p", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](43, DietCreateComponent_p_43_Template, 2, 0, "p", 19);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
         }
         if (rf & 2) {
@@ -2227,9 +2249,12 @@ class DietCreateComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.year);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzMin", 2000)("nzMax", 2100)("nzStep", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.dietLevel);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzOptions", ctx.dietLevelOptions);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.description);
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzAutosize", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](13, _c0));
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzAutosize", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](15, _c0));
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.weekdays)("ngForTrackBy", ctx.trackByDay);
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
@@ -3181,7 +3206,7 @@ class DietsService {
     }));
   }
   fetchDietsByYear(year) {
-    return this.fire.collection('diets', ref => ref.where('year', '==', year).orderBy('legacyId')).get().pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_0__.map)(diets => {
+    return this.fire.collection('diets', ref => ref.where('year', '==', year).orderBy('dietLevel')).get().pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_0__.map)(diets => {
       return diets.docs.map(diet => {
         return {
           id: diet.id,
