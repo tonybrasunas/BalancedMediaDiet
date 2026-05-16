@@ -52,14 +52,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   AppRoutingModule: () => (/* binding */ AppRoutingModule)
 /* harmony export */ });
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home/home.component */ 7824);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ 5072);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ 5072);
 /* harmony import */ var _user_custom_diet_custom_diet_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./user/custom-diet/custom-diet.component */ 7686);
 /* harmony import */ var _diet_diet_create_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./diet/diet-create.component */ 1201);
 /* harmony import */ var _go_go_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./go/go.component */ 7362);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _news_source_news_source_create_news_source_create_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./news-source/news-source-create/news-source-create.component */ 9334);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 7580);
 
 
+// import { NewsSourceComponent } from './news-source/news-source.component';
+// import { DietGridComponent } from './diet-grid/diet-grid.component';
+// import { ProfileComponent } from './user/profile/profile.component';
 
+
+// import { LoginComponent } from './user/login/login.component';
 
 
 
@@ -81,6 +87,9 @@ const routes = [{
   path: 'diet',
   component: _diet_diet_create_component__WEBPACK_IMPORTED_MODULE_2__.DietCreateComponent
 }, {
+  path: 'news-source/create',
+  component: _news_source_news_source_create_news_source_create_component__WEBPACK_IMPORTED_MODULE_4__.NewsSourceCreateComponent
+}, {
   path: 'go',
   component: _go_go_component__WEBPACK_IMPORTED_MODULE_3__.GoComponent
 }
@@ -100,20 +109,20 @@ class AppRoutingModule {
     };
   }
   static {
-    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineNgModule"]({
+    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineNgModule"]({
       type: AppRoutingModule
     });
   }
   static {
-    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector"]({
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule]
+    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule]
     });
   }
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsetNgModuleScope"](AppRoutingModule, {
-    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule],
-    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](AppRoutingModule, {
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule],
+    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule]
   });
 })();
 
@@ -192,50 +201,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AppModule: () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @angular/platform-browser */ 436);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @angular/forms */ 4456);
-/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/cdk/drag-drop */ 854);
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ng-zorro-antd/button */ 6104);
-/* harmony import */ var ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ng-zorro-antd/form */ 1034);
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ng-zorro-antd/grid */ 904);
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ng-zorro-antd/input */ 7084);
-/* harmony import */ var ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ng-zorro-antd/input-number */ 5346);
-/* harmony import */ var ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ng-zorro-antd/layout */ 5730);
-/* harmony import */ var ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ng-zorro-antd/menu */ 6993);
-/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ng-zorro-antd/message */ 9917);
-/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ng-zorro-antd/modal */ 1663);
-/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ng-zorro-antd/radio */ 6741);
-/* harmony import */ var ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ng-zorro-antd/select */ 4328);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/platform-browser */ 436);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @angular/forms */ 4456);
+/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @angular/cdk/drag-drop */ 854);
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ng-zorro-antd/button */ 6104);
+/* harmony import */ var ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ng-zorro-antd/form */ 1034);
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ng-zorro-antd/grid */ 904);
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ng-zorro-antd/input */ 7084);
+/* harmony import */ var ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ng-zorro-antd/input-number */ 5346);
+/* harmony import */ var ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ng-zorro-antd/layout */ 5730);
+/* harmony import */ var ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ng-zorro-antd/menu */ 6993);
+/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ng-zorro-antd/message */ 9917);
+/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ng-zorro-antd/modal */ 1663);
+/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ng-zorro-antd/radio */ 6741);
+/* harmony import */ var ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ng-zorro-antd/select */ 4328);
 /* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/environments/environment */ 5312);
-/* harmony import */ var _angular_fire_compat__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/fire/compat */ 8942);
-/* harmony import */ var _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/fire/compat/auth */ 8245);
-/* harmony import */ var _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/fire/compat/storage */ 4914);
-/* harmony import */ var _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/fire/compat/firestore */ 2450);
-/* harmony import */ var _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/fire/compat/database */ 608);
-/* harmony import */ var _angular_fire_compat_functions__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/fire/compat/functions */ 370);
+/* harmony import */ var _angular_fire_compat__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/fire/compat */ 8942);
+/* harmony import */ var _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/fire/compat/auth */ 8245);
+/* harmony import */ var _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/fire/compat/storage */ 4914);
+/* harmony import */ var _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/fire/compat/firestore */ 2450);
+/* harmony import */ var _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/fire/compat/database */ 608);
+/* harmony import */ var _angular_fire_compat_functions__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/fire/compat/functions */ 370);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 92);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @angular/platform-browser/animations */ 3835);
-/* harmony import */ var _news_source_news_source_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./news-source/news-source.component */ 8624);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/platform-browser/animations */ 3835);
+/* harmony import */ var _diet_grid_grid_news_source_grid_news_source_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./diet-grid/grid-news-source/grid-news-source.component */ 244);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ 4114);
 /* harmony import */ var _diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./diet-grid/diet-grid.component */ 9016);
 /* harmony import */ var _diet_grid_grid_spot_grid_spot_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./diet-grid/grid-spot/grid-spot.component */ 7942);
-/* harmony import */ var _archived_to_delete_food_groups_food_groups_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./archived-to-delete/food-groups/food-groups.component */ 1001);
-/* harmony import */ var _archived_to_delete_news_sources_news_sources_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./archived-to-delete/news-sources/news-sources.component */ 3103);
-/* harmony import */ var _home_today_today_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/today/today.component */ 3082);
-/* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./about/about.component */ 2912);
-/* harmony import */ var _archived_to_delete_guide_guide_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./archived-to-delete/guide/guide.component */ 5525);
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/home.component */ 7824);
-/* harmony import */ var _nav_nav_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./nav/nav.component */ 9464);
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./footer/footer.component */ 708);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/common */ 316);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/common/http */ 6443);
-/* harmony import */ var _home_intro_intro_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./home/intro/intro.component */ 6426);
-/* harmony import */ var _home_the_author_the_author_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./home/the-author/the-author.component */ 6558);
-/* harmony import */ var _home_the_book_the_book_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./home/the-book/the-book.component */ 1594);
-/* harmony import */ var _user_custom_diet_custom_diet_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./user/custom-diet/custom-diet.component */ 7686);
-/* harmony import */ var _diet_diet_create_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./diet/diet-create.component */ 1201);
-/* harmony import */ var _go_go_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./go/go.component */ 7362);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _home_today_today_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/today/today.component */ 3082);
+/* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./about/about.component */ 2912);
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/home.component */ 7824);
+/* harmony import */ var _nav_nav_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./nav/nav.component */ 9464);
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./footer/footer.component */ 708);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/common */ 316);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/common/http */ 6443);
+/* harmony import */ var _home_intro_intro_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/intro/intro.component */ 6426);
+/* harmony import */ var _home_the_author_the_author_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./home/the-author/the-author.component */ 6558);
+/* harmony import */ var _home_the_book_the_book_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./home/the-book/the-book.component */ 1594);
+/* harmony import */ var _user_custom_diet_custom_diet_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./user/custom-diet/custom-diet.component */ 7686);
+/* harmony import */ var _diet_diet_create_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./diet/diet-create.component */ 1201);
+/* harmony import */ var _news_source_news_source_create_news_source_create_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./news-source/news-source-create/news-source-create.component */ 9334);
+/* harmony import */ var _go_go_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./go/go.component */ 7362);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/core */ 7580);
 
 
 // import { MatButtonModule } from '@angular/material/button';
@@ -271,10 +278,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// import { FoodGroupsComponent } from './archived-to-delete/food-groups/food-groups.component';
+// import { NewsSourcesComponent } from './archived-to-delete/news-sources/news-sources.component';
 
 
-
-
+// import { GuideComponent } from './archived-to-delete/guide/guide.component';
 
 
 
@@ -296,1389 +304,43 @@ class AppModule {
     };
   }
   static {
-    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵdefineNgModule"]({
+    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵdefineNgModule"]({
       type: AppModule,
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
     });
   }
   static {
-    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵdefineInjector"]({
+    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵdefineInjector"]({
       providers: [{
-        provide: _angular_common__WEBPACK_IMPORTED_MODULE_21__.LocationStrategy,
-        useClass: _angular_common__WEBPACK_IMPORTED_MODULE_21__.HashLocationStrategy
+        provide: _angular_common__WEBPACK_IMPORTED_MODULE_19__.LocationStrategy,
+        useClass: _angular_common__WEBPACK_IMPORTED_MODULE_19__.HashLocationStrategy
       }, {
-        provide: _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_22__.USE_EMULATOR,
+        provide: _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_20__.USE_EMULATOR,
         useValue: src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.useEmulators ? ['http://localhost:9099'] : undefined
       }, {
-        provide: _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_23__.USE_EMULATOR,
+        provide: _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_21__.USE_EMULATOR,
         useValue: src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.useEmulators ? ['http://localhost:8080'] : undefined
       }, {
-        provide: _angular_fire_compat_functions__WEBPACK_IMPORTED_MODULE_24__.USE_EMULATOR,
+        provide: _angular_fire_compat_functions__WEBPACK_IMPORTED_MODULE_22__.USE_EMULATOR,
         useValue: src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.useEmulators ? ['http://localhost:5001'] : undefined
       }],
-      imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_25__.HttpClientModule, _angular_fire_compat__WEBPACK_IMPORTED_MODULE_26__.AngularFireModule.initializeApp(src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.firebase), _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_23__.AngularFirestoreModule, _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_27__.AngularFireStorageModule, _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_22__.AngularFireAuthModule, _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_28__.AngularFireDatabaseModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_29__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_30__.BrowserAnimationsModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_31__.DragDropModule, _angular_forms__WEBPACK_IMPORTED_MODULE_32__.FormsModule, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_33__.NzButtonModule, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_34__.NzFormModule, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_35__.NzGridModule, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_36__.NzInputModule, ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_37__.NzInputNumberModule, ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_38__.NzLayoutModule, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_39__.NzMenuModule, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_40__.NzMessageModule, ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_41__.NzModalModule, ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_42__.NzRadioModule, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_43__.NzSelectModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_3__.AppRoutingModule]
+      imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_23__.HttpClientModule, _angular_fire_compat__WEBPACK_IMPORTED_MODULE_24__.AngularFireModule.initializeApp(src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.firebase), _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_21__.AngularFirestoreModule, _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_25__.AngularFireStorageModule, _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_20__.AngularFireAuthModule, _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_26__.AngularFireDatabaseModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_27__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_28__.BrowserAnimationsModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_29__.DragDropModule, _angular_forms__WEBPACK_IMPORTED_MODULE_30__.FormsModule, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_31__.NzButtonModule, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_32__.NzFormModule, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_33__.NzGridModule, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_34__.NzInputModule, ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_35__.NzInputNumberModule, ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_36__.NzLayoutModule, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_37__.NzMenuModule, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_38__.NzMessageModule, ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_39__.NzModalModule, ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_40__.NzRadioModule, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_41__.NzSelectModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_3__.AppRoutingModule]
     });
   }
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵsetNgModuleScope"](AppModule, {
-    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _news_source_news_source_component__WEBPACK_IMPORTED_MODULE_2__.NewsSourceComponent,
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_18__["ɵɵsetNgModuleScope"](AppModule, {
+    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _diet_grid_grid_news_source_grid_news_source_component__WEBPACK_IMPORTED_MODULE_2__.GridNewsSourceComponent,
     // NewsSourceDialogComponent,
-    _diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_4__.DietGridComponent, _diet_grid_grid_spot_grid_spot_component__WEBPACK_IMPORTED_MODULE_5__.GridSpotComponent, _archived_to_delete_food_groups_food_groups_component__WEBPACK_IMPORTED_MODULE_6__.FoodGroupsComponent, _archived_to_delete_news_sources_news_sources_component__WEBPACK_IMPORTED_MODULE_7__.NewsSourcesComponent, _home_today_today_component__WEBPACK_IMPORTED_MODULE_8__.TodayComponent, _about_about_component__WEBPACK_IMPORTED_MODULE_9__.AboutComponent, _archived_to_delete_guide_guide_component__WEBPACK_IMPORTED_MODULE_10__.GuideComponent, _home_home_component__WEBPACK_IMPORTED_MODULE_11__.HomeComponent, _home_intro_intro_component__WEBPACK_IMPORTED_MODULE_14__.IntroComponent, _home_the_author_the_author_component__WEBPACK_IMPORTED_MODULE_15__.TheAuthorComponent, _home_the_book_the_book_component__WEBPACK_IMPORTED_MODULE_16__.TheBookComponent, _nav_nav_component__WEBPACK_IMPORTED_MODULE_12__.NavComponent, _footer_footer_component__WEBPACK_IMPORTED_MODULE_13__.FooterComponent, _user_custom_diet_custom_diet_component__WEBPACK_IMPORTED_MODULE_17__.CustomDietComponent, _diet_diet_create_component__WEBPACK_IMPORTED_MODULE_18__.DietCreateComponent, _go_go_component__WEBPACK_IMPORTED_MODULE_19__.GoComponent],
-    imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_25__.HttpClientModule, _angular_fire_compat__WEBPACK_IMPORTED_MODULE_26__.AngularFireModule, _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_23__.AngularFirestoreModule, _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_27__.AngularFireStorageModule, _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_22__.AngularFireAuthModule, _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_28__.AngularFireDatabaseModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_29__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_30__.BrowserAnimationsModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_31__.DragDropModule, _angular_forms__WEBPACK_IMPORTED_MODULE_32__.FormsModule, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_33__.NzButtonModule, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_34__.NzFormModule, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_35__.NzGridModule, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_36__.NzInputModule, ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_37__.NzInputNumberModule, ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_38__.NzLayoutModule, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_39__.NzMenuModule, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_40__.NzMessageModule, ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_41__.NzModalModule, ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_42__.NzRadioModule, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_43__.NzSelectModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_3__.AppRoutingModule]
+    _diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_4__.DietGridComponent, _diet_grid_grid_spot_grid_spot_component__WEBPACK_IMPORTED_MODULE_5__.GridSpotComponent,
+    // FoodGroupsComponent,
+    // NewsSourcesComponent,
+    _home_today_today_component__WEBPACK_IMPORTED_MODULE_6__.TodayComponent, _about_about_component__WEBPACK_IMPORTED_MODULE_7__.AboutComponent,
+    // GuideComponent,
+    _home_home_component__WEBPACK_IMPORTED_MODULE_8__.HomeComponent, _home_intro_intro_component__WEBPACK_IMPORTED_MODULE_11__.IntroComponent, _home_the_author_the_author_component__WEBPACK_IMPORTED_MODULE_12__.TheAuthorComponent, _home_the_book_the_book_component__WEBPACK_IMPORTED_MODULE_13__.TheBookComponent, _nav_nav_component__WEBPACK_IMPORTED_MODULE_9__.NavComponent, _footer_footer_component__WEBPACK_IMPORTED_MODULE_10__.FooterComponent, _user_custom_diet_custom_diet_component__WEBPACK_IMPORTED_MODULE_14__.CustomDietComponent, _diet_diet_create_component__WEBPACK_IMPORTED_MODULE_15__.DietCreateComponent, _news_source_news_source_create_news_source_create_component__WEBPACK_IMPORTED_MODULE_16__.NewsSourceCreateComponent, _go_go_component__WEBPACK_IMPORTED_MODULE_17__.GoComponent],
+    imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_23__.HttpClientModule, _angular_fire_compat__WEBPACK_IMPORTED_MODULE_24__.AngularFireModule, _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_21__.AngularFirestoreModule, _angular_fire_compat_storage__WEBPACK_IMPORTED_MODULE_25__.AngularFireStorageModule, _angular_fire_compat_auth__WEBPACK_IMPORTED_MODULE_20__.AngularFireAuthModule, _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_26__.AngularFireDatabaseModule, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_27__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_28__.BrowserAnimationsModule, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_29__.DragDropModule, _angular_forms__WEBPACK_IMPORTED_MODULE_30__.FormsModule, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_31__.NzButtonModule, ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_32__.NzFormModule, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_33__.NzGridModule, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_34__.NzInputModule, ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_35__.NzInputNumberModule, ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_36__.NzLayoutModule, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_37__.NzMenuModule, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_38__.NzMessageModule, ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_39__.NzModalModule, ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_40__.NzRadioModule, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_41__.NzSelectModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_3__.AppRoutingModule]
   });
 })();
-
-/***/ }),
-
-/***/ 1001:
-/*!*************************************************************************!*\
-  !*** ./src/app/archived-to-delete/food-groups/food-groups.component.ts ***!
-  \*************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   FoodGroupsComponent: () => (/* binding */ FoodGroupsComponent)
-/* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7580);
-
-class FoodGroupsComponent {
-  constructor() {}
-  ngOnInit() {}
-  static {
-    this.ɵfac = function FoodGroupsComponent_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || FoodGroupsComponent)();
-    };
-  }
-  static {
-    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: FoodGroupsComponent,
-      selectors: [["food-groups"]],
-      decls: 125,
-      vars: 0,
-      consts: [["name", "food-groups"], [1, "iq", "co"], [1, "jt"], [1, "lz", "ma", "mb"], [1, "fn"], ["href", "https://en.wikipedia.org/wiki/First_Red_Scare"], [1, ""]],
-      template: function FoodGroupsComponent_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "a", 0);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h2");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "THE SIX MEDIA FOOD GROUPS FOR 2021");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p")(4, "span");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "1.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " Foreign News. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "This food group includes any and all news and viewpoints originating from outside the United States, particularly from non-English speaking countries. Consuming media from this group is critical for reaching an informed opinion not just as a citizen of the country but as a member of this human race. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "em", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "10% of the 2021 diet.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "blockquote", 3)(12, "p")(13, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, " \u2014 The next pair of media sources together look at the daily jostling over legislation and power among elected officials in Washington, DC and state capitols. From who\u2019s placed on what congressional committees, to court confirmation hearings, to approval ratings and budgeting, this is ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "em", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "party politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, ". There are also usually one or two scandals for each party at any given time that keep the party politics news cycle flowing; these days, as we\u2019re in the ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "a", 5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "third red scare");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, ", news about politicians\u2019 interactions with Russia, for instance, provides endless scandal material. These food groups constitute 90% of corporate mainstream political news. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "p")(23, "span");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "2.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " Party Politics (Republican).");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " News and viewpoints that follow the daily and weekly news cycle of events, scandals, and legislation on the Republican side. Important to understanding how news is packaged to inform and outrage conservatives. Generally the blame is placed on the other party and there is little deeper analysis. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "em", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "20% of the 2021 diet.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "p")(31, "span");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "3.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, " Party Politics (Democrat). ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "News and viewpoints that follow the daily and weekly news cycle of events, scandals, and legislation on the Democratic side. Important to understanding how news is packaged to inform and outrage liberals. Generally the blame is placed on the other party and there is little deeper analysis. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "em", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "20% of the 2021 diet.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "blockquote", 3)(39, "p")(40, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, " \u2014 The next pair of media sources looks beyond the parties and considers the underlying guiding political philosophies and principles that form the historical differences between conservatives and liberals, libertarians and progressives, capitalists and socialists. It has been said that all politics \u2014 for at least the past 1000 years \u2014 can be viewed as originating from one of three impulses: 1. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "em", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "progressive");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, ", the impulse to spread wealth and power more broadly among people; 2. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "em", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, "reactionary");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, ", aiming to concentrate wealth and power more narrowly; and 3. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "em", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, "conservative");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, ", aiming to keep the distribution of wealth and power as it is. The push and pull of these three impulses is true politics. It should be mentioned that the great overarching trend \u2014 the long arc of history \u2014 has been bending in a progressive direction since 1215 and the signing of Magna Carta. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](52, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, " Note: The terms \u201CRadical\u201D or \u201CPrincipled\u201D are used sometimes instead of \u201CTrue\u201D for this layer of news coverage, but the former to me tends to have too negative a connotation, and the latter too positive, so I mostly use \u201CTrue.\u201D ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "p")(55, "span");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](56, "4.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, " True Politics (Progressive). ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, "News and analysis that will point out flaws in both parties and that will sometimes suggest that the parties agree about most things and feign disagreement. Progressive analysis includes ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "em", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "class analysis ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, "that acknowledges that all Americans suffer when there are wars overseas, no universal healthcare, starvation wages, polluted air and water, and crippling debt. Progressive True Politics sources tend to be marginalized by Party Politics with these labels: \u201Cradical\u201D, \u201Csocialist,\u201D \u201Cfar-left,\u201D \u201Ccommunist.\u201D ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "em", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "20% of the 2021 diet.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "p")(66, "span");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](67, "5.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, " True Politics (Libertarian & Conservative). ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "News and analysis that will point out flaws in both parties and that will sometimes suggest that the parties agree about most things and feign disagreement. Libertarian perspectives include ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "em", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72, "analysis of privacy and liberty ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "that critiques the encroaching surveillance state, worsening militarism, and shrinking set of guaranteed personal rights. Conservative perspectives include ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "em", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](75, "attention to founding principles");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, " and favor more deliberate consideration before advocating systemic change. Words used by Party Politics sources to marginalize and silence these sources: \u201Cradical,\u201D \u201Cfascist,\u201D \u201Calt-right,\u201D \u201Cnazi.\u201D ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "em", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78, "20% of the 2021 diet.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "blockquote", 3)(80, "p")(81, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82, "Deep Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](83, " \u2014 This final media food group includes reporting on the political system as a whole, considering both parties and their principles, and also inspecting the generally allowed parameters of debate and discussion. Even a casual observer of American politics will notice that important policies remain largely unaffected by elections even if the party in power changes. Deep politics analyzes the political decisions and disagreements occurring in this permanent political establishment, which is generally called the \u201Cpermanent state\u201D or the \u201Cdeep state.\u201D Deep political analysis also contemplates covert agreements between the political parties and considers conspiracies, both those discussed openly in the mainstream media (alleged Russian election interference; 9/11 hijackings; etc.) and those not generally discussed in the mainstream media (election fraud; assassinations; climate engineering; \u201Cfalse flag\u201D events and faked acts of foreign aggression; CIA-backed coups, etc.). ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "p")(85, "span");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, "6.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, " Deep Politics. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "News and analysis covering the underlying power structures of our country and the crucial decisions about things like war, energy, the money supply, and surveillance that are made largely by unelected officials in intelligence organizations, the Pentagon, and executive departments. Words used by both Party Politics and True Politics sources to marginalize and silence these Deep Politics sources: \u201Cparanoid,\u201D \u201Cwacky,\u201D \u201Cconspiracy theorist.\u201D ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "em", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, "10% of the 2021 diet.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "h1");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, "THE DIET");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "p")(95, "span");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](96, "Y");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](97, "ou\u2019ve gotten this far, so you have both an interest and a bit of time to devote to a balanced awareness of our news media and the events and ideas shaping our world. Thank you and congratulations. Greater consciousness is right around the corner.\n");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](99, " Here\u2019s how it works: You will read a different set of news sources each day of the week, as specified in the chart below. For each source, on each day, you will scroll down to the list of Highlighted Sources for 2021 and click to read, watch, or listen to the day\u2019s sources. You can bookmark the sites in your browser so you don\u2019t have to keep coming back to this page.\n");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "h2");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](101, "Three Levels");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](102, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](103, " The diet has three levels to fit your available time. If you haven\u2019t been conscious of your media consumption before, start with 30 minutes a day; it will have an enormous impact on your awareness of the country and world around you. After just two weeks, you will begin to have an entirely different experience watching and reading news media.\n");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](104, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](105, " If you\u2019re already consuming a lot of news media from various sources, or if you\u2019re a professional journalist, politician, or professor, or if for any other reason you simply want an express journey to a broader understanding of our political and economic world, spend more time: Go on the \u201CJournalist\u201D or \u201CMedia Critic\u201D diet, which offer more depth and a greater range of perspectives from quality journalists situated all across our media landscape.\n");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "ol", 6)(107, "li");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](108, "BASIC. \u201CConscious Citizen.\u201D (30 minutes daily)");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "li");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](110, "ADVANCED. \u201CJournalist.\u201D (90 minutes daily)");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "li");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](112, "EXPERT. \u201CMedia Critic.\u201D (180 minutes daily)");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114, "There\u2019s a fourth option too, for when you need to focus on other parts of life:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](116, "4. UNPLUGGED. \u201COn a Media Fast.\u201D (1 hour weekly)");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "p")(118, "span");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](119, "H");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](120, "ere it is! I spent many hours reviewing sources and balancing the diet across the days of the week and across perspectives. All forty sources are detailed, with links provided, below the chart.\n");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](122, "The Balanced Media Diet for 2021:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](123, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124, "\nThe Balanced Media Diet for 2021. Each source\u2019s color matches its food group on the pyramid. \u2018$\u2019\nindicates the source has a partial paywall.\n");
-        }
-      },
-      styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
-    });
-  }
-}
-
-/***/ }),
-
-/***/ 5525:
-/*!*************************************************************!*\
-  !*** ./src/app/archived-to-delete/guide/guide.component.ts ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   GuideComponent: () => (/* binding */ GuideComponent)
-/* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../diet-grid/diet-grid.component */ 9016);
-/* harmony import */ var _food_groups_food_groups_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../food-groups/food-groups.component */ 1001);
-/* harmony import */ var _news_sources_news_sources_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../news-sources/news-sources.component */ 3103);
-
-
-
-
-class GuideComponent {
-  constructor() {}
-  ngOnInit() {}
-  static {
-    this.ɵfac = function GuideComponent_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || GuideComponent)();
-    };
-  }
-  static {
-    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({
-      type: GuideComponent,
-      selectors: [["guide"]],
-      decls: 162,
-      vars: 0,
-      consts: [["src", "./../../assets/Balanced-Media-Diet.png", 1, "food-pyramid"], [1, "drop-cap"], ["href", "#diet-grid"], ["href", "#food-groups"], ["href", "#news-sources"], [1, "kq"], ["id", "02ec", "data-selectable-paragraph", "", 1, "kr", "ks", "fn", "au", "kt", "ku", "kv", "kw", "kx", "ky", "kz", "jj", "ax"], ["id", "41c3", "data-selectable-paragraph", "", 1, "kr", "ks", "fn", "au", "kt", "ku", "kv", "kw", "kx", "ky", "kz", "jj", "ax"], [1, "iq", "co"], ["href", "https://citizentruth.org/operation-mockingbird-cia-media-manipulation/"], ["href", "https://foreignpolicy.com/2013/07/14/u-s-repeals-propaganda-ban-spreads-government-made-news-to-americans/"], ["href", "/a-balanced-media-diet-for-2019-81b4c6abc683"]],
-      template: function GuideComponent_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "article")(1, "h1");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](2, "A Balanced Media Diet for 2021");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](3, "h4");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](4, "How to be an informed citizen in an era of deception.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](5, "img", 0);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](6, "caption");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](7, " A Media Diet Pyramid ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](8, "p", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](9, "Welcome to the era of fake news.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](10, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](11, " The number of media sources available to Americans has exploded over the past two decades with the growth of the internet. These myriad sources present the very same event in often dramatically different ways, which can be fascinating. The problem is, each source often labels all other sources as deceptive or even malicious by denouncing them as \u201Cfake news.\u201D ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](12, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](13, " This creates a dilemma: Either accept one news source as the arbiter of truth and let it distinguish the fake from the genuine and thereby filter the news for you, or read broadly despite the warnings and trust your own intelligence to determine the veracity of the news you read. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](14, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](15, " Choosing the first path \u2014 which many do \u2014 is creating increasingly distinct news bubbles in this country which in turn lead to social media \u201Cecho chambers\u201D where a small and dwindling range of perspectives is available. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](16, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](17, "This guide is for those choosing the second path.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](18, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](19, " If you\u2019re ready to acknowledge that no one news source is always right \u2014 about its take on every event or about which of its competitors\u2019 coverage is \u201Cfake\u201D \u2014 then you\u2019re ready to acknowledge that we live in an era of deception and that it\u2019s important and worthwhile to be conscious in your consumption of the news. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](20, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](21, " This guide proposes a balanced ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](22, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](23, "media diet");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](24, " \u2014 a diverse set of media sources that will allow anyone with 30 minutes a day to become aware of the truth about current events most of the time. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](25, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](26, " Just as there are food additives and chemicals that will make you sick, there are dense foods that boost your immune system; just as there are fad diets that will ultimately diminish your health, there is the time-tested notion of a balanced diet that identifies food groups to ensure any diet provides all the basic nutrients a body needs. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](27, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](28, " This media diet identifies media food groups so as to balance not only the perspectives of the news one consumes but also the sources of the news. The goal is to ensure that all media nutrients are available to the consumer\u2019s thoughts. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](29, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](30, " This media diet identifies media food groups so as to balance not only the ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](31, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](32, "perspective");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](33, "s of the news one consumes but also the ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](34, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](35, "source");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](36, "s of the news. The goal is to ensure that all media nutrients are available to the consumer\u2019s thoughts. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](37, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](38, " Eating broadly leads to a healthy appetite and a sound balance within the body; reading broadly leads to a critical mind and a healthy awareness of the world around you. This isn\u2019t to say it\u2019s ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](39, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](40, "easy");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](41, " to embark on a media diet. On the contrary, just as keeping to a new food diet that challenges your cravings and eating habits, a media diet will challenge your biases, your cultural beliefs, your political habits, and your certainty about who the \u201Cgood guys\u201D and \u201Cbad guys\u201D might be. But the potential rewards are just as great. If you ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](42, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](43, "do");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](44, " stick to a media diet for even just a couple of weeks, you will begin to develop something I call ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](45, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](46, "media consciousness, ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](47, "an awareness of the biases at play in each of the narratives you\u2019re told about current events. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](48, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](49, " Just as fine-tuning the foods you eat for maximum health isn\u2019t a one-time adjustment, developing ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](50, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](51, "media consciousness");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](52, " is a lifelong journey, a path of inquiry and learning that continuously deepens our awareness of the world around us. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](53, "p")(54, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](55, "You can skip the following four-part introduction to the current state of American media and go right to: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](56, "a", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](57, "the diet");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](58, ", ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](59, "a", 3);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](60, "the food groups");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](61, ", or ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](62, "a", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](63, "the highlighted sources");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](64, ".");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](65, "h2");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](66, "First, A Brief History of Media");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](67, "p", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](68, " To begin, a quick discussion of how we got here. It is important to understand that a biased and chaotic news media is nothing new to this country. It has been generations since the media has been so diverse, but in the 1920s and 1930s it was common for a major city to have as many as a dozen daily newspapers. Each newspaper generally had a clear viewpoint and bias known to all: the \u201CRepublicans\u2019 paper,\u201D the \u201Clabor paper,\u201D the \u201CItalians\u2019 paper,\u201D and so on. Most people read only one newspaper, but it was quite easy for anyone to buy a half-dozen papers one day and get a sense of the range of debate on a particular issue. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](69, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](70, " This diversity of sources began to dwindle in the 1960s as an era of media consolidation intensified and culminated in a period of deregulation in the 1990s and early 2000s. At the turn of the century, suddenly just six corporations published and broadcasted nearly all political debate in this country. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](71, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](72, " The rise of the internet has pushed the pendulum back in the other direction. Every viewpoint once again has its own media source, or even dozen media sources. Every voice can be heard if one is interested in listening. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](73, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](74, " But two things are different this time. First, there are even more accessible sources today: you don\u2019t have to walk to the newsstand or an international news store to get a dozen different opinions, you just need an internet connection. Second, and far more important, this time around the corporate and government news organizations know what they had, and they want it back. They have no interest in another era of numerous media sources providing people with diverse, distinct narratives about events and ideas; they relish the power that comes with controlling what ideas and perspectives are published. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](75, "h2");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](76, "Second, A War for your Mind");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](77, "p", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](78, " And that brings us to where we are today. On one hand, we have a profusion of news sources and a concomitant difficulty discerning the honest ones from the deceptive ones. On the other hand, we have large legacy media corporations who desperately want to put the genie back in the bottle and regain control of the narrative. Much as there are fast food conglomerates that use advertisements to coerce you to eat one way or another, these media corporations would like nothing better than to convince you that the world was better when there were fewer sources, that it\u2019s inconvenient to read a diversity of news sources, and that ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](79, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](80, "they\u2019re");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](81, " best suited to determine for you which news sources are trustworthy and which are \u201Cfake.\u201D ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](82, "blockquote", 5)(83, "p", 6);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](84, " \u201CAny dictator would admire the uniformity and obedience of the American media\u201D ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](85, "p", 7);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](86, " \u2014 Noam Chomsky, before the advent of the internet ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](87, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](88, " Put simply, there\u2019s a war on for your mind. The power to control a society\u2019s narrative about its present is tantamount to controlling that society\u2019s future. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](89, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](90, " The legacy media channels, from FOX to CNN to NPR, serve the type of news they think should be sufficient for all of us: a sprinkling of hard news on top of scandals, soundbites from pundits with uniform viewpoints, \u201Cinfotainment\u201D with little news content, \u201Chot takes\u201D from celebrities, and one-sided analysis of events that are presented primarily to cause outrage. What news this coverage provides consists almost exclusively of what I label ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](91, "strong", 8);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](92, "party politics, ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](93, "contributing news from only two of the media food groups. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](94, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](95, " But worse than the shallowness of each channel\u2019s analysis is the narrowness of each channel\u2019s perspective, and the implication that its narrow perspective isn\u2019t only valid but is");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](96, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](97, " the only");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](98, " valid perspective. Again, the label of \u201Cfake news\u201D is peppered explicitly and implicitly throughout this type of media coverage these days to disparage other sources and to demand that we view their opinion about what is important and their version of events as");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](99, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](100, " the truth");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](101, ", and everything else as biased, manipulated, or simply \u201Cfake.\u201D ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](102, "h2");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](103, "Third, The Remedy");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](104, "p", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](105, " With food, any diet consisting of just one single food repeated over and over will lead to disease. Similarly, any one news media source consumed exclusively becomes disinformation. Even spending a little more time to watch two channels of the same food group provides a broader perspective on things, but given the media consolidation mentioned above that transpired over the last half century, even this effort inevitably leaves one with a narrow view of the world. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](106, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](107, " To get something approaching a complete sense of our world today, we have to explore independent media as well as corporate media, left-leaning media as well as right-leaning media, foreign news sources and domestic government propaganda, corporate PR and \u201Cnative advertising,\u201D and delve at least occasionally into deeper systemic analysis of our political system. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](108, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](109, " Reading broadly and discerning the truth from such a cornucopia of voices might sound like an impossible task, but from my experience a carefully chosen, balanced diet can be not only manageable but also fascinating and invigorating to our minds. I propose that a broad diet confers intellectual vitality as well as a more accurate sense of what is going on in one\u2019s community, country, and world \u2014 and that it ultimately paves a path to a healthy political discourse for us all. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](110, "h2");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](111, "Fourth, What Happens When We Stay in Thought Bubbles");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](112, "p", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](113, " It doesn\u2019t take an exhaustive review of history to find cases where great tragedies have befallen nations when the majority of the people have been continuously deceived by a single group of media sources. The Iraq War, which killed over a million innocent people and cost trillions of dollars, is one very recent such case. The Nazi holocaust is another. Tiananmen Square. The list goes on. Rising to the mental challenge of reading diverse media sources is, I believe, a worthwhile endeavor. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](114, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](115, " With such momentous events happening all around us these days \u2014 the coronavirus pandemic, the 2020 election, the protests at the capitol building \u2014 it is more important than ever to have a balanced and broad understanding of these events if we are to avoid catastrophic error in how we understand the country we live in. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](116, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](117, " I\u2019ve been writing about American politics since 2003, when I started an online political news magazine. The magazine\u2019s second issue was titled \u201CBig Media,\u201D and it specifically covered our nation\u2019s dwindling number of large news sources and the ongoing consolidation that the internet was just beginning to counteract. I\u2019ve been tracking independent and corporate news sources ever since, and I\u2019ve learned that nearly every news source has something to offer. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](118, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](119, " What if we each read a balanced mix of different voices and trusted our minds to distinguish the truth from the propaganda? What if we challenged our own confirmation biases? What if we confronted our fear of unfamiliar ideas? We might be able to talk to a wider array of people, we might pause to contemplate the complexity of pressing issues, we might understand the world more deeply. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](120, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](121, "A balanced media diet presents these possibilities.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](122, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](123, " Finally, I have to say that while I\u2019ve spent hours reading, watching, and listening to sources of countless mindsets, viewpoints, and persuasions, and I can present a fairly broad-based background on the topic of news media \u2014 if you really want to get a firm grasp on how our media has functioned over the past century, you must read Noam Chomsky\u2019s ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](124, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](125, "Manufacturing Consent");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](126, " (co-authored with Edward Herman) and research ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](127, "a", 9);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](128, "Operation Mockingbird");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](129, ", a government project that placed CIA agents at major American news organizations. And you should know that President Obama in 2017 ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](130, "a", 10);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](131, "signed a bill");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](132, " making government propaganda inside the US legal for the first time. I\u2019m writing a book about this topic as well, which I plan to publish this year. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](133, "p", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](134, " Now that we understand where we are, how we got here, and why it\u2019s worth rising to the challenge of digesting diverse news media, here is the Balanced Media Diet for 2021. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](135, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](136, " Below, in order, are the six media food groups, the diet itself, and the 40 highlighted media sources of diverse nutritious value. Enjoy! ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](137, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](138, "Please feel free to send me any suggestions you have for improving it.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](139, "food-groups")(140, "diet-grid")(141, "news-sources")(142, "hr");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](143, "p", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](144, " Ultimately the challenge of the diet is to consciously consider news rather than to simply consume whatever is thrown in front of you. When you begin to trust your own mind, your own heart, or your own intuition \u2014 whatever it is you use as a guide in the most important parts of your life \u2014 you will be able to discern honest and unbiased information as it comes before you. You\u2019ll be wrong sometimes, but you\u2019ll get better at it, and you\u2019ll start to have a memory for these things. This is");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](145, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](146, " media consciousness");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](147, ". ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](148, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](149, " When you remember that the ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](150, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](151, "New York Times");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](152, " was in favor of the Iraq War and repeatedly published government lies about Iraq\u2019s \u201Cweapons of mass destruction\u201D \u2014 and you realize that the big New York paper has actually been in favor of every war for the last seven decades \u2014 you\u2019ll realize it shouldn\u2019t be your only source of news when you want unbiased information about a potential new use America\u2019s deadly military. Sources that have failed you in the past likely will fail you again. Sources that have had value in the past likely will prove their value again. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](153, "p")(154, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](155, "Media consciousness");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](156, ", which begins with a commitment to a media diet, is not a fixed goal but rather a lifelong path of growth, and this path will change and evolve as you do. Your perspective will change with the incessantly changing events of your life. Indeed, all things change. Media sources themselves evolve, grow, and improve or degrade in quality. This diet you have before you today will evolve as well \u2014 to adjust as the perspective and quality of its sources change. This diet is for 2021, and it differs slightly from ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](157, "a", 11);
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](158, "2019\u2019s");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](159, ". ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](160, "p");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](161, "Enjoy, and may your journey be fruitful.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-        }
-      },
-      dependencies: [_diet_grid_diet_grid_component__WEBPACK_IMPORTED_MODULE_0__.DietGridComponent, _food_groups_food_groups_component__WEBPACK_IMPORTED_MODULE_1__.FoodGroupsComponent, _news_sources_news_sources_component__WEBPACK_IMPORTED_MODULE_2__.NewsSourcesComponent],
-      styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
-    });
-  }
-}
-
-/***/ }),
-
-/***/ 3103:
-/*!***************************************************************************!*\
-  !*** ./src/app/archived-to-delete/news-sources/news-sources.component.ts ***!
-  \***************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   NewsSourcesComponent: () => (/* binding */ NewsSourcesComponent)
-/* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7580);
-
-class NewsSourcesComponent {
-  constructor() {}
-  ngOnInit() {}
-  static {
-    this.ɵfac = function NewsSourcesComponent_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || NewsSourcesComponent)();
-    };
-  }
-  static {
-    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: NewsSourcesComponent,
-      selectors: [["news-sources"]],
-      decls: 741,
-      vars: 0,
-      consts: [["name", "news-sources"], [1, "iq", "co"], ["id", "b9a8", "data-selectable-paragraph", "", 1, "jv", "jw", "fn", "au", "jx", "jy", "jz", "gm", "ka", "kb", "kc", "gp", "kd", "gq", "ke", "gs", "kf", "gt", "kg", "gv", "kh", "gw", "ki", "gy", "kj", "kk", "dw"], ["href", "https://www.aljazeera.com/"], ["href", "http://www.chinadaily.com.cn/"], ["href", "https://www.c-span.org/"], ["href", "https://www.foxnews.com/"], ["href", "https://www.msnbc.com/"], ["href", "https://www.npr.org/"], ["href", "https://www.npr.org/stations/"], ["href", "https://www.rt.com/"], ["href", "https://en.wikipedia.org/wiki/First_Red_Scare"], ["href", "https://www.telesurenglish.net/"], ["href", "https://www.theatlantic.com/"], ["href", "https://www.cnsnews.com/"], ["href", "https://consortiumnews.com/"], ["href", "https://www.democracynow.org/"], ["href", "https://www.democracynow.org/shows"], ["href", "https://www.economist.com/united-states/"], ["href", "https://www.forbes.com/"], ["href", "https://www.globalresearch.ca/"], ["href", "https://ivn.us/"], ["href", "https://lockdownsceptics.org/"], ["href", "https://jacobinmag.com/"], ["href", "https://www.nytimes.com/"], [1, "jt"], ["href", "https://www.thenation.com/subject/politics/"], ["href", "https://www.nationalreview.com/"], ["href", "https://reason.com/"], ["href", "https://www.youtube.com/channel/UCPWXiRWZ29zrxPFIQT7eHSA"], ["href", "https://www.washingtontimes.com"], ["href", "https://www.wsj.com/"], ["href", "https://en.wikipedia.org/wiki/List_of_newspapers_in_the_United_States"], ["href", "https://sharylattkisson.com/"], ["href", "https://www.youtube.com/channel/UCxOEp-QgiQMwqBmJlBbgrJQ"], ["href", "https://thehighwire.com/watch/"], ["href", "https://www.youtube.com/channel/UCR0qQlskMnffysEChGKqFpQ"], ["href", "https://www.youtube.com/channel/UCyvaZ2RHEDrgKXz43gz7CbQ"], ["href", "http://insider.foxnews.com/people/tucker-carlson"], ["href", "https://www.youtube.com/channel/UC3M7l8ved_rYQ45AVzS0RGA"], ["href", "https://greenwald.substack.com/"], ["href", "https://theintercept.com/staff/glenn-greenwald/"], ["href", "https://www.truthdig.com/author/chris_hedges/"], ["href", "https://www.youtube.com/channel/UCFAQyZq0NqfCwVkRQoXpx0A"], ["href", "https://www.youtube.com/channel/UCoJTOwZxbvq8Al8Qat2zgTA"], ["href", "https://medium.com/@caityjohnstone", "rel", "noopener", 1, "bp", "ju"], ["href", "https://thegrayzone.com/category/pushback/"], ["href", "https://www.youtube.com/channel/UCMxiv15iK_MFayY_3fU9loQ"], ["href", "https://dossier.substack.com/"]],
-      template: function NewsSourcesComponent_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "a", 0);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h2");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "THE HIGHLIGHTED NEWS SOURCES FOR 2021");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p")(4, "span");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "A");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "fter extensive research and a weighted rating selection routine, I chose the following 40 ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "networks");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, ", ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "magazines");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, ", and ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "individual journalists ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "for your balanced 2021 diet. Feel free to supplement them with your own favorites, but always pay attention to the overall balance of your diet.\n");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "h2", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, " Networks\n");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "p")(19, "a", 3)(20, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Al Jazeera");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, " \u2014 An international Arab news network with a full English version. Relatively open news coverage of international events. Based in Qatar, owned by a Qatari public-private partnership with significant funding from the Qatari government.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " Foreign Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, " International, Middle Eastern, Arab");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](31, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "a", 3);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "p")(35, "a", 4)(36, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "China Daily");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, " \u2014 The major national English-language Chinese newspaper. Covers international news, with a focus on Chinese affairs. Founded and funded by the Chinese government. Based in China. (If you\u2019re concerned about foreign propaganda, please consider that all media \u2014 particularly government or corporate funded media \u2014 is propaganda. See the description of RT, below, to be inspired to read foreign media nonetheless.) ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, " Foreign Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](43, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, "Viewpoint: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "International, Chinese");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](47, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "a", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "p")(51, "a", 5)(52, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, "C-SPAN");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](54, " \u2014 A network created out of a 1979 settlement with cable companies, C-SPAN carries live and often unmoderated coverage of political events in Washington D.C. Sometimes this makes for compelling television, other times dull coverage, but in any case it is good for a balanced understanding of politics, albeit from an establishment, bipartisan perspective. Analysis stays within the accepted bounds of corporate media. Owned by the National Cable Satellite Corporation. Based in Washington, DC.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](55, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, " Corporate Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](59, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "Viewpoint");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, ": Republican & Democrat");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](63, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "a", 5);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](65, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "p")(67, "a", 6)(68, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, "FOX News ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "\u2014 The big Republican-leaning corporate political news network. Owned by FOX Corporation, with Rupert Murdoch as chairman and 39% ownership via a family trust. Based in New York.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](71, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, " Corporate Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](75, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78, " Republican");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](79, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "a", 6);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](81, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "p")(83, "a", 7)(84, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](85, "MSNBC ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, "\u2014 The big Democrat-leaning corporate political news network. Originally founded through a joint venture by Bill Gates\u2019s Microsoft and GE\u2019s NBC News which created the name \u201CMS-NBC.\u201D Now owned by giant media conglomerate Comcast. Based in New York.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](87, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, " Corporate Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](91, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, " Democrat");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](95, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "a", 7);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](97, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "p")(99, "a", 8)(100, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](101, "NPR ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](102, "\u2014 The government-founded American radio network, now generally supported by corporations and foundations. At one point NPR and its affiliates were primarily supported by government funding, but that was phased out during the Reagan and Clinton years \u2014 the era of media deregulation. With its recently increasing corporate underwriting, NPR is too big and too heavily influenced by corporate forces to be considered independent. Strong establishment and Democrat bias. Based in Washington, DC.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](103, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](104, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](105, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](106, " Corporate Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](107, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](110, " Democrat");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](111, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](112, "a", 9);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](113, "LISTEN >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](114, "a", 8);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](115, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](116, "p")(117, "a", 10)(118, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](119, "RT ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](120, "\u2014 A major international news network funded in part by the Russian government. We are in the ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "a", 11);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](122, "Third Red Scare");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](123, ", so you\u2019re supposed to be scared of this network, but in truth it\u2019s a great source of alternative perspectives that will broaden your mind. As you watch, think of the open-minded people in East Germany in 1970 listening to Voice of America; or the open-minded people in China today watching CNN. You\u2019re smart enough to consider unfamiliar ideas, that\u2019s the point of a media diet. In fact, most of the commentators on RT are brilliant Americans who were too outspoken for MSNBC\u2019s corporate pro-war bias: Phil Donahue was fired by MSNBC for opposing the Iraq invasion; Jesse Ventura was fired by MSNBC for opposing the Iraq invasion; Ed Schultz was fired for talking too much about Bernie Sanders, etc. Why did MSNBC fire these progressives? Important to check it out. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](124, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](126, "Media Food Group: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](127, "Foreign Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](128, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](130, "Viewpoint");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](131, ": International, Russian");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](132, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "a", 10);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](134, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "p")(136, "a", 12)(137, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](138, "Telesur ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](139, "\u2014 An international news network funded by a coalition of Latin American countries to counter the influence of CNN. A great regular complement to an American\u2019s media diet, Telesur tends to provide alternative viewpoint with a left-leaning or even socialist take on international events.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](140, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](142, "Media Food Group: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](143, "Foreign Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](144, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](146, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](147, " International, Latin American (Bolivia, Cuba, El Salvador, Venezuela)");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](148, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](149, "a", 12);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](150, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](151, "h1");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](152, "Magazines & Newspapers");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](153, "p")(154, "a", 13)(155, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](156, "The Atlantic ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](157, "\u2014 A liberal-leaning political journal in print since the 1800s. After changing hands several times recently, it\u2019s now owned by the Emerson Collective, a foundation started by billionaire Laurene Powell Jobs, former Apple CEO Steve Jobs\u2019 widow. Based in Washington DC.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](158, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](159, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](160, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](161, " Independent Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](162, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](163, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](164, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](165, " Democrat");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](166, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](167, "a", 13);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](168, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](169, "p")(170, "a", 14)(171, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](172, "CNSNews");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](173, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](174, "\u2014 A firmly conservative news magazine that was founded in the late 1990s by conservative media advocate L. Brent Bozell to counter \u201Cliberal bias\u201D in the corporate media. Originally named \u201CConservative News Source,\u201D CNS has since changed its name to Cybercast News Source. Owned by the Media Research Center. Based in Reston, Va.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](175, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](176, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](177, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](178, " Independent Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](179, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](180, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](181, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](182, " Republican");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](183, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](184, "a", 14);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](185, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](186, "p")(187, "a", 15)(188, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](189, "Consortium News");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](190, " \u2014 A great source for deeper analysis of the current American political situation. It was one of the first internet-based news magazines, founded by Robert Parry in 1995. Parry was the journalist who broke the Iran-Contra Scandal in the 1980s, and he is one of many journalists who have (unfortunately) been fired by corporate media for taking a step too far investigating controversial topics. Based in Arlington, Va. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](191, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](192, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](193, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](194, " Independent Deep Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](195, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](196, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](197, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](198, " Nonpartisan");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](199, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](200, "a", 15);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](201, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](202, "p")(203, "a", 16)(204, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](205, "Democracy Now");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](206, " \u2014 A progressive television and radio show produced in New York by longtime left media personage Amy Goodman. Provides generally under-reported news on labor and social movements as well as coverage of foreign news with a focus on the effects of American sanctions and military strikes. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](207, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](208, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](209, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](210, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](211, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](212, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](213, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](214, " Progressive");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](215, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](216, "a", 17);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](217, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](218, "a", 16);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](219, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](220, "p")(221, "a", 18)(222, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](223, "The Economist");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](224, " \u2014 A business-friendly international weekly with an establishment pedigree. Firmly centrist, its bias is in favor of capitalism and globalization, and since both American political parties now generally support these things too, it\u2019s hard to say the Economist has a clear party preference, but in 2021 seems to have a slight Democrat bias. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](225, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](226, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](227, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](228, " Corporate Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](229, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](230, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](231, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](232, " Democrat");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](233, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](234, "a", 18);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](235, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](236, "p")(237, "a", 19)(238, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](239, "Forbes");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](240, " \u2014 A conservative-leaning business and politics magazine and contributor platform founded in 1917 and run by a member of the Forbes family ever since. Unironically uses the nickname, \u201CThe Capitalist Tool.\u201D An expansive array of contributors provide a wide array of perspectives. Owned now by Asian holding company Integrated Whale Media. Based in New Jersey. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](241, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](242, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](243, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](244, " Corporate Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](245, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](246, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](247, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](248, " Republican");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](249, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](250, "a", 19);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](251, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](252, "p")(253, "a", 20)(254, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](255, "Global Research");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](256, " \u2014 Provides a trenchant critique of deep politics, focusing on the ramifications of American and Western foreign policy, American empire, terrorism, state-sponsored violence, and wars. Pulls no punches in appraising current events and American history. Based in Ottawa, Canada.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](257, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](258, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](259, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](260, " Independent Deep Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](261, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](262, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](263, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](264, " Nonpartisan");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](265, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](266, "a", 20);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](267, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](268, "p")(269, "a", 21)(270, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](271, "IVN ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](272, "\u2014 A news platform dedicated to highlighting independent political news, the Independent Voter Network focuses on electoral reform and on events that reveal the political straitjacket of the two-party system.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](273, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](274, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](275, "Media Food Group: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](276, "Independent Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](277, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](278, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](279, "Viewpoint: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](280, "Nonpartisan");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](281, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](282, "a", 21);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](283, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](284, "p")(285, "a", 22)(286, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](287, "Lockdown Skeptics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](288, " \u2014 A Britain-based review of news that questions the justification of throttling worldwide lockdowns, offering some balance for those of us inured to corporate media\u2019s incessant defense of these global restrictions. Often brilliant perspective pieces. Based in London.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](289, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](290, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](291, "Media Food Group: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](292, "Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](293, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](294, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](295, "Viewpoint: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](296, "Nonpartisan");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](297, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](298, "a", 22);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](299, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](300, "p")(301, "a", 23)(302, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](303, "Jacobin ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](304, "\u2014 A socialist-leaning progressive political magazine with a fearless attitude. Great for getting a balanced perspective on, say, the Bernie Sanders movement or the underlying goals of the more progressive members of Congress. Critiques of the Democratic Party from the left. Based in New York, NY.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](305, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](306, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](307, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](308, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](309, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](310, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](311, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](312, " Progressive");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](313, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](314, "a", 23);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](315, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](316, "p")(317, "a", 24)(318, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](319, "New York Times");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](320, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](321, "($) \u2014 The most widely circulated Democrat-leaning newspaper. Exhaustive reporting of domestic and international events. The agenda-setter for left-leaning media, the \u201Cpaper of record.\u201D This prestigious organization was also the most important asset of Operation Mockingbird, which recruited journalists to work for the CIA. Owned primarily by the American Sulzberger family and Mexican billionaire Carlos Slim. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](322, "strong", 1)(323, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](324, "Paywall after 3 articles.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](325, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](326, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](327, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](328, " Corporate Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](329, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](330, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](331, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](332, " Democrat");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](333, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](334, "a", 24);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](335, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](336, "p")(337, "a", 26)(338, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](339, "The Nation");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](340, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](341, "($) \u2014 The country\u2019s oldest weekly magazine. A longtime progressive news source still putting out trenchant analysis and great journalism, although currently more inline with Democrat talking points than in years past. Sometimes on the line between Party Politics and True Politics, but offering more Party Politics lately. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](342, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](343, "Paywall after 6 articles.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](344, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](345, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](346, "Media Food Group: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](347, "Independent Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](348, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](349, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](350, "Viewpoint: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](351, "Democrat");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](352, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](353, "a", 26);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](354, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](355, "p")(356, "a", 27)(357, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](358, "National Review");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](359, " \u2014 A traditional pillar of right-leaning thought, it was founded in the 1950s by William F. Buckley and has featured and strengthened a variety of strands of conservative thought over the decades.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](360, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](361, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](362, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](363, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](364, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](365, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](366, "Viewpoint");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](367, ": Conservative");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](368, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](369, "a", 27);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](370, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](371, "p")(372, "a", 28)(373, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](374, "Reason");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](375, " \u2014 A leading libertarian magazine, it was founded in 1968 as a mimeographed newsletter and has grown into an important journal with a refreshing perspective on politics and culture. In a time of intense two-dimensional political rancor, ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](376, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](377, "Reason");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](378, " offers a third dimension, one that is necessary when things like lockdowns and forced medical procedures are in the political discourse. Styles itself \u201Cjournal of free minds and free markets.\u201D Based in Los Angeles, Ca.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](379, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](380, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](381, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](382, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](383, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](384, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](385, "Viewpoint");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](386, ": Libertarian");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](387, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](388, "a", 28);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](389, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](390, "p")(391, "a", 29)(392, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](393, "Rising ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](394, "\u2014 A daily news show produced by ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](395, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](396, "The Hill");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](397, " with a refreshing populist perspective and a balance of progressive and conservative thought. Co-hosts Krystal Ball (progressive) and Saagar Enjeti (conservative) analyze beltway and national politics, and when they get into principled debates with each other we have a model for engaged political discourse. Based in Washington, DC.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](398, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](399, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](400, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](401, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](402, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](403, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](404, "Viewpoint");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](405, ": Bipartisan");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](406, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](407, "a", 29);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](408, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](409, "p")(410, "a", 30)(411, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](412, "Washington Times");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](413, " ($) \u2014 The other newspaper in Washington, DC. This daily was founded in 1982 at the end of the last red scare, by Sun Myung Moon, head of the Korea-based Unification Church, in a curious attempt to fight communism. In the intervening years it has become a leader of conservative and contrarian news publishing. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](414, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](415, "Paywall after 3 articles.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](416, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](417, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](418, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](419, " Independent Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](420, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](421, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](422, "Viewpoint");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](423, ": Republican");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](424, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](425, "a", 30);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](426, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](427, "p")(428, "a", 31)(429, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](430, "Wall Street Journal");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](431, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](432, "($) \u2014 One of the oldest American daily newspapers, the WSJ focuses first on business news, but has considerable political coverage and clout too, including a famously conservative editorial page. Owned by billionaire Rupert Murdoch\u2019s News Corporation. Based in New York. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](433, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](434, "Paywall now after only one article.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](435, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](436, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](437, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](438, " Corporate Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](439, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](440, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](441, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](442, " Republican");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](443, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](444, "a", 31);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](445, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](446, "p")(447, "a", 32)(448, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](449, "Your local newspaper");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](450, " \u2014 Stay apprised of what\u2019s going on in your town, city, and region. Notice your local paper\u2019s bias. You probably have at least two local newspapers. Regardless of perspective, the closer journalism is to where you live, the more honest it will be about the events in your local community.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](451, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](452, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](453, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](454, " Corporate Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](455, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](456, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](457, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](458, " Republican or Democrat");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](459, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](460, "a", 32);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](461, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](462, "h1");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](463, "Individual Journalists & Columnists");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](464, "p")(465, "a", 33)(466, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](467, "Sheryl Attkisson ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](468, "\u2014");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](469, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](470, "After three decades as a correspondent and anchor at PBS and CBS News, Attkisson resigned from CBS citing bias and a vanishing commitment to investigative journalism. She creates a weekly 20-minute investigative news show called ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](471, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](472, "Full Measure");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](473, ". Attkisson\u2019s bias is mildly conservative but as a dyed-in-the-wool investigative journalist she lets the chips fall where they may.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](474, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](475, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](476, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](477, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](478, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](479, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](480, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](481, " Conservative");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](482, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](483, "a", 34);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](484, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](485, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](486, "a", 33);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](487, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](488, "p")(489, "a", 35)(490, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](491, "Del Bigtree / The Highwire");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](492, " \u2014Bigtree\u2019s weekly investigative tour de force ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](493, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](494, "The Highwire");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](495, " is a two-hour news show that will balance an entire week of NPR or CNN\u2019s fear-based coverage of the lockdowns and the coronavirus. He goes hard but fair at the dominant paradigms about the virus, bringing on experts in the fields of immunology, virology, epidemiology, and others, like OSHA mask experts and doctors who have cured COVID-19 with hydroxychloroquine and ivermectin. Based in Austin, TX.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](496, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](497, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](498, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](499, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](500, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](501, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](502, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](503, " Conservative");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](504, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](505, "a", 35);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](506, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](507, "p")(508, "a", 36)(509, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](510, "Rachel Blevins");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](511, " \u2014 Progressive news commentator who, like Phil Donahue, Ed Schultz, Krystal Ball, etc., was fired for being too outspoken for corporate mainstream media. Her stated goal is to \u201Clook beyond the false \u2018left vs. right\u2019 paradigm that is prevalent in American media,\u201D and pay attention to issues not covered elsewhere.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](512, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](513, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](514, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](515, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](516, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](517, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](518, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](519, " Progressive");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](520, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](521, "a", 36);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](522, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](523, "p")(524, "a", 37)(525, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](526, "Lee Camp / Redacted Tonight");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](527, " \u2014 In a time of universal deception, comedy is often the only channel through which the truth comes out. In the tradition of George Carlin and Jon Stewart, the brilliant-yet-accessible deep politics commentator today is comedian Lee Camp and his weekly show Redacted Tonight. Foul language and off-color jokes abound, but so does a penetrating examination of the underlying forces of current American politics. ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](528, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](529, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](530, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](531, " Deep Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](532, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](533, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](534, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](535, " Progressive");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](536, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](537, "a", 37);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](538, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](539, "p")(540, "a", 38)(541, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](542, "Tucker Carlson");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](543, " \u2014 A conservative FOX News commentator who freely switches from toeing the party line to offering an independent take on current national politics. Speaks his own mind particularly on foreign policy. Rumor is, Carlson is the only news commentator Donald Trump watches.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](544, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](545, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](546, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](547, " Corporate Party Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](548, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](549, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](550, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](551, " Republican");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](552, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](553, "a", 38);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](554, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](555, "p")(556, "a", 39)(557, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](558, "Jimmy Dore ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](559, "\u2014 Another comedian-turned-news-commentator, Dore\u2019s daily show provides in-depth coverage of the day\u2019s events, from a progressive viewpoint, as well as cogent \u2014 even withering at times \u2014 criticism of the corporate media. His style is literally to analyze a few of the day\u2019s corporate news reports and point out lies and deception. Great for media balance.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](560, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](561, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](562, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](563, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](564, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](565, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](566, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](567, " Progressive");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](568, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](569, "a", 39);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](570, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](571, "p")(572, "a", 40)(573, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](574, "Glenn Greenwald");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](575, "\u2014 The talented independent investigative journalist who provided Edward Snowden with his initial connections to the media to tell the world about massive American surveillance, Greenwald founded the ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](576, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](577, "The Intercept");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](578, " to provide censorship-free journalism opportunities to American writers, and then left the publication after five years when it \u201Cbecame its antithesis.\u201D He\u2019s now independent again and writing better than ever.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](579, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](580, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](581, "Media Food Group: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](582, "Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](583, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](584, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](585, "Viewpoint: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](586, "Progressive");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](587, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](588, "a", 41);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](589, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](590, "p")(591, "a", 42)(592, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](593, "Christopher Hedges ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](594, "\u2014 Cogent, even caustic, left critic of capitalism and our current American system, which he calls, with formidable evidence, \u201Ccorporate totalitarianism.\u201D Fired by the ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](595, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](596, "New York Times ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](597, "for being insufficiently supportive of the 2003 invasion of Iraq, Hedges is one of several heirs apparent to Noam Chomsky and eminently worth listening to.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](598, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](599, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](600, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](601, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](602, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](603, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](604, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](605, " Progressive");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](606, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](607, "a", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](608, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](609, "p")(610, "a", 43)(611, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](612, "Niko House");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](613, " \u2014 An Army veteran who studied at UNC Chapel Hill, Niko House is a young independent journalist with a growing following. In 2016, he was the founder of \u201CCarolina Students for Bernie Sanders,\u201D and later revealed that the Vermont senator\u2019s campaign in the Tar Heel State was derailed from within by Hillary Clinton supporters who ran the state campaign. Getting to the bottom of this scandal launched his career as a journalist, and he now doesn\u2019t support either party but rather reports on the underlying forces driving the entire American political process.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](614, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](615, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](616, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](617, " Independent Deep Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](618, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](619, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](620, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](621, " Nonpartisan");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](622, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](623, "a", 43);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](624, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](625, "p")(626, "a", 44)(627, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](628, "Kim Iversen");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](629, " \u2014From a successful career on corporate radio stations all around the country to an independent show of her own, Iversen has found a following with her trenchant political analysis. One of many solo video bloggers today doing excellent independent journalism, her perspective defies easy labels: she has both conservative and progressive biases, depending on the issue, which suggests she has that rare quality, ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](630, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](631, "integrity.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](632, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](633, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](634, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](635, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](636, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](637, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](638, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](639, " Progressive");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](640, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](641, "a", 44);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](642, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](643, "p")(644, "a", 45)(645, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](646, "Caitlin Johnstone");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](647, " \u2014 Uncommonly insightful independent writer with a deep analytical perspective that is nearly unavailable elsewhere. She points out the flaws and corruption in both parties and explores the underlying forces directing both. Be forewarned: she peppers her political commentary with sardonic humor, four-letter words, and occasional appeals to universal spirituality.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](648, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](649, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](650, "Media Food Group: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](651, "Independent Deep Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](652, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](653, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](654, "Viewpoint: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](655, "Progressive");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](656, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](657, "a", 45);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](658, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](659, "p")(660, "a", 46)(661, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](662, "Aaron Mat\u00E9 / The Grayzone");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](663, " \u2014 An independent journalist with a keen eye for uncovering media distortion in foreign affairs reporting, Mat\u00E9 has provided balance and clarity on the endless Russiagate conspiracy theory, the alleged gas attacks in Syria, and the frequently censored genocide going on in Yemen. He\u2019s written for years for ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](664, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](665, "The Nation");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](666, " (above), and recently joined independent news analysis network The Grayzone with fellow journalists Max Blumenthal and Anya Parampil.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](667, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](668, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](669, "Media Food Group: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](670, "Independent Deep Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](671, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](672, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](673, "Viewpoint: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](674, "Progressive");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](675, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](676, "a", 46);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](677, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](678, "p")(679, "a", 47)(680, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](681, "Freddie Sayers / Unherd");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](682, "\u2014 British journalist Freddie Sayers creates high-quality, often superb, interviews, and as balanced information on the pandemic, virus, and lockdowns grew difficult to find throughout 2020, ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](683, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](684, "Unherd");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](685, " featured political leaders and expert scientists on all sides of the questions. Indeed it was perhaps as un-2020 as news sources came, featuring long, thoughtful conversations rather than fearful soundbites. Sayers continues his excellent work in 2021, striving for balanced and patient interviews.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](686, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](687, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](688, "Media Food Group: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](689, "Foreign News");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](690, "strong", 1)(691, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](692, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](693, "Viewpoint: ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](694, "Nonpartisan ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](695, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](696, "a", 47);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](697, "WATCH >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](698, "p")(699, "a", 48)(700, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](701, "Jordan Schachtel ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](702, "\u2014 An indefatigable investigative journalist with a foreign affairs focus and a conservative slant, Schachtel left Breitbart News in 2016 on principle, alleging incessant \u201Cparty-line Trump propaganda.\u201D In 2020, he did brilliant investigative work countering what he sees as groupthink on the lockdowns and coronavirus response, and provided important perspective on the Capitol protests in early 2021. Shachtel\u2019s reporting and analysis will prove important in 2021 for balancing corporate news bias.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](703, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](704, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](705, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](706, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](707, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](708, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](709, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](710, " Conservative");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](711, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](712, "a", 48);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](713, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](714, "p")(715, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](716, "Ben Swann ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](717, "\u2014 A quintessential investigative journalist, Swann founded an investigative segment called ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](718, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](719, "Reality Check ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](720, "and a social media channel called ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](721, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](722, "Truth in Media");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](723, " while working in corporate news television in Atlanta and Cincinnati. He anchored these segments for years and won nationwide praise for asking Obama difficult questions about drone strikes in an interview. He was then fired for investigating \u201CPizzagate\u201D in 2018. Now on his own, his ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](724, "em", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](725, "Reality Check");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](726, " show provides great counterpoint to corporate media news.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](727, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](728, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](729, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](730, " Independent True Politics");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](731, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](732, "strong", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](733, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](734, " Conservative");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](735, "br");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](736, "a", 48);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](737, "READ >");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](738, "p")(739, "em");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](740, "And that\u2019s it. A quick note on something I\u2019ve barely mentioned: money. While nearly all sources selected are free to read or view, a few have instituted a partial paywall; these are marked with a dollar sign ($). For these, read the number of articles allowed, then move on to the next source in the day\u2019s diet. You can also choose to pay the subscription fee, of course, but in that case try to contribute equally to all sources you go to for news, or at least balance your contributions somewhat, as many of the independent journalists offer their writing for free as they attempt to build a large audience. The funding of quality journalism is a complex and contentious issue, something I\u2019ll address in a future article.");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        }
-      },
-      styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
-    });
-  }
-}
 
 /***/ }),
 
@@ -1869,6 +531,133 @@ class DietGridComponent {
 
 /***/ }),
 
+/***/ 244:
+/*!**************************************************************************!*\
+  !*** ./src/app/diet-grid/grid-news-source/grid-news-source.component.ts ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   GridNewsSourceComponent: () => (/* binding */ GridNewsSourceComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/modal */ 1663);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 5072);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 316);
+
+// import * as mediaData from 'BalancedMediaDiet.json';
+
+
+
+
+function GridNewsSourceComponent_a_14_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 8)(1, "h2", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Read >");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", ctx_r0.newsOrg.linkToRead, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+  }
+}
+function GridNewsSourceComponent_a_15_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 8)(1, "h2", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Watch >");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", ctx_r0.newsOrg.linkToWatch, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+  }
+}
+function GridNewsSourceComponent_a_16_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 8)(1, "h2", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Listen >");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", ctx_r0.newsOrg.linkToListen, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+  }
+}
+class GridNewsSourceComponent {
+  constructor(route) {
+    this.route = route;
+    this.edit = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.nzModalData = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_1__.NZ_MODAL_DATA);
+  }
+  ngOnInit() {
+    console.log('Incoming data to the modal: ', this.nzModalData);
+    this.newsOrg = this.nzModalData.newsSource;
+  }
+  static {
+    this.ɵfac = function GridNewsSourceComponent_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || GridNewsSourceComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__.ActivatedRoute));
+    };
+  }
+  static {
+    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: GridNewsSourceComponent,
+      selectors: [["grid-news-source"]],
+      outputs: {
+        edit: "edit"
+      },
+      decls: 17,
+      vars: 11,
+      consts: [[1, "news-source-inner"], ["src", "../../assets/main_nameplate-Balanced-Media-Diet.png", 1, "bmd-nameplate"], [1, "text-bmd-red"], [1, "media-source-logo", 3, "alt", "src"], [3, "innerHTML"], [1, "foodgroup"], [1, "viewpoint"], ["target", "_blank", 3, "href", 4, "ngIf"], ["target", "_blank", 3, "href"], [1, "visit-link"]],
+      template: function GridNewsSourceComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "img", 3)(5, "p", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "span", 5)(7, "strong");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Media Food Group:");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span", 6)(11, "strong");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Viewpoint:");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, GridNewsSourceComponent_a_14_Template, 3, 1, "a", 7)(15, GridNewsSourceComponent_a_15_Template, 3, 1, "a", 7)(16, GridNewsSourceComponent_a_16_Template, 3, 1, "a", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.newsOrg.name);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("alt", "Media Source - ", ctx.newsOrg.name, "");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("src", "../../assets/news-sources/", ctx.newsOrg.imageName, "", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", ctx.newsOrg.description, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.newsOrg.foodGroup, " ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.newsOrg.viewpoint, " ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.newsOrg.linkToRead);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.newsOrg.linkToWatch);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.newsOrg.linkToListen);
+        }
+      },
+      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf],
+      styles: [".news-source-card[_ngcontent-%COMP%] {\n  max-width: 500px;\n  margin: 50px auto;\n}\n\n.news-source-header-image[_ngcontent-%COMP%] {\n  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');\n  background-size: cover;\n}\n\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZGlldC1ncmlkL2dyaWQtbmV3cy1zb3VyY2UvZ3JpZC1uZXdzLXNvdXJjZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLG1GQUFtRjtFQUNuRixzQkFBc0I7QUFDeEIiLCJzb3VyY2VzQ29udGVudCI6WyIubmV3cy1zb3VyY2UtY2FyZCB7XG4gIG1heC13aWR0aDogNTAwcHg7XG4gIG1hcmdpbjogNTBweCBhdXRvO1xufVxuXG4ubmV3cy1zb3VyY2UtaGVhZGVyLWltYWdlIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL21hdGVyaWFsLmFuZ3VsYXIuaW8vYXNzZXRzL2ltZy9leGFtcGxlcy9zaGliYTEuanBnJyk7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */"]
+    });
+  }
+}
+
+/***/ }),
+
 /***/ 7942:
 /*!************************************************************!*\
   !*** ./src/app/diet-grid/grid-spot/grid-spot.component.ts ***!
@@ -1879,7 +668,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   GridSpotComponent: () => (/* binding */ GridSpotComponent)
 /* harmony export */ });
-/* harmony import */ var src_app_news_source_news_source_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/news-source/news-source.component */ 8624);
+/* harmony import */ var src_app_diet_grid_grid_news_source_grid_news_source_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/diet-grid/grid-news-source/grid-news-source.component */ 244);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
 /* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/modal */ 1663);
 /* harmony import */ var src_app_services_news_sources_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/news-sources.service */ 3362);
@@ -1917,7 +706,7 @@ class GridSpotComponent {
       nzWidth: 650,
       nzCentered: true,
       nzClassName: 'news-source-modal',
-      nzContent: src_app_news_source_news_source_component__WEBPACK_IMPORTED_MODULE_0__.NewsSourceComponent,
+      nzContent: src_app_diet_grid_grid_news_source_grid_news_source_component__WEBPACK_IMPORTED_MODULE_0__.GridNewsSourceComponent,
       nzViewContainerRef: this.vcf,
       nzData: {
         newsSource
@@ -3067,130 +1856,579 @@ class NavComponent {
 
 /***/ }),
 
-/***/ 8624:
-/*!******************************************************!*\
-  !*** ./src/app/news-source/news-source.component.ts ***!
-  \******************************************************/
+/***/ 9334:
+/*!********************************************************************************!*\
+  !*** ./src/app/news-source/news-source-create/news-source-create.component.ts ***!
+  \********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   NewsSourceComponent: () => (/* binding */ NewsSourceComponent)
+/* harmony export */   NewsSourceCreateComponent: () => (/* binding */ NewsSourceCreateComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/modal */ 1663);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 5072);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 316);
+/* harmony import */ var _Users_tonybrasunas_code_BMD_balanced_media_diet_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 819);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ 2575);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/fire/compat/firestore */ 2450);
+/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/message */ 9917);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ 316);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ 4456);
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/button */ 6104);
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ 6902);
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ 9741);
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/input */ 7084);
+/* harmony import */ var ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-zorro-antd/input-number */ 5346);
+/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/radio */ 6741);
+/* harmony import */ var ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/select */ 4328);
 
-// import * as mediaData from 'BalancedMediaDiet.json';
 
 
 
 
-function NewsSourceComponent_a_14_Template(rf, ctx) {
+
+
+
+
+
+
+
+
+
+
+const _c0 = () => ({
+  minRows: 4,
+  maxRows: 10
+});
+function NewsSourceCreateComponent_div_16_li_4_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 8)(1, "h2", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Read >");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", ctx_r0.newsOrg.linkToRead, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+    const s_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](s_r1);
   }
 }
-function NewsSourceComponent_a_15_Template(rf, ctx) {
+function NewsSourceCreateComponent_div_16_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 8)(1, "h2", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Watch >");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 29)(1, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Similar sources already exist:");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ul");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, NewsSourceCreateComponent_div_16_li_4_Template, 2, 1, "li", 30);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6, "Generally you shouldn't create a duplicate source, but if this source has significantly changed, use the year field to indicate the year of the change and continue creating a new source with the same name. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", ctx_r0.newsOrg.linkToWatch, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r1.similarSources);
   }
 }
-function NewsSourceComponent_a_16_Template(rf, ctx) {
+function NewsSourceCreateComponent_div_60_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 8)(1, "h2", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Listen >");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 13)(1, "label");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Journalist Name");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "input", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_div_60_Template_input_ngModelChange_3_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r3);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx_r1.journalistName, $event) || (ctx_r1.journalistName = $event);
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"]($event);
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", ctx_r0.newsOrg.linkToListen, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx_r1.journalistName);
   }
 }
-class NewsSourceComponent {
-  constructor(route) {
-    this.route = route;
-    this.edit = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
-    this.nzModalData = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_1__.NZ_MODAL_DATA);
+function NewsSourceCreateComponent_p_104_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p", 32);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Name, description, type, category, food group, viewpoint, and at least one link are required.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+  }
+}
+class NewsSourceCreateComponent {
+  constructor(firestore, message) {
+    this.firestore = firestore;
+    this.message = message;
+    this.name = '';
+    this.description = '';
+    this.type = '';
+    this.category = '';
+    this.foodGroup = '';
+    this.viewpoint = '';
+    this.year = null;
+    this.journalistName = '';
+    this.hasPaywall = false;
+    this.linkToRead = '';
+    this.linkToWatch = '';
+    this.linkToListen = '';
+    this.imageName = '';
+    this.isSaving = false;
+    this.similarSources = [];
+    this.allSourceNames = [];
+    this.nameSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__.Subject();
+    this.typeOptions = [{
+      label: 'Network',
+      value: 'Network'
+    }, {
+      label: 'Magazine/Newspaper',
+      value: 'Magazine'
+    }, {
+      label: 'Individual Journalist',
+      value: 'Journalist'
+    }];
+    this.categoryOptions = [{
+      label: 'Corporate',
+      value: 'Corporate'
+    }, {
+      label: 'Independent',
+      value: 'Independent'
+    }];
+    this.allFoodGroupOptions = [{
+      label: 'Corporate Party Politics',
+      value: 'Corporate Party Politics'
+    }, {
+      label: 'Independent Party Politics',
+      value: 'Independent Party Politics'
+    }, {
+      label: 'Independent True Politics',
+      value: 'Independent True Politics'
+    }, {
+      label: 'Independent Deep Politics',
+      value: 'Independent Deep Politics'
+    }, {
+      label: 'Foreign Politics',
+      value: 'Foreign Politics'
+    }];
+    this.corporateFoodGroupOptions = [{
+      label: 'Corporate Party Politics',
+      value: 'Corporate Party Politics'
+    }, {
+      label: 'Foreign Politics',
+      value: 'Foreign Politics'
+    }];
+    this.independentFoodGroupOptions = [{
+      label: 'Independent Party Politics',
+      value: 'Independent Party Politics'
+    }, {
+      label: 'Independent True Politics',
+      value: 'Independent True Politics'
+    }, {
+      label: 'Independent Deep Politics',
+      value: 'Independent Deep Politics'
+    }, {
+      label: 'Foreign Politics',
+      value: 'Foreign Politics'
+    }];
+    this.filteredFoodGroupOptions = [...this.allFoodGroupOptions];
+    this.allViewpointOptions = [{
+      label: 'Democrat',
+      value: 'Democrat'
+    }, {
+      label: 'Republican',
+      value: 'Republican'
+    }, {
+      label: 'Progressive/Liberal',
+      value: 'Progressive'
+    }, {
+      label: 'Conservative/Libertarian',
+      value: 'Conservative'
+    }, {
+      label: 'Nonpartisan',
+      value: 'Nonpartisan'
+    }, {
+      label: 'International',
+      value: 'International'
+    }];
+    this.partyViewpointOptions = [{
+      label: 'Democrat',
+      value: 'Democrat'
+    }, {
+      label: 'Republican',
+      value: 'Republican'
+    }];
+    this.trueViewpointOptions = [{
+      label: 'Progressive/Liberal',
+      value: 'Progressive'
+    }, {
+      label: 'Conservative/Libertarian',
+      value: 'Conservative'
+    }];
+    this.filteredViewpointOptions = [...this.allViewpointOptions];
   }
   ngOnInit() {
-    console.log('Incoming data to the modal: ', this.nzModalData);
-    this.newsOrg = this.nzModalData.newsSource;
-    // this.sources = mediaData.sources;
-    // const id = +this.route.snapshot.paramMap.get('id');
-    // this.newsSource = this.sources.find((source) => source.id === id);
+    this.nameSub = this.nameSubject.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_3__.debounceTime)(400)).subscribe(name => this.checkForDuplicates(name));
+    this.firestore.collection('newsSources').get().subscribe(snapshot => {
+      this.allSourceNames = snapshot.docs.map(d => d.data().name);
+    });
+  }
+  ngOnDestroy() {
+    this.nameSub?.unsubscribe();
+  }
+  onNameChange(val) {
+    this.nameSubject.next(val);
+  }
+  checkForDuplicates(name) {
+    if (!name.trim()) {
+      this.similarSources = [];
+      return;
+    }
+    const lower = name.trim().toLowerCase();
+    this.similarSources = this.allSourceNames.filter(n => {
+      const nl = n.toLowerCase();
+      return nl.includes(lower) || lower.includes(nl);
+    });
+  }
+  onTypeChange(type) {
+    if (type !== 'Journalist') {
+      this.journalistName = '';
+    }
+    if (type === 'Network') {
+      this.category = 'Corporate';
+      this.onCategoryChange('Corporate');
+    }
+  }
+  onCategoryChange(category) {
+    if (category === 'Corporate') {
+      this.filteredFoodGroupOptions = this.corporateFoodGroupOptions;
+      this.foodGroup = 'Corporate Party Politics';
+      this.onFoodGroupChange('Corporate Party Politics');
+    } else if (category === 'Independent') {
+      this.filteredFoodGroupOptions = this.independentFoodGroupOptions;
+      if (this.foodGroup === 'Corporate Party Politics') {
+        this.foodGroup = '';
+        this.viewpoint = '';
+        this.filteredViewpointOptions = [...this.allViewpointOptions];
+      }
+    } else {
+      this.filteredFoodGroupOptions = [...this.allFoodGroupOptions];
+    }
+  }
+  onFoodGroupChange(foodGroup) {
+    const partyGroups = ['Corporate Party Politics', 'Independent Party Politics'];
+    if (partyGroups.includes(foodGroup)) {
+      this.filteredViewpointOptions = this.partyViewpointOptions;
+      if (!['Democrat', 'Republican'].includes(this.viewpoint)) this.viewpoint = '';
+    } else if (foodGroup === 'Independent True Politics') {
+      this.filteredViewpointOptions = this.trueViewpointOptions;
+      if (!['Progressive', 'Conservative'].includes(this.viewpoint)) this.viewpoint = '';
+    } else {
+      this.filteredViewpointOptions = [...this.allViewpointOptions];
+    }
+  }
+  get hasAtLeastOneLink() {
+    return this.linkToRead.trim().length > 0 || this.linkToWatch.trim().length > 0 || this.linkToListen.trim().length > 0;
+  }
+  get isFormValid() {
+    return this.name.trim().length > 0 && this.description.trim().length > 0 && this.type.length > 0 && this.category.length > 0 && this.foodGroup.length > 0 && this.viewpoint.length > 0 && this.hasAtLeastOneLink;
+  }
+  save() {
+    var _this = this;
+    return (0,_Users_tonybrasunas_code_BMD_balanced_media_diet_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      if (!_this.isFormValid) return;
+      _this.isSaving = true;
+      try {
+        const doc = {
+          name: _this.name.trim(),
+          description: _this.description.trim(),
+          type: _this.type,
+          category: _this.category,
+          foodGroup: _this.foodGroup,
+          viewpoint: _this.viewpoint,
+          hasPaywall: _this.hasPaywall,
+          imageName: _this.imageName.trim()
+        };
+        if (_this.year !== null) doc.year = _this.year;
+        if (_this.journalistName.trim()) doc.journalistName = _this.journalistName.trim();
+        if (_this.linkToRead.trim()) doc.linkToRead = _this.linkToRead.trim();
+        if (_this.linkToWatch.trim()) doc.linkToWatch = _this.linkToWatch.trim();
+        if (_this.linkToListen.trim()) doc.linkToListen = _this.linkToListen.trim();
+        yield _this.firestore.collection('newsSources').add(doc);
+        _this.message.success('News source saved successfully!');
+        _this.resetForm();
+      } catch (err) {
+        console.error('Error saving news source:', err);
+        _this.message.error('Failed to save news source. Please try again.');
+      } finally {
+        _this.isSaving = false;
+      }
+    })();
+  }
+  resetForm() {
+    this.name = '';
+    this.description = '';
+    this.type = '';
+    this.category = '';
+    this.foodGroup = '';
+    this.viewpoint = '';
+    this.year = null;
+    this.journalistName = '';
+    this.hasPaywall = false;
+    this.linkToRead = '';
+    this.linkToWatch = '';
+    this.linkToListen = '';
+    this.imageName = '';
+    this.similarSources = [];
+    this.filteredFoodGroupOptions = [...this.allFoodGroupOptions];
+    this.filteredViewpointOptions = [...this.allViewpointOptions];
   }
   static {
-    this.ɵfac = function NewsSourceComponent_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || NewsSourceComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__.ActivatedRoute));
+    this.ɵfac = function NewsSourceCreateComponent_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || NewsSourceCreateComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_fire_compat_firestore__WEBPACK_IMPORTED_MODULE_4__.AngularFirestore), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_5__.NzMessageService));
     };
   }
   static {
-    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: NewsSourceComponent,
-      selectors: [["news-source"]],
-      outputs: {
-        edit: "edit"
-      },
-      decls: 17,
-      vars: 11,
-      consts: [[1, "news-source-inner"], ["src", "../../assets/main_nameplate-Balanced-Media-Diet.png", 1, "bmd-nameplate"], [1, "text-bmd-red"], [1, "media-source-logo", 3, "alt", "src"], [3, "innerHTML"], [1, "foodgroup"], [1, "viewpoint"], ["target", "_blank", 3, "href", 4, "ngIf"], ["target", "_blank", 3, "href"], [1, "visit-link"]],
-      template: function NewsSourceComponent_Template(rf, ctx) {
+    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
+      type: NewsSourceCreateComponent,
+      selectors: [["news-source-create"]],
+      decls: 105,
+      vars: 28,
+      consts: [["id", "news-source-create"], [1, "text-bmd-blue"], [1, "section-subtitle"], [3, "ngSubmit"], [1, "form-section"], [1, "form-row"], [1, "form-field", "form-field--full"], [1, "required"], ["nz-input", "", "name", "name", "placeholder", "e.g. The Atlantic", 3, "ngModelChange", "ngModel"], ["class", "duplicate-warning", 4, "ngIf"], ["name", "year", "nzPlaceHolder", "e.g. 2026", 3, "ngModelChange", "ngModel", "nzMin", "nzMax", "nzStep"], [1, "hint-text", "section-hint"], ["nz-input", "", "name", "description", "placeholder", "Describe this news source, its history, bias, and value to a balanced diet\u2026", 3, "ngModelChange", "ngModel", "nzAutosize"], [1, "form-field"], ["name", "type", "nzPlaceHolder", "Select type", 3, "ngModelChange", "ngModel", "nzOptions"], ["name", "category", "nzPlaceHolder", "Select category", 3, "ngModelChange", "ngModel", "nzOptions"], ["name", "foodGroup", "nzPlaceHolder", "Select food group", 3, "ngModelChange", "ngModel", "nzOptions"], ["name", "viewpoint", "nzPlaceHolder", "Select viewpoint", 3, "ngModelChange", "ngModel", "nzOptions"], ["class", "form-field", 4, "ngIf"], [1, "form-field", "form-field--narrow"], ["name", "hasPaywall", 3, "ngModelChange", "ngModel"], ["nz-radio", "", 3, "nzValue"], ["nz-input", "", "name", "imageName", "placeholder", "e.g. the-atlantic.png", 3, "ngModelChange", "ngModel"], ["nz-input", "", "name", "linkToRead", "placeholder", "https://\u2026", 3, "ngModelChange", "ngModel"], ["nz-input", "", "name", "linkToWatch", "placeholder", "https://\u2026", 3, "ngModelChange", "ngModel"], ["nz-input", "", "name", "linkToListen", "placeholder", "https://\u2026", 3, "ngModelChange", "ngModel"], [1, "form-actions"], ["nz-button", "", "nzType", "primary", "nzSize", "large", 3, "disabled", "nzLoading"], ["class", "hint-text validation-hint", 4, "ngIf"], [1, "duplicate-warning"], [4, "ngFor", "ngForOf"], ["nz-input", "", "name", "journalistName", "placeholder", "e.g. Jordan Schachtel", 3, "ngModelChange", "ngModel"], [1, "hint-text", "validation-hint"]],
+      template: function NewsSourceCreateComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "img", 3)(5, "p", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "span", 5)(7, "strong");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Media Food Group:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span", 6)(11, "strong");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Viewpoint:");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, NewsSourceComponent_a_14_Template, 3, 1, "a", 7)(15, NewsSourceComponent_a_15_Template, 3, 1, "a", 7)(16, NewsSourceComponent_a_16_Template, 3, 1, "a", 7);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "h1", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Add a News Source");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "p", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, "Fill in the details below to add a new source.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "form", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngSubmit", function NewsSourceCreateComponent_Template_form_ngSubmit_5_listener() {
+            return ctx.save();
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "div", 4)(7, "h2", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8, "Basic Info");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "div", 5)(10, "div", 6)(11, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12, "Name ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "span", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](14, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "input", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_input_ngModelChange_15_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.name, $event) || (ctx.name = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NewsSourceCreateComponent_Template_input_ngModelChange_15_listener($event) {
+            return ctx.onNameChange($event);
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](16, NewsSourceCreateComponent_div_16_Template, 7, 1, "div", 9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](17, "div", 5)(18, "div", 6)(19, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Year");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "nz-input-number", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_nz_input_number_ngModelChange_21_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.year, $event) || (ctx.year = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "p", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Only needed if creating a new version with updated info for an existing news source.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "div", 5)(25, "div", 6)(26, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Description ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "span", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](30, "textarea", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_textarea_ngModelChange_30_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.description, $event) || (ctx.description = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "div", 4)(32, "h2", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "Classification");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "div", 5)(35, "div", 13)(36, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](37, "Type ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](38, "span", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](39, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](40, "nz-select", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_nz_select_ngModelChange_40_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.type, $event) || (ctx.type = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NewsSourceCreateComponent_Template_nz_select_ngModelChange_40_listener($event) {
+            return ctx.onTypeChange($event);
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](41, "div", 13)(42, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](43, "Category ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](44, "span", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](45, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](46, "nz-select", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_nz_select_ngModelChange_46_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.category, $event) || (ctx.category = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NewsSourceCreateComponent_Template_nz_select_ngModelChange_46_listener($event) {
+            return ctx.onCategoryChange($event);
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](47, "div", 13)(48, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](49, "Media Food Group ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](50, "span", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](51, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](52, "nz-select", 16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_nz_select_ngModelChange_52_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.foodGroup, $event) || (ctx.foodGroup = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NewsSourceCreateComponent_Template_nz_select_ngModelChange_52_listener($event) {
+            return ctx.onFoodGroupChange($event);
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](53, "div", 13)(54, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](55, "Viewpoint ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](56, "span", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](57, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](58, "nz-select", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_nz_select_ngModelChange_58_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.viewpoint, $event) || (ctx.viewpoint = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](59, "div", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](60, NewsSourceCreateComponent_div_60_Template, 4, 1, "div", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](61, "div", 19)(62, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](63, "Paywall");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](64, "nz-radio-group", 20);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_nz_radio_group_ngModelChange_64_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.hasPaywall, $event) || (ctx.hasPaywall = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](65, "label", 21);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](66, "No paywall");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](67, "label", 21);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](68, "Has paywall");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](69, "div", 4)(70, "h2", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](71, "Logo / Image");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](72, "div", 13)(73, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](74, "Image Filename");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](75, "input", 22);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_input_ngModelChange_75_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.imageName, $event) || (ctx.imageName = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](76, "p", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](77, "Add the image file to ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](78, "code");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](79, "src/assets/news-sources/");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](80, " and enter the filename here.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](81, "div", 4)(82, "h2", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](83, "Links ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](84, "span", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](85, "*");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](86, "p", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](87, "At least one link is required.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](88, "div", 5)(89, "div", 13)(90, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](91, "Link to Read");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](92, "input", 23);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_input_ngModelChange_92_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.linkToRead, $event) || (ctx.linkToRead = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](93, "div", 13)(94, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](95, "Link to Watch");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](96, "input", 24);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_input_ngModelChange_96_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.linkToWatch, $event) || (ctx.linkToWatch = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](97, "div", 13)(98, "label");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](99, "Link to Listen");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](100, "input", 25);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayListener"]("ngModelChange", function NewsSourceCreateComponent_Template_input_ngModelChange_100_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.linkToListen, $event) || (ctx.linkToListen = $event);
+            return $event;
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](101, "div", 26)(102, "button", 27);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](103, " Save News Source ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](104, NewsSourceCreateComponent_p_104_Template, 2, 0, "p", 28);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
         }
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.newsOrg.name);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("alt", "Media Source - ", ctx.newsOrg.name, "");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("src", "../../assets/news-sources/", ctx.newsOrg.imageName, "", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", ctx.newsOrg.description, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.newsOrg.foodGroup, " ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.newsOrg.viewpoint, " ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.newsOrg.linkToRead);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.newsOrg.linkToWatch);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.newsOrg.linkToListen);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.name);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.similarSources.length > 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.year);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzMin", 1800)("nzMax", 2100)("nzStep", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.description);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzAutosize", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](27, _c0));
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.type);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzOptions", ctx.typeOptions);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.category);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzOptions", ctx.categoryOptions);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.foodGroup);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzOptions", ctx.filteredFoodGroupOptions);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.viewpoint);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzOptions", ctx.filteredViewpointOptions);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.type === "Journalist");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.hasPaywall);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzValue", false);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzValue", true);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.imageName);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.linkToRead);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.linkToWatch);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.linkToListen);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("disabled", !ctx.isFormValid || ctx.isSaving)("nzLoading", ctx.isSaving);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx.isFormValid);
         }
       },
-      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf],
-      styles: [".news-source-card[_ngcontent-%COMP%] {\n  max-width: 500px;\n  margin: 50px auto;\n}\n\n.news-source-header-image[_ngcontent-%COMP%] {\n  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');\n  background-size: cover;\n}\n\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbmV3cy1zb3VyY2UvbmV3cy1zb3VyY2UuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFnQjtFQUNoQixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxtRkFBbUY7RUFDbkYsc0JBQXNCO0FBQ3hCIiwic291cmNlc0NvbnRlbnQiOlsiLm5ld3Mtc291cmNlLWNhcmQge1xuICBtYXgtd2lkdGg6IDUwMHB4O1xuICBtYXJnaW46IDUwcHggYXV0bztcbn1cblxuLm5ld3Mtc291cmNlLWhlYWRlci1pbWFnZSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9tYXRlcmlhbC5hbmd1bGFyLmlvL2Fzc2V0cy9pbWcvZXhhbXBsZXMvc2hpYmExLmpwZycpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */"]
+      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_6__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_7__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_7__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_7__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_7__.NgForm, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_8__.NzButtonComponent, ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_9__["ɵNzTransitionPatchDirective"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_10__.NzWaveDirective, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_11__.NzInputDirective, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_11__.NzAutosizeDirective, ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_12__.NzInputNumberComponent, ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_13__.NzRadioComponent, ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_13__.NzRadioGroupComponent, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_14__.NzSelectComponent],
+      styles: ["#news-source-create[_ngcontent-%COMP%] {\n  max-width: 860px;\n  margin: 40px auto 100px;\n  padding: 0 24px;\n}\n#news-source-create[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: \"Montserrat\", \"Open Sans\", sans-serif;\n  margin-bottom: 8px;\n}\n#news-source-create[_ngcontent-%COMP%]   .section-subtitle[_ngcontent-%COMP%] {\n  color: #666;\n  margin-bottom: 36px;\n}\n\n.form-section[_ngcontent-%COMP%] {\n  background: #fff;\n  border: 1px solid #e8e8e8;\n  border-radius: 8px;\n  padding: 28px 32px;\n  margin-bottom: 24px;\n}\n.form-section[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  font-family: \"Montserrat\", \"Open Sans\", sans-serif;\n  font-size: 18px;\n  margin-bottom: 20px;\n}\n\n.form-row[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 20px;\n  flex-wrap: wrap;\n  margin-bottom: 20px;\n}\n.form-row[_ngcontent-%COMP%]:last-child {\n  margin-bottom: 0;\n}\n\n.form-field[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  flex: 1;\n  min-width: 220px;\n}\n.form-field--narrow[_ngcontent-%COMP%] {\n  flex: 0 0 180px;\n  min-width: 180px;\n}\n.form-field--full[_ngcontent-%COMP%] {\n  width: 100%;\n  flex: none;\n}\n.form-field[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  font-size: 13px;\n  font-weight: 600;\n  color: #444;\n  margin-bottom: 6px;\n}\n.form-field[_ngcontent-%COMP%]   .required[_ngcontent-%COMP%] {\n  color: var(--primary-red);\n}\n.form-field[_ngcontent-%COMP%]   .optional[_ngcontent-%COMP%] {\n  font-weight: 400;\n  color: #999;\n}\n\n.duplicate-warning[_ngcontent-%COMP%] {\n  margin-top: 8px;\n  padding: 10px 14px;\n  background: #fff7e6;\n  border: 1px solid #ffd591;\n  border-radius: 6px;\n  font-size: 13px;\n  color: #874d00;\n}\n.duplicate-warning[_ngcontent-%COMP%]   strong[_ngcontent-%COMP%] {\n  display: block;\n  margin-bottom: 4px;\n}\n.duplicate-warning[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  margin: 4px 0 6px 16px;\n  padding: 0;\n}\n.duplicate-warning[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  font-style: italic;\n}\n\n.hint-text[_ngcontent-%COMP%] {\n  font-size: 13px !important;\n  color: #888;\n}\n\n.section-hint[_ngcontent-%COMP%] {\n  margin-top: 6px;\n  margin-bottom: 0;\n}\n\n.file-input[_ngcontent-%COMP%] {\n  padding: 6px 0;\n  font-size: 14px;\n}\n\n.image-row[_ngcontent-%COMP%] {\n  align-items: flex-start;\n}\n\n.image-preview[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 8px;\n}\n.image-preview__img[_ngcontent-%COMP%] {\n  width: 120px;\n  height: 120px;\n  object-fit: contain;\n  border: 1px solid #e8e8e8;\n  border-radius: 6px;\n  background: #fafafa;\n  padding: 8px;\n}\n.image-preview__name[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #888;\n  max-width: 140px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n\n.form-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 16px;\n  margin-top: 8px;\n}\n\n.validation-hint[_ngcontent-%COMP%] {\n  margin: 0;\n}\n\n@media (max-width: 767px) {\n  #news-source-create[_ngcontent-%COMP%] {\n    margin: 20px auto 60px;\n    padding: 0 16px;\n  }\n  .form-section[_ngcontent-%COMP%] {\n    padding: 20px 16px;\n  }\n  .form-row[_ngcontent-%COMP%] {\n    flex-direction: column;\n    gap: 12px;\n  }\n  .form-field--narrow[_ngcontent-%COMP%] {\n    flex: 1;\n    min-width: unset;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbmV3cy1zb3VyY2UvbmV3cy1zb3VyY2UtY3JlYXRlL25ld3Mtc291cmNlLWNyZWF0ZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFBO0VBQ0EsdUJBQUE7RUFDQSxlQUFBO0FBQ0Y7QUFDRTtFQUNFLGtEQUFBO0VBQ0Esa0JBQUE7QUFDSjtBQUVFO0VBQ0UsV0FBQTtFQUNBLG1CQUFBO0FBQUo7O0FBSUE7RUFDRSxnQkFBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0FBREY7QUFHRTtFQUNFLGtEQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0FBREo7O0FBS0E7RUFDRSxhQUFBO0VBQ0EsU0FBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtBQUZGO0FBSUU7RUFDRSxnQkFBQTtBQUZKOztBQU1BO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsT0FBQTtFQUNBLGdCQUFBO0FBSEY7QUFLRTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQUhKO0FBTUU7RUFDRSxXQUFBO0VBQ0EsVUFBQTtBQUpKO0FBT0U7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7QUFMSjtBQVFFO0VBQ0UseUJBQUE7QUFOSjtBQVNFO0VBQ0UsZ0JBQUE7RUFDQSxXQUFBO0FBUEo7O0FBV0E7RUFDRSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0VBQ0EsY0FBQTtBQVJGO0FBVUU7RUFDRSxjQUFBO0VBQ0Esa0JBQUE7QUFSSjtBQVdFO0VBQ0Usc0JBQUE7RUFDQSxVQUFBO0FBVEo7QUFZRTtFQUNFLGtCQUFBO0FBVko7O0FBY0E7RUFDRSwwQkFBQTtFQUNBLFdBQUE7QUFYRjs7QUFjQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQVhGOztBQWNBO0VBQ0UsY0FBQTtFQUNBLGVBQUE7QUFYRjs7QUFjQTtFQUNFLHVCQUFBO0FBWEY7O0FBY0E7RUFDRSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLFFBQUE7QUFYRjtBQWFFO0VBQ0UsWUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7QUFYSjtBQWNFO0VBQ0UsZUFBQTtFQUNBLFdBQUE7RUFDQSxnQkFBQTtFQUNBLGdCQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtBQVpKOztBQWdCQTtFQUNFLGFBQUE7RUFDQSxtQkFBQTtFQUNBLFNBQUE7RUFDQSxlQUFBO0FBYkY7O0FBZ0JBO0VBQ0UsU0FBQTtBQWJGOztBQWdCQTtFQUNFO0lBQ0Usc0JBQUE7SUFDQSxlQUFBO0VBYkY7RUFnQkE7SUFDRSxrQkFBQTtFQWRGO0VBaUJBO0lBQ0Usc0JBQUE7SUFDQSxTQUFBO0VBZkY7RUFrQkE7SUFDRSxPQUFBO0lBQ0EsZ0JBQUE7RUFoQkY7QUFDRiIsInNvdXJjZXNDb250ZW50IjpbIiNuZXdzLXNvdXJjZS1jcmVhdGUge1xuICBtYXgtd2lkdGg6IDg2MHB4O1xuICBtYXJnaW46IDQwcHggYXV0byAxMDBweDtcbiAgcGFkZGluZzogMCAyNHB4O1xuXG4gIGgxIHtcbiAgICBmb250LWZhbWlseTogJ01vbnRzZXJyYXQnLCAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbiAgICBtYXJnaW4tYm90dG9tOiA4cHg7XG4gIH1cblxuICAuc2VjdGlvbi1zdWJ0aXRsZSB7XG4gICAgY29sb3I6ICM2NjY7XG4gICAgbWFyZ2luLWJvdHRvbTogMzZweDtcbiAgfVxufVxuXG4uZm9ybS1zZWN0aW9uIHtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgYm9yZGVyOiAxcHggc29saWQgI2U4ZThlODtcbiAgYm9yZGVyLXJhZGl1czogOHB4O1xuICBwYWRkaW5nOiAyOHB4IDMycHg7XG4gIG1hcmdpbi1ib3R0b206IDI0cHg7XG5cbiAgaDIge1xuICAgIGZvbnQtZmFtaWx5OiAnTW9udHNlcnJhdCcsICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICB9XG59XG5cbi5mb3JtLXJvdyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGdhcDogMjBweDtcbiAgZmxleC13cmFwOiB3cmFwO1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuXG4gICY6bGFzdC1jaGlsZCB7XG4gICAgbWFyZ2luLWJvdHRvbTogMDtcbiAgfVxufVxuXG4uZm9ybS1maWVsZCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGZsZXg6IDE7XG4gIG1pbi13aWR0aDogMjIwcHg7XG5cbiAgJi0tbmFycm93IHtcbiAgICBmbGV4OiAwIDAgMTgwcHg7XG4gICAgbWluLXdpZHRoOiAxODBweDtcbiAgfVxuXG4gICYtLWZ1bGwge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGZsZXg6IG5vbmU7XG4gIH1cblxuICBsYWJlbCB7XG4gICAgZm9udC1zaXplOiAxM3B4O1xuICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgY29sb3I6ICM0NDQ7XG4gICAgbWFyZ2luLWJvdHRvbTogNnB4O1xuICB9XG5cbiAgLnJlcXVpcmVkIHtcbiAgICBjb2xvcjogdmFyKC0tcHJpbWFyeS1yZWQpO1xuICB9XG5cbiAgLm9wdGlvbmFsIHtcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGNvbG9yOiAjOTk5O1xuICB9XG59XG5cbi5kdXBsaWNhdGUtd2FybmluZyB7XG4gIG1hcmdpbi10b3A6IDhweDtcbiAgcGFkZGluZzogMTBweCAxNHB4O1xuICBiYWNrZ3JvdW5kOiAjZmZmN2U2O1xuICBib3JkZXI6IDFweCBzb2xpZCAjZmZkNTkxO1xuICBib3JkZXItcmFkaXVzOiA2cHg7XG4gIGZvbnQtc2l6ZTogMTNweDtcbiAgY29sb3I6ICM4NzRkMDA7XG5cbiAgc3Ryb25nIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBtYXJnaW4tYm90dG9tOiA0cHg7XG4gIH1cblxuICB1bCB7XG4gICAgbWFyZ2luOiA0cHggMCA2cHggMTZweDtcbiAgICBwYWRkaW5nOiAwO1xuICB9XG5cbiAgc3BhbiB7XG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xuICB9XG59XG5cbi5oaW50LXRleHQge1xuICBmb250LXNpemU6IDEzcHggIWltcG9ydGFudDtcbiAgY29sb3I6ICM4ODg7XG59XG5cbi5zZWN0aW9uLWhpbnQge1xuICBtYXJnaW4tdG9wOiA2cHg7XG4gIG1hcmdpbi1ib3R0b206IDA7XG59XG5cbi5maWxlLWlucHV0IHtcbiAgcGFkZGluZzogNnB4IDA7XG4gIGZvbnQtc2l6ZTogMTRweDtcbn1cblxuLmltYWdlLXJvdyB7XG4gIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xufVxuXG4uaW1hZ2UtcHJldmlldyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGdhcDogOHB4O1xuXG4gICZfX2ltZyB7XG4gICAgd2lkdGg6IDEyMHB4O1xuICAgIGhlaWdodDogMTIwcHg7XG4gICAgb2JqZWN0LWZpdDogY29udGFpbjtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjZThlOGU4O1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBiYWNrZ3JvdW5kOiAjZmFmYWZhO1xuICAgIHBhZGRpbmc6IDhweDtcbiAgfVxuXG4gICZfX25hbWUge1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICBjb2xvcjogIzg4ODtcbiAgICBtYXgtd2lkdGg6IDE0MHB4O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgfVxufVxuXG4uZm9ybS1hY3Rpb25zIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgZ2FwOiAxNnB4O1xuICBtYXJnaW4tdG9wOiA4cHg7XG59XG5cbi52YWxpZGF0aW9uLWhpbnQge1xuICBtYXJnaW46IDA7XG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiA3NjdweCkge1xuICAjbmV3cy1zb3VyY2UtY3JlYXRlIHtcbiAgICBtYXJnaW46IDIwcHggYXV0byA2MHB4O1xuICAgIHBhZGRpbmc6IDAgMTZweDtcbiAgfVxuXG4gIC5mb3JtLXNlY3Rpb24ge1xuICAgIHBhZGRpbmc6IDIwcHggMTZweDtcbiAgfVxuXG4gIC5mb3JtLXJvdyB7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBnYXA6IDEycHg7XG4gIH1cblxuICAuZm9ybS1maWVsZC0tbmFycm93IHtcbiAgICBmbGV4OiAxO1xuICAgIG1pbi13aWR0aDogdW5zZXQ7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */"]
     });
   }
 }
